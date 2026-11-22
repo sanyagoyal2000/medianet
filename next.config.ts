@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     return config;
   },
   serverExternalPackages: ["linkedom"],
+  devIndicators: false,
 };
 
 export default nextConfig;
