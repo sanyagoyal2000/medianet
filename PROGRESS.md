@@ -9,7 +9,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - [x] Phase 04 · F1 context engine + Context Library (J2)
 - [x] Phase 05 · F3/F4 campaign brief, targeting and eligibility (J1)
 - [x] Phase 06 · F2 traffic router, Traffic Intelligence, Decision Inspector (J3, J4)
-- [ ] Phase 07 · Phase 2 AI Channels + ShopBuddy, Phase 3 planned (J5)
+- [x] Phase 07 · Phase 2 AI Channels + ShopBuddy, Phase 3 planned (J5)
 - [ ] Phase 08 · Overview, Reports & experiments, Settings (J8, J6)
 - [ ] Phase 09 · MCP endpoint for buying agents (J7)
 - [ ] Phase 10 · Polish, README, deploy to Vercel
@@ -37,6 +37,9 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 
 - **P06:** The router has its policy table as data, a Web Bot Auth structure and registry check ("verification simulated"), timestamped steps, and `performance.now()` timing: every kind routes in **0.1–0.7 ms**. `simulate.ts` builds realistic headers for all 6 kinds, and live requests fold into today's bucket and the automation rows. Curl confirmed: human → Ad displayed (billable); AI app → Awaiting display; signed crawler → No ad impression + "Follow publisher policy"; buyer → Planning only; unidentified → Review required; headless → Excluded. Only the human request is billable. Unknown review: reclassifying as human without a note returns 400, and nothing is re-billed. Traffic Intelligence and the Decision Inspector match the screenshots. The Inspect request dialog is shared with Overview. `/decisions` redirects to the latest simulated request, or RQ1049.
 - **Decision:** request activity is sorted by request number, not timestamp, because the seed clock (22 Nov 14:10 UTC) can be ahead of real time.
+
+- **P07:** The partner API `/api/v1/ai-placements` (+ `/display`, `/click`), `/api/ai-rules` and `/api/shopbuddy/chat` are done. Each placement call stores an `ai_offers` row plus a linked RQ request and decision. Billing happens **only** on display confirmation: a click before display is ignored (409), and an unregistered app gets 403. Verified in Chrome: shopping → Kohl's card, the IntersectionObserver confirms the display and the decision flips to "Ad displayed" (billable), and the funnel goes from 12,400 / 8,480 / 8,060 to +1 live. Recall → "No ad: sensitive request (recalls)"; job loss → financial distress; no consent → "No ad consent"; a second card within 3 turns → "Frequency cap"; Gifts removed from the rules → "Context not allowed". `/shopbuddy` is a standalone teal partner app with a consent toggle. The Licensed content access tab is static, marked Planned, with a disabled Join pilot.
+- **Fix:** Chrome's `scrollIntoView` now returns a Promise, so implicit-return effects were wrapped in braces.
 
 ## Deployed URL
 (Claude Code fills this in at the end)

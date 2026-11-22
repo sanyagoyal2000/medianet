@@ -127,6 +127,7 @@ export interface AiOffer {
   reasonReader: string;
   reason?: string | null;
   checks?: { label: string; ok: boolean }[];
+  requestId?: string | null;
   createdAt: string;
 }
 

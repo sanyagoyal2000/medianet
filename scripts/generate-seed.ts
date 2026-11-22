@@ -194,6 +194,7 @@ const aiOffers: AiOffer[] = [{
     { label: "Display confirmation received", ok: true },
     { label: "Billable", ok: true },
   ],
+  requestId: "RQ1053",
   createdAt: "2026-11-22T14:04:12.900Z",
 }];
 

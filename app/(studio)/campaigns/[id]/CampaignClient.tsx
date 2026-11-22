@@ -479,7 +479,7 @@ function ContextProfileCard({ row }: { row: Row | null }) {
 function AdPreview({ campaignId, row, advertiser }: { campaignId: string; row: Row | null; advertiser: string }) {
   const [reason, setReason] = useState<{ reader: string; buyer: string; cached: boolean } | null>(null);
   const [loading, setLoading] = useState(false);
-  useEffect(() => setReason(null), [row?.pageId]);
+  useEffect(() => { setReason(null); }, [row?.pageId]);
   async function load() {
     if (!row || reason) return;
     setLoading(true);

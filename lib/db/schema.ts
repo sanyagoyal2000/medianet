@@ -107,6 +107,7 @@ export const aiOffers = pgTable("ai_offers", {
   reasonReader: text("reason_reader").notNull(),
   reason: text("reason"),
   checks: jsonb("checks"),
+  requestId: text("request_id"),
   createdAt: text("created_at").notNull(),
 });
 
