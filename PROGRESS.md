@@ -44,5 +44,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - **P08:** Overview matches the screenshot and is wired to the same queries as the other screens: 24 / 91.2% / 1,000,000 / 5.0%, the 84/11/5 purpose bar, the four recent decisions RQ1053–56, and live task counts with links (also used for the bell badge). Reports: the experiment readout comes from `twoProportionCI` ("+0.3 observed difference · confidence interval crosses zero · No conclusive uplift yet"). Approve ramp is disabled with a computed list of blockers in its tooltip. Pause/Resume persists. The other three tabs have real charts. Settings has model IDs, the demo-mode cookie (live/cached/default), the data adapter, Reset demo data, filterable agent runs with a JSON viewer, and MCP instructions.
 - **Note:** local build checks use `NEXT_DIST_DIR=.next-build` so they don't clobber `next dev`; Vercel uses the default `.next`.
 
+- **P09 (IN PROGRESS):** `app/api/mcp/route.ts` is written (mcp-handler 2.x + `@modelcontextprotocol/server` v2, 5 tools, `mcp:*` agent_runs logging, optional MCP_TOKEN bearer guard) and type-checks. **Not yet verified:** the curl smoke test (initialize → tools/list → create_package) returned an empty response. Next: check the dev log / response headers, fix, confirm the draft appears in Campaigns with source MCP, then build and tick.
+
 ## Deployed URL
 (Claude Code fills this in at the end)
