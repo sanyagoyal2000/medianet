@@ -10,7 +10,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - [x] Phase 05 · F3/F4 campaign brief, targeting and eligibility (J1)
 - [x] Phase 06 · F2 traffic router, Traffic Intelligence, Decision Inspector (J3, J4)
 - [x] Phase 07 · Phase 2 AI Channels + ShopBuddy, Phase 3 planned (J5)
-- [ ] Phase 08 · Overview, Reports & experiments, Settings (J8, J6)
+- [x] Phase 08 · Overview, Reports & experiments, Settings (J8, J6)
 - [ ] Phase 09 · MCP endpoint for buying agents (J7)
 - [ ] Phase 10 · Polish, README, deploy to Vercel
 
@@ -40,6 +40,9 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 
 - **P07:** The partner API `/api/v1/ai-placements` (+ `/display`, `/click`), `/api/ai-rules` and `/api/shopbuddy/chat` are done. Each placement call stores an `ai_offers` row plus a linked RQ request and decision. Billing happens **only** on display confirmation: a click before display is ignored (409), and an unregistered app gets 403. Verified in Chrome: shopping → Kohl's card, the IntersectionObserver confirms the display and the decision flips to "Ad displayed" (billable), and the funnel goes from 12,400 / 8,480 / 8,060 to +1 live. Recall → "No ad: sensitive request (recalls)"; job loss → financial distress; no consent → "No ad consent"; a second card within 3 turns → "Frequency cap"; Gifts removed from the rules → "Context not allowed". `/shopbuddy` is a standalone teal partner app with a consent toggle. The Licensed content access tab is static, marked Planned, with a disabled Join pilot.
 - **Fix:** Chrome's `scrollIntoView` now returns a Promise, so implicit-return effects were wrapped in braces.
+
+- **P08:** Overview matches the screenshot and is wired to the same queries as the other screens: 24 / 91.2% / 1,000,000 / 5.0%, the 84/11/5 purpose bar, the four recent decisions RQ1053–56, and live task counts with links (also used for the bell badge). Reports: the experiment readout comes from `twoProportionCI` ("+0.3 observed difference · confidence interval crosses zero · No conclusive uplift yet"). Approve ramp is disabled with a computed list of blockers in its tooltip. Pause/Resume persists. The other three tabs have real charts. Settings has model IDs, the demo-mode cookie (live/cached/default), the data adapter, Reset demo data, filterable agent runs with a JSON viewer, and MCP instructions.
+- **Note:** local build checks use `NEXT_DIST_DIR=.next-build` so they don't clobber `next dev`; Vercel uses the default `.next`.
 
 ## Deployed URL
 (Claude Code fills this in at the end)

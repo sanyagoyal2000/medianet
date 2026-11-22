@@ -360,7 +360,7 @@ function RulesCard({ rules, update, topics, readOnly }: { rules: CampaignRules; 
           <span className="size-3 rounded-full bg-ok-solid" aria-hidden />
           Agent access: <b className="font-medium">Connected</b> · Read &amp; draft only
         </span>
-        <Link href="/settings?tab=runs&agent=briefInterpreter" className="text-link underline underline-offset-2">View activity</Link>
+        <Link href="/settings?agent=briefInterpreter#runs" className="text-link underline underline-offset-2">View activity</Link>
       </div>
     </section>
   );
