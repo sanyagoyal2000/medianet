@@ -141,12 +141,7 @@
 }
 
 .studio-sidebar {
-  background:
-    linear-gradient(135deg, transparent 0 62%, rgba(255,255,255,0.07) 62% 100%) 0 0 / 100% 100% no-repeat,
-    linear-gradient(45deg, rgba(0,0,0,0.07) 0 30%, transparent 30% 100%) 0 0 / 100% 100% no-repeat,
-    conic-gradient(from 225deg at 0 60%, rgba(255,255,255,0.08) 0 45deg, transparent 45deg) 0 0 / 100% 100% no-repeat,
-    conic-gradient(from 315deg at 100% 82%, rgba(0,0,0,0.06) 0 50deg, transparent 50deg) 0 0 / 100% 100% no-repeat,
-    linear-gradient(180deg, var(--sidebar-from), var(--sidebar-to));
+  background: linear-gradient(180deg, var(--sidebar-from), var(--sidebar-to));
 }
 
 .studio-card {

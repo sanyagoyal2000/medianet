@@ -40,7 +40,7 @@ You are building a **working prototype, deployed on Vercel**, for a Media.net pr
 - **Reader-facing explanations never reference the person** (history, location, device). They describe only the page or chat context.
 - **The demo must never break.** Every agent call falls back to cached output when there is no key, a timeout or an error, and the UI shows a small "cached" chip when that happens.
 - **Numbers are consistent across screens.** Overview totals equal Traffic totals, and the seed reproduces the numbers in `design/*.png`.
-- A small footer reads: *"Concept prototype for a Media.net PM case study · not an official Media.net product."*
+
 - No secrets in code. Use `.env.local` locally and Vercel env vars in production.
 
 ## Stack (fixed)
