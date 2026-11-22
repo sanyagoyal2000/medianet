@@ -53,3 +53,4 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 
 ## Deployed URL
 (Claude Code fills this in at the end)
+- **Env rename:** `MCP_TOKEN` is now `MCP_AUTH_TOKEN` (a stale `MCP_TOKEN` entry blocked adding it on Vercel).

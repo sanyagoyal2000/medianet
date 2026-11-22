@@ -69,7 +69,7 @@ Agents: Context Profiler, Explainer, Placement Guard → `claude-haiku-5-5`; Bri
 | `ANTHROPIC_API_KEY` | — | Without it, everything runs in cached mode |
 | `DEMO_MODE` | `live` if a key exists, else `cached` | Settings can override per browser (cookie) |
 | `DATABASE_URL` | — | Neon Postgres; otherwise in-memory (resets on cold start) |
-| `MCP_TOKEN` | — | If set, `/api/mcp` requires `Authorization: Bearer <token>` |
+| `MCP_AUTH_TOKEN` | — | If set, `/api/mcp` requires `Authorization: Bearer <token>` |
 | `NEXT_PUBLIC_APP_URL` | request origin | Used in MCP instructions |
 
 ## Local setup

@@ -21,7 +21,7 @@ Design for Vercel from phase 00. Don't retrofit.
 | `ANTHROPIC_API_KEY` | no | n/a | Without it, everything runs cached |
 | `DEMO_MODE` | no | `live` if key present, else `cached` | |
 | `DATABASE_URL` | no | n/a | Neon Postgres |
-| `MCP_TOKEN` | no | n/a | If set, `/api/mcp` requires `Authorization: Bearer <token>` |
+| `MCP_AUTH_TOKEN` | no | n/a | If set, `/api/mcp` requires `Authorization: Bearer <token>` |
 | `NEXT_PUBLIC_APP_URL` | no | n/a | Used in MCP instructions and ShopBuddy → API calls (fall back to the request origin) |
 
 Commit `.env.example` with all of these.

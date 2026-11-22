@@ -81,7 +81,7 @@ const handler = createMcpHandler(
 );
 
 async function guarded(req: Request) {
-  const token = process.env.MCP_TOKEN;
+  const token = process.env.MCP_AUTH_TOKEN;
   if (token && req.headers.get("authorization") !== `Bearer ${token}`) {
     return new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401, headers: { "content-type": "application/json", "www-authenticate": "Bearer" } });
   }

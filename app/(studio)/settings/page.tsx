@@ -16,7 +16,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ a
   return (
     <SettingsClient
       models={AGENT_MODELS}
-      env={{ mode: envMode(), hasKey: hasKey(), cookie, adapter: dataAdapterLabel(), mcpToken: !!process.env.MCP_TOKEN }}
+      env={{ mode: envMode(), hasKey: hasKey(), cookie, adapter: dataAdapterLabel(), mcpToken: !!process.env.MCP_AUTH_TOKEN }}
       runs={runs}
       origin={origin}
       initialFilter={{ agent: sp.agent ?? "all", source: sp.source ?? "all" }}

@@ -15,7 +15,7 @@
    | `list_campaigns` | List campaigns, read-only |
 
 3. Every tool call is logged to `agent_runs` with `source: "mcp"`. Packages created this way appear in Campaigns with source **MCP**, status **draft**, and they feed the Overview task "1 campaign draft from agent".
-4. If `MCP_TOKEN` is set, require `Authorization: Bearer`.
+4. If `MCP_AUTH_TOKEN` is set, require `Authorization: Bearer`.
 5. Settings › MCP shows the endpoint URL (from `NEXT_PUBLIC_APP_URL` or the request origin), both connection methods from spec/06, and a sample prompt: *"Using Media.net Context Studio, find US gift guides and comparisons under $50 for Kohl's holiday campaign, exclude recalls and tragedy, forecast reach, and save a draft package."*
 6. **Manual check:** with `npm run dev`, use `npx @modelcontextprotocol/inspector` (or curl JSON-RPC `initialize` → `tools/list` → `tools/call find_contexts`) against `http://localhost:3000/api/mcp`. Confirm `create_package` creates a draft that's visible in the UI.
 

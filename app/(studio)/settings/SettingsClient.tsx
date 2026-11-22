@@ -39,7 +39,7 @@ export function SettingsClient({ models, env, runs, origin, initialFilter }: {
     if (r.ok) { toast.success("Demo data reset to the seed"); router.refresh(); } else toast.error("Reset failed");
   }
   const mcpUrl = `${origin}/api/mcp`;
-  const config = JSON.stringify({ mcpServers: { "media-net-context-studio": { command: "npx", args: ["-y", "mcp-remote", mcpUrl, ...(env.mcpToken ? ["--header", "Authorization: Bearer ${MCP_TOKEN}"] : [])] } } }, null, 2);
+  const config = JSON.stringify({ mcpServers: { "media-net-context-studio": { command: "npx", args: ["-y", "mcp-remote", mcpUrl, ...(env.mcpToken ? ["--header", "Authorization: Bearer ${MCP_AUTH_TOKEN}"] : [])] } } }, null, 2);
   const copy = (t: string) => { navigator.clipboard.writeText(t); toast.success("Copied"); };
 
   return (
