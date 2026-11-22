@@ -11,7 +11,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - [x] Phase 06 · F2 traffic router, Traffic Intelligence, Decision Inspector (J3, J4)
 - [x] Phase 07 · Phase 2 AI Channels + ShopBuddy, Phase 3 planned (J5)
 - [x] Phase 08 · Overview, Reports & experiments, Settings (J8, J6)
-- [ ] Phase 09 · MCP endpoint for buying agents (J7)
+- [x] Phase 09 · MCP endpoint for buying agents (J7)
 - [ ] Phase 10 · Polish, README, deploy to Vercel
 
 ## Notes / decisions
@@ -44,7 +44,8 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - **P08:** Overview matches the screenshot and is wired to the same queries as the other screens: 24 / 91.2% / 1,000,000 / 5.0%, the 84/11/5 purpose bar, the four recent decisions RQ1053–56, and live task counts with links (also used for the bell badge). Reports: the experiment readout comes from `twoProportionCI` ("+0.3 observed difference · confidence interval crosses zero · No conclusive uplift yet"). Approve ramp is disabled with a computed list of blockers in its tooltip. Pause/Resume persists. The other three tabs have real charts. Settings has model IDs, the demo-mode cookie (live/cached/default), the data adapter, Reset demo data, filterable agent runs with a JSON viewer, and MCP instructions.
 - **Note:** local build checks use `NEXT_DIST_DIR=.next-build` so they don't clobber `next dev`; Vercel uses the default `.next`.
 
-- **P09 (IN PROGRESS):** `app/api/mcp/route.ts` is written (mcp-handler 2.x + `@modelcontextprotocol/server` v2, 5 tools, `mcp:*` agent_runs logging, optional MCP_TOKEN bearer guard) and type-checks. **Not yet verified:** the curl smoke test (initialize → tools/list → create_package) returned an empty response. Next: check the dev log / response headers, fix, confirm the draft appears in Campaigns with source MCP, then build and tick.
+- **P09:** `/api/mcp` uses mcp-handler 2.x (MCP SDK v2, stateless Streamable HTTP, serving both the 2026 and 2025-era protocol). Verified with curl JSON-RPC: `initialize` OK; `tools/list` returns 5 tools (find_contexts, explain_match, forecast_reach, create_package, list_campaigns); `create_package` created a VoltMart draft that appears in Campaigns as source MCP, status draft, with DR-xxxx filed. Every call is logged to agent_runs as `mcp:*` with source mcp. An optional `MCP_TOKEN` bearer guard returns 401. Settings shows the URL, both connection methods and the sample prompt. (The earlier empty response was the first compile plus a curl quoting issue.)
+- **Decision:** I added `@modelcontextprotocol/server@2` because mcp-handler 2.x requires it. The spec's `@modelcontextprotocol/sdk` 1.x is left installed but unused.
 
 ## Deployed URL
 (Claude Code fills this in at the end)
