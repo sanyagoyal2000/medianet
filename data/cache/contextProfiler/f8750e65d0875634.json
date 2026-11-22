@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "f8750e65d0875634",
+  "input": {
+    "url": "giftguide.example/uk/christmas-gifts-under-40",
+    "title": "Christmas gifts under £40",
+    "text": "Christmas comes round faster every year, so we have done the legwork. Our UK team rounded up 18 Christmas presents under £40 that we would be delighted to receive.\n\nCosy, clever and properly useful, with something for everyone on your list. For the person who feels the cold, a heated throw at £38 costs pennies an hour to run and makes the sofa the best seat in the house.\n\nTea drinkers will love a glass teapot with a built-in infuser (£22), and coffee lovers a hand grinder (£35) that makes a noticeable difference to the morning cup.\n\nFor walkers, a pair of merino walking socks (£16) and a pocket-sized flask (£19) both made our list. Gardeners will appreciate a kneeling pad and tool set (£28).\n\nFamilies with young children can pick up a wooden advent train (£34), and teenagers were keen on a portable speaker (£39) that survives being dropped.\n\nPrices were correct at the time of writing and include VAT. Order by 18 December for standard delivery before Christmas.",
+    "existingTopic": "Shopping > Gifts > Holiday"
+  },
+  "output": {
+    "purpose": "buying_guide",
+    "tone": "upbeat",
+    "confidence": 0.86,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Our UK team rounded up 18 Christmas presents under £40 that we would be delighted to receive."
+      },
+      {
+        "field": "tone",
+        "quote": "Cosy, clever and properly useful, with something for everyone on your list."
+      }
+    ]
+  }
+}

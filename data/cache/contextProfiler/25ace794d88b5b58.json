@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "25ace794d88b5b58",
+  "input": {
+    "url": "travelnotes.example/cheaper-holiday-flights",
+    "title": "How to find cheaper holiday flights",
+    "text": "Holiday airfare is expensive, but it is not random. These six steps helped our readers save an average of $140 per ticket last December.\n\nFlexibility beats any secret trick, so start with your dates before you look at prices. Flying on Christmas Day or the day after is often 30 percent cheaper than the weekend before.\n\nCompare nearby airports. A second airport an hour away can cut fares dramatically, especially for families buying four or more tickets.\n\nSet price alerts instead of checking every day. Fares for domestic holiday travel usually bottom out four to six weeks before departure, then climb quickly.\n\nWatch the fees. A low base fare can end up more expensive once you add a carry-on bag and seat selection. Compare the total price for your actual trip.\n\nUse points carefully. Airline miles are often worth more for last-minute holiday flights, when cash prices spike.\n\nFinally, book refundable or changeable fares if your plans may shift. The extra cost can be small compared with a change fee. Holiday travel is stressful enough without losing money on a ticket you cannot use.",
+    "existingTopic": "Travel > Flights"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.85,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "These six steps helped our readers save an average of $140 per ticket last December."
+      },
+      {
+        "field": "tone",
+        "quote": "Flexibility beats any secret trick, so start with your dates before you look at prices."
+      }
+    ]
+  }
+}

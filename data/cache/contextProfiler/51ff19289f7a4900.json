@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "51ff19289f7a4900",
+  "input": {
+    "url": "kitchenwise.example/drip-vs-pod-coffee-makers",
+    "title": "Drip vs. pod coffee makers: which to buy",
+    "text": "Pod machines win on speed. Drip machines win on cost. But the details matter. We ran drip and pod machines side by side for a month to compare cost per cup, taste and cleanup.\n\nThe numbers first. Pods averaged 68 cents a cup in our test. Ground coffee in a drip machine came to about 22 cents. If you drink more than two cups a day, a drip machine pays for itself within a year.\n\nTaste was closer than we expected. Our panel preferred the drip coffee in blind tests, but only by a small margin, and the best pods scored higher than the cheapest drip machine.\n\nCleanup favored pods. There is no filter to empty and no carafe to scrub. Drip machines need a monthly descaling, which most people forget.\n\nWaste is the other issue. Even recyclable pods often end up in the trash because they must be emptied first.\n\nOur recommendation: choose a pod machine for a single person who wants one cup in the morning, and a drip machine for a household that drinks a full pot. Both of our top picks cost less than $80.",
+    "existingTopic": "Shopping > Home & Kitchen"
+  },
+  "output": {
+    "purpose": "product_comparison",
+    "tone": "practical",
+    "confidence": 0.8,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We ran drip and pod machines side by side for a month to compare cost per cup, taste and cleanup."
+      },
+      {
+        "field": "tone",
+        "quote": "If you drink more than two cups a day, a drip machine pays for itself within a year."
+      }
+    ]
+  }
+}

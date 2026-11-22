@@ -1,0 +1,28 @@
+{
+  "agent": "explainer",
+  "hash": "275b7860ae56883e",
+  "input": {
+    "page": {
+      "title": "Christmas gifts under £40",
+      "topic": "Shopping > Gifts > Holiday",
+      "purpose": "buying_guide",
+      "tone": "upbeat",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Country mismatch"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: country mismatch.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

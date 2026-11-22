@@ -1,0 +1,28 @@
+{
+  "agent": "contextProfiler",
+  "hash": "10720fb05159711b",
+  "input": {
+    "url": "moneysense.example/when-holiday-debt-overwhelms",
+    "title": "When holiday debt becomes overwhelming",
+    "text": "For many households, January brings a stack of bills that feels impossible to pay. If you are behind on payments, these steps can help you regain control.\n\nFalling behind is common, and it is not a personal failure. Surveys suggest that more than a third of shoppers take on holiday debt, and many are still paying it off by spring.\n\nStart by listing every debt: who you owe, the balance, the interest rate and the minimum payment. Seeing it in one place makes the problem smaller and clearer.\n\nCall your lenders before you miss a payment. Many offer hardship programs that lower interest or pause payments for a few months. They are more flexible when you contact them early.\n\nProtect essentials first: housing, utilities, food and transportation to work. Credit card debt matters, but not more than keeping the lights on.\n\nBe wary of quick fixes. Debt settlement companies that charge large upfront fees can leave you worse off. A nonprofit credit counselor can help you build a plan for free or at low cost.\n\nIf debt is affecting your sleep or health, talk to someone you trust. Help is available, and the first step is often the hardest.",
+    "existingTopic": "Finance > Debt"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "serious",
+    "confidence": 0.8,
+    "sensitive": [
+      "financial_distress"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "If you are behind on payments, these steps can help you regain control."
+      },
+      {
+        "field": "tone",
+        "quote": "Falling behind is common, and it is not a personal failure."
+      }
+    ]
+  }
+}

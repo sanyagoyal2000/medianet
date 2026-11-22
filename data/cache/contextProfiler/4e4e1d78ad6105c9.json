@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "4e4e1d78ad6105c9",
+  "input": {
+    "url": "worklife.example/desk-upgrades-worth-buying",
+    "title": "Desk upgrades worth buying",
+    "text": "A good desk setup is less about style and more about the hours you spend at it. We tested six monitor stands, four desk mats and three keyboard trays side by side. Here is what earned a permanent spot.\n\nMonitor stands first. The aluminum riser at $45 beat the bamboo model on stability, and it leaves room for a keyboard underneath. The clamp-on arm at $89 is better if you share a desk, but it takes twenty minutes to install and needs a sturdy edge.\n\nDesk mats were closer. The felt mat ($24) is quiet and soft under the wrist, while the vegan leather version ($31) wipes clean after a coffee spill. Both stopped our chairs from scratching the desk surface.\n\nKeyboard trays were the surprise. Two of the three wobbled when we typed fast. Only the steel tray ($72) stayed put, and it is the one we would buy again.\n\nSpend where you sit longest, and skip the gadgets that only look good in photos. A cable tray under the desk ($19) did more for our focus than any decorative organizer. If you are buying for someone who works from home, a stand and a mat together come in under $70 and get used every day.",
+    "existingTopic": "Shopping > Home & Office"
+  },
+  "output": {
+    "purpose": "product_comparison",
+    "tone": "practical",
+    "confidence": 0.81,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We tested six monitor stands, four desk mats and three keyboard trays side by side."
+      },
+      {
+        "field": "tone",
+        "quote": "Spend where you sit longest, and skip the gadgets that only look good in photos."
+      }
+    ]
+  }
+}

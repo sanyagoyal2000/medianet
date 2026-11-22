@@ -1,0 +1,10 @@
+{
+  "agent": "shopbuddy",
+  "hash": "cf141fc1d9f47e3b",
+  "input": {
+    "last": "Gift ideas under $50 for my sister who loves cooking"
+  },
+  "output": {
+    "answer": "Lovely! For a cook: an instant-read thermometer, a sharp eight-inch chef's knife, linen kitchen towels or a heavy sheet pan. All under $50, and every one gets used weekly. A handwritten recipe card makes it personal."
+  }
+}

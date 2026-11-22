@@ -1,0 +1,31 @@
+{
+  "agent": "explainer",
+  "hash": "a74ac4747b744384",
+  "input": {
+    "page": {
+      "title": "Gifts for home cooks that actually get used",
+      "topic": "Shopping > Gifts",
+      "purpose": "buying_guide",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "eligible",
+    "reasons": [
+      "Topic matched: Shopping / Gifts",
+      "Purpose matched: Buying guide",
+      "Tone preferred: Practical",
+      "No hard exclusion: Not a product recall or tragedy"
+    ]
+  },
+  "output": {
+    "buyer": "Eligible for Holiday Gifting 2026: buying guide on gifts, practical tone, no hard exclusion.",
+    "reader": "Shown because this page is a gifts buying guide. Paid placement."
+  }
+}

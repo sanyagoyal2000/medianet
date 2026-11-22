@@ -1,0 +1,15 @@
+{
+  "agent": "placementGuard",
+  "hash": "64e59191da6b2776",
+  "input": {
+    "turnSummary": "Is the holiday toy recall affecting my kid's gift?"
+  },
+  "output": {
+    "topic": "Gifts",
+    "purpose": "safety_report",
+    "sensitive": [
+      "recalls"
+    ],
+    "confidence": 0.93
+  }
+}

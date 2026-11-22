@@ -1,0 +1,13 @@
+{
+  "agent": "placementGuard",
+  "hash": "c11a875b8ea4f789",
+  "input": {
+    "turnSummary": "What are practical holiday gifts under $50?"
+  },
+  "output": {
+    "topic": "Gifts",
+    "purpose": "buying_guide",
+    "sensitive": [],
+    "confidence": 0.92
+  }
+}

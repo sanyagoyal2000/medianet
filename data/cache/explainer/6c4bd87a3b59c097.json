@@ -1,0 +1,28 @@
+{
+  "agent": "explainer",
+  "hash": "6c4bd87a3b59c097",
+  "input": {
+    "page": {
+      "title": "In defense of the gift card",
+      "topic": "Shopping > Gifts",
+      "purpose": "opinion",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Purpose not targeted: Opinion"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: purpose not targeted: opinion.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

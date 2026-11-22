@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "ca331fbfb55f47dd",
+  "input": {
+    "url": "techreview.example/budget-phone-review",
+    "title": "Budget phone review: solid camera, weak speaker",
+    "text": "Budget phones keep getting better, and this year's model is no exception. We used the phone for two weeks and compared it with last year's model and two rivals. Both rivals sit in the same price range.\n\nIt is a sensible phone with one annoying flaw. The speaker is thin and distorts at high volume, which makes video calls without headphones unpleasant.\n\nEverything else is solid. The main camera takes sharp daylight photos with natural color, and the night mode is a clear step up from last year. The ultrawide camera is weaker, with soft edges.\n\nBattery life was excellent. We regularly ended the day with 40 percent left after heavy use. The included charger is slow, though, taking almost two hours to fill the battery.\n\nThe screen is bright enough to read outdoors and refreshes smoothly. Performance is fine for social apps and maps, but large games stutter.\n\nCompared with its two rivals, this phone has the better camera and longer software support, promising five years of updates. One rival has a much better speaker. If you mostly use headphones, this is the one to buy.",
+    "existingTopic": "Technology > Phones"
+  },
+  "output": {
+    "purpose": "product_comparison",
+    "tone": "neutral",
+    "confidence": 0.72,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We used the phone for two weeks and compared it with last year's model and two rivals."
+      },
+      {
+        "field": "tone",
+        "quote": "It is a sensible phone with one annoying flaw."
+      }
+    ]
+  }
+}

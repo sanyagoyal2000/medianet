@@ -8,10 +8,10 @@
     "start": "next start",
     "lint": "eslint",
     "seed:generate": "tsx scripts/generate-seed.ts",
-    "cache:build": "node --import ./scripts/register-md.mjs --import tsx scripts/build-cache.ts",
+    "cache:build": "node --require ./scripts/register-md.cjs --import tsx scripts/build-cache.ts",
     "db:push": "drizzle-kit push",
     "db:seed": "tsx scripts/db-seed.ts",
-    "check": "node --import ./scripts/register-md.mjs --import tsx scripts/check.ts"
+    "check": "node --require ./scripts/register-md.cjs --import tsx scripts/check.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.12.0",

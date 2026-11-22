@@ -1,0 +1,10 @@
+{
+  "agent": "shopbuddy",
+  "hash": "9b72bf7fa083697e",
+  "input": {
+    "last": "Is the holiday toy recall affecting my kid's gift?"
+  },
+  "output": {
+    "answer": "Check the tag sewn into the toy for the lot number and compare it with the official recall notice. If it matches, stop using it, remove the batteries and return it for a full refund. If it doesn't match, it's fine to give."
+  }
+}

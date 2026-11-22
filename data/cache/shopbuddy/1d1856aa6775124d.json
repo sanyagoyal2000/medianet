@@ -1,0 +1,10 @@
+{
+  "agent": "shopbuddy",
+  "hash": "1d1856aa6775124d",
+  "input": {
+    "last": "I just lost my job, how do I budget for holidays?"
+  },
+  "output": {
+    "answer": "I'm sorry, that's a hard time. Pick a total you can cover without credit, then lean on low-cost gifts: baked treats, a shared outing, or a heartfelt note. Telling family you're keeping it simple this year is completely okay."
+  }
+}

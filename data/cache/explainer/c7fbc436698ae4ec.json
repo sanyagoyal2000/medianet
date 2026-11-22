@@ -1,0 +1,28 @@
+{
+  "agent": "explainer",
+  "hash": "c7fbc436698ae4ec",
+  "input": {
+    "page": {
+      "title": "Should you buy a laptop on Black Friday?",
+      "topic": "Shopping > Electronics > Computers",
+      "purpose": "opinion",
+      "tone": "neutral",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Purpose not targeted: Opinion"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: purpose not targeted: opinion.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

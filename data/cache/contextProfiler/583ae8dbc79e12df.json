@@ -1,0 +1,28 @@
+{
+  "agent": "contextProfiler",
+  "hash": "583ae8dbc79e12df",
+  "input": {
+    "url": "bizwire.example/retailer-cuts-2000-jobs",
+    "title": "Retailer cuts 2,000 jobs before holidays",
+    "text": "A national department store chain said on Wednesday that it will cut about 2,000 corporate and distribution jobs. The cuts amount to roughly 4 percent of its workforce, as it closes two regional warehouses and consolidates its buying teams.\n\nThe company blamed weaker spending on home goods and apparel, and higher shipping costs that it said had squeezed margins through the summer. Its shares fell 6 percent in morning trading.\n\nWorkers described the timing as cruel, coming weeks before the busiest season of the year. Several employees at a warehouse in Ohio said they learned about the cuts from a recorded video message. The company said affected staff will receive at least eight weeks of severance and help finding new roles.\n\nStore employees are not affected, and all locations will stay open through the holidays, a spokesperson said.\n\nAnalysts said the move reflects a broader shift. Shoppers are buying more online and waiting longer for discounts, which forces retailers to rethink how much inventory they hold. Two other chains announced smaller cuts last month.\n\nThe company will report its quarterly results in early December. It said it still expects holiday sales to be flat compared with last year.",
+    "existingTopic": "News > Business > Retail"
+  },
+  "output": {
+    "purpose": "news",
+    "tone": "negative",
+    "confidence": 0.86,
+    "sensitive": [
+      "layoffs"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "A national department store chain said on Wednesday that it will cut about 2,000 corporate and distribution jobs."
+      },
+      {
+        "field": "tone",
+        "quote": "Workers described the timing as cruel, coming weeks before the busiest season of the year."
+      }
+    ]
+  }
+}

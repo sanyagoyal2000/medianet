@@ -1,0 +1,10 @@
+{
+  "agent": "shopbuddy",
+  "hash": "2bdeb99c2950e82a",
+  "input": {
+    "last": "What are practical holiday gifts under $50?"
+  },
+  "output": {
+    "answer": "Consider a desk organizer, insulated mug or compact charger."
+  }
+}

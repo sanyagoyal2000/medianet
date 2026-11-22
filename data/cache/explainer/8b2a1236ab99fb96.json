@@ -1,0 +1,27 @@
+{
+  "agent": "explainer",
+  "hash": "8b2a1236ab99fb96",
+  "input": {
+    "page": {
+      "title": "STEM gifts for kids 6–10",
+      "topic": "Shopping > Gifts > Kids",
+      "purpose": "buying_guide",
+      "tone": "upbeat",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

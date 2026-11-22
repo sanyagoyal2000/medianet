@@ -1,0 +1,29 @@
+{
+  "agent": "explainer",
+  "hash": "4e3df7e8d0c4348b",
+  "input": {
+    "page": {
+      "title": "Retailer cuts 2,000 jobs before holidays",
+      "topic": "News > Business > Retail",
+      "purpose": "news",
+      "tone": "negative",
+      "sensitive": [
+        "layoffs"
+      ]
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

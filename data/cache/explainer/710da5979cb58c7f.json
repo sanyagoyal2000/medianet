@@ -1,0 +1,27 @@
+{
+  "agent": "explainer",
+  "hash": "710da5979cb58c7f",
+  "input": {
+    "page": {
+      "title": "Gifts for home cooks that actually get used",
+      "topic": "Shopping > Gifts",
+      "purpose": "buying_guide",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

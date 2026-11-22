@@ -1,0 +1,27 @@
+{
+  "agent": "explainer",
+  "hash": "b1069f3364ee1898",
+  "input": {
+    "page": {
+      "title": "15 stocking stuffers under $25",
+      "topic": "Shopping > Gifts > Holiday",
+      "purpose": "buying_guide",
+      "tone": "upbeat",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

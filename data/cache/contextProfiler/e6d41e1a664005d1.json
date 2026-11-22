@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "e6d41e1a664005d1",
+  "input": {
+    "url": "worklife.example/ergonomic-chairs-compared",
+    "title": "Ergonomic chairs compared under $300",
+    "text": "A good chair is the single biggest upgrade most home offices can make. We sat in eight ergonomic chairs for a full workweek each and compared adjustability, comfort and build. Every chair costs under $300.\n\nAdjustability matters more than padding, so test the armrests and lumbar support first. Our top pick, at $279, has armrests that move in four directions and a lumbar pad that slides up and down. Testers of different heights could all get comfortable within a minute.\n\nThe best value, at $189, has fewer adjustments but a breathable mesh back that stayed cool through long afternoons. Its seat cushion flattened slightly by the end of the test.\n\nTwo chairs looked great but caused back aches after a few days. Both had fixed lumbar curves that did not suit taller testers.\n\nCheck the warranty. The best chairs in our test came with at least five years of coverage on the frame and mechanism.\n\nIf you are buying for someone else, choose a model with a generous return window. Chairs are personal, and comfort is hard to judge from a photo.",
+    "existingTopic": "Shopping > Home & Office"
+  },
+  "output": {
+    "purpose": "product_comparison",
+    "tone": "practical",
+    "confidence": 0.82,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We sat in eight ergonomic chairs for a full workweek each and compared adjustability, comfort and build."
+      },
+      {
+        "field": "tone",
+        "quote": "Adjustability matters more than padding, so test the armrests and lumbar support first."
+      }
+    ]
+  }
+}

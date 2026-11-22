@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "8b44282bd496d371",
+  "input": {
+    "url": "homecook.example/five-ingredient-holiday-cookies",
+    "title": "Five-ingredient holiday cookies",
+    "text": "Holiday baking does not need a long shopping list. Here is how to make three batches of cookies with the same five pantry ingredients. You need butter, sugar, flour, eggs and vanilla.\n\nThese cookies are forgiving, cheerful and nearly impossible to mess up. Start with a basic dough: cream one cup of softened butter with three quarters of a cup of sugar until fluffy. Beat in one egg and a teaspoon of vanilla. Stir in two and a quarter cups of flour until just combined.\n\nDivide the dough into three bowls.\n\nFor thumbprints, roll the first bowl into small balls, press a dent into each with your thumb, and fill with jam after baking.\n\nFor slice-and-bake rounds, roll the second bowl into a log, chill it for an hour, then cut quarter-inch slices. Dip the edges in sprinkles if you have them.\n\nFor cut-outs, roll the third bowl between two sheets of parchment and use any cookie cutter you own.\n\nBake everything at 350 degrees for 10 to 12 minutes, until the edges are just golden. Let the cookies cool on the pan for five minutes before moving them. They keep for a week in a tin, if they last that long.",
+    "existingTopic": "Food & Drink > Baking"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "upbeat",
+    "confidence": 0.87,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Here is how to make three batches of cookies with the same five pantry ingredients."
+      },
+      {
+        "field": "tone",
+        "quote": "These cookies are forgiving, cheerful and nearly impossible to mess up."
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "agent": "placementGuard",
+  "hash": "0ded622fb51f6d49",
+  "input": {
+    "turnSummary": "I just lost my job, how do I budget for holidays?"
+  },
+  "output": {
+    "topic": "Finance",
+    "purpose": "how_to",
+    "sensitive": [
+      "financial_distress"
+    ],
+    "confidence": 0.88
+  }
+}

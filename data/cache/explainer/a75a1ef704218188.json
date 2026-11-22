@@ -1,0 +1,28 @@
+{
+  "agent": "explainer",
+  "hash": "a75a1ef704218188",
+  "input": {
+    "page": {
+      "title": "Roast dinner timeline for a stress-free holiday",
+      "topic": "Food & Drink > Recipes",
+      "purpose": "how_to",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "1621e7128ea42162",
+  "input": {
+    "url": "familylife.example/stem-gifts-kids-6-10",
+    "title": "STEM gifts for kids 6–10",
+    "text": "The best science gifts do not feel like homework. We asked a dozen kids to test science and building kits, and these eight were the clear favorites.\n\nEvery one of these kept a curious kid busy for a whole rainy afternoon. The top pick was a snap-together circuit kit ($35) that lets kids build a working doorbell, fan and alarm without soldering. Our testers aged seven and up built every project in the booklet within a week.\n\nA crystal-growing kit ($18) was the most exciting to watch, with crystals forming overnight. A marble run with 120 pieces ($41) was the most popular with six-year-olds, who built towers taller than themselves.\n\nFor kids who like screens, a coding robot ($49) that follows lines drawn with markers was a hit, and it does not need a tablet.\n\nRounding out the list are a kid-safe microscope ($32), a weather station ($27), a solar-powered car kit ($22) and a set of magnetic building tiles ($39).\n\nAll of these are under $50. Adult help is needed for some steps, especially for the younger testers.",
+    "existingTopic": "Shopping > Gifts > Kids"
+  },
+  "output": {
+    "purpose": "buying_guide",
+    "tone": "upbeat",
+    "confidence": 0.86,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We asked a dozen kids to test science and building kits, and these eight were the clear favorites."
+      },
+      {
+        "field": "tone",
+        "quote": "Every one of these kept a curious kid busy for a whole rainy afternoon."
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "5b9a2a8d2443d7b9",
+  "input": {
+    "url": "giftguide.example/stocking-stuffers-under-25",
+    "title": "15 stocking stuffers under $25",
+    "text": "Stockings are where good intentions go to become clutter. Here are 15 small gifts under $25 that people actually keep using after the holidays.\n\nTiny gifts, big smiles, and not a single novelty mug in sight. We started with the stuff that gets lost the most: a four-pack of bright cable ties ($8), a key finder tag ($19) and a set of reusable produce bags ($12).\n\nFor the person who is always cold, rechargeable hand warmers ($22) last about six hours and double as a phone power bank. For the home cook, a magnetic measuring spoon set ($14) snaps together in the drawer.\n\nKids liked a pocket-sized drawing pad with a magnetic stylus ($11) and a deck of travel card games ($9). Teenagers were harder to impress, but a clip-on phone grip ($13) and a mini instant camera film pack ($18) both won approval.\n\nRounding out the list are fuzzy socks with grippy soles ($10), a lip balm trio ($7), a stainless steel straw kit ($9), a mini flashlight ($15), a bookmark with a built-in light ($12), and a small succulent in a ceramic pot ($16).\n\nAll prices were checked this week. Mix and match to fill a stocking for under $50.",
+    "existingTopic": "Shopping > Gifts > Holiday"
+  },
+  "output": {
+    "purpose": "buying_guide",
+    "tone": "upbeat",
+    "confidence": 0.88,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Here are 15 small gifts under $25 that people actually keep using after the holidays."
+      },
+      {
+        "field": "tone",
+        "quote": "Tiny gifts, big smiles, and not a single novelty mug in sight."
+      }
+    ]
+  }
+}

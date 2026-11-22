@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "36e8c2a238877cde",
+  "input": {
+    "url": "funnypages.example/santa-elves-unionize",
+    "title": "Satire: Santa unionizes elves",
+    "text": "NORTH POLE — In a move that stunned the reindeer community, the elves of Santa's workshop voted 4,112 to 3 on Monday to form the International Brotherhood of Toymakers and Cookie Tasters.\n\nThe three votes against came from elves who said they had not read the ballot because they were busy painting rocking horses.\n\nUnion leaders presented a list of demands that includes a 32-hour week, dental coverage for sugar-related injuries, and a ban on the phrase \"just one more sleigh load.\" They also want the workshop's music changed. \"We have heard the same twelve songs since 1843,\" said one shop steward.\n\nManagement has offered the elves an extra candy cane per shift, which the union called insulting. Mrs. Claus, who runs payroll, said she is open to talks but warned that the workshop operates on cookies and goodwill.\n\nSanta himself declined to comment, though witnesses saw him pacing near the stables and muttering about the naughty list. Rudolph has reportedly offered to mediate.\n\nA strike could begin as early as December 1, which would leave only the reindeer to wrap gifts. Experts say this would be a disaster, as reindeer do not have thumbs.\n\nThis is satire, and no elves were harmed in the making of this article.",
+    "existingTopic": "Entertainment > Humor"
+  },
+  "output": {
+    "purpose": "entertainment",
+    "tone": "satirical",
+    "confidence": 0.9,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "This is satire, and no elves were harmed in the making of this article."
+      },
+      {
+        "field": "tone",
+        "quote": "Management has offered the elves an extra candy cane per shift, which the union called insulting."
+      }
+    ]
+  }
+}

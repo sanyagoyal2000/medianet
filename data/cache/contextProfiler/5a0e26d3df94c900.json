@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "5a0e26d3df94c900",
+  "input": {
+    "url": "techreview.example/best-compact-chargers",
+    "title": "Best compact chargers",
+    "text": "Chargers keep shrinking while phones and laptops keep asking for more power. We compared nine compact USB-C chargers on speed, heat and size, using the same phone, tablet and thin laptop for every test.\n\nThe 65-watt two-port model was the best all-rounder. It filled a phone to 50 percent in 24 minutes and still had enough headroom to charge a laptop at the same time. It got warm, but never too hot to touch.\n\nThe 30-watt single-port charger is the pick for travelers. It is the size of a matchbox and weighs less than two ounces. It will not charge a laptop quickly, but it handles a phone and earbuds with ease.\n\nTwo models in our test throttled badly once they warmed up, losing almost half their speed after ten minutes. We left them off the list.\n\nIf you only buy one, get a two-port model that fits in a jacket pocket. Look for folding prongs, a clear wattage label and a cable that is rated for the same power. Prices in this guide ranged from $19 to $49 when we last checked.",
+    "existingTopic": "Shopping > Electronics > Chargers"
+  },
+  "output": {
+    "purpose": "product_comparison",
+    "tone": "practical",
+    "confidence": 0.77,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We compared nine compact USB-C chargers on speed, heat and size, using the same phone, tablet and thin laptop for every test."
+      },
+      {
+        "field": "tone",
+        "quote": "If you only buy one, get a two-port model that fits in a jacket pocket."
+      }
+    ]
+  }
+}

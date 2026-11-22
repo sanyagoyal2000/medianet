@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "752712165f977ec6",
+  "input": {
+    "url": "moneysense.example/credit-card-rewards-holiday",
+    "title": "Credit card rewards compared for holiday spending",
+    "text": "Holiday shopping is when card rewards can add up, but the best card depends on how you shop. We compared flat cashback, rotating categories and store cards on a typical $1,200 holiday budget.\n\nA flat 2 percent cashback card earned $24 on our sample budget, with no tracking required. It is the simplest option and works everywhere.\n\nRotating category cards earned the most, $41, but only because the fourth-quarter bonus happened to cover department stores and online shopping. In other years, the categories might not match your spending.\n\nStore cards offered the biggest headline discounts, often 15 to 20 percent off the first purchase. But the rewards only apply at one retailer, and their interest rates were the highest in our comparison.\n\nRewards only pay off if you clear the balance every month. Carrying a $1,200 balance at a typical rate for three months would cost more than any card earns in rewards.\n\nOur take: use a flat cashback card for most purchases, and only open a store card if you were already planning a large purchase at that store.",
+    "existingTopic": "Finance > Credit Cards"
+  },
+  "output": {
+    "purpose": "product_comparison",
+    "tone": "neutral",
+    "confidence": 0.78,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We compared flat cashback, rotating categories and store cards on a typical $1,200 holiday budget."
+      },
+      {
+        "field": "tone",
+        "quote": "Rewards only pay off if you clear the balance every month."
+      }
+    ]
+  }
+}

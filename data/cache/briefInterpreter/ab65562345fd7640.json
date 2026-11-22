@@ -1,0 +1,60 @@
+{
+  "agent": "briefInterpreter",
+  "hash": "ab65562345fd7640",
+  "input": {
+    "brief": "Find US gift guides and product comparisons under $50. Prefer practical, upbeat content. Exclude product recalls and tragedy."
+  },
+  "output": {
+    "spec": {
+      "topics": [
+        "Shopping > Gifts",
+        "Shopping > Home & Office",
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "buying_guide",
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical",
+        "upbeat"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1,
+      "maxPriceHint": "$50"
+    },
+    "summary": "Targets gift guides and product comparisons in Shopping › Gifts, Home & Office and Electronics in the US, preferring practical and upbeat tone. Hard exclusions: product recalls and tragedy. Partner tier ≤ 1.",
+    "ambiguities": [
+      "\"Under $50\" is a price hint; pages aren't priced, so it is kept as a creative and landing-page note, not a page filter.",
+      "\"Product comparisons\" could mean any category; mapped to Home & Office and Electronics, where gift-priced comparisons live. Remove a topic to narrow reach."
+    ]
+  },
+  "steps": [
+    {
+      "label": "Reading brief"
+    },
+    {
+      "label": "Mapping to ContextGraph",
+      "detail": "Shopping > Gifts · Shopping > Home & Office · Shopping > Electronics"
+    },
+    {
+      "label": "Applying hard restrictions",
+      "detail": "Exclude Product recalls · Exclude Tragedy · Country US · Partner tier ≤ 1"
+    },
+    {
+      "label": "Scoring pages",
+      "detail": "7 eligible · 5 excluded with reasons"
+    },
+    {
+      "label": "Forecasting reach",
+      "detail": "2.4M opportunities · next 7 days · Historical estimate, not guaranteed delivery"
+    },
+    {
+      "label": "Draft ready"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "81f473b3ee4ae0b3",
+  "input": {
+    "url": "dailynews.example/carriers-warn-holiday-shipping-delays",
+    "title": "Carriers warn of holiday shipping delays",
+    "text": "The country's largest parcel carriers said on Tuesday that holiday package volumes are expected to reach a record this year. They urged shoppers to send gifts early.\n\nThe carriers expect to move about 1.9 billion packages between Thanksgiving and New Year's Day, up 4 percent from last year. Online sales are growing faster than in-store sales, and more retailers now offer free shipping on small orders.\n\nCarriers published their recommended last shipping dates for ground delivery before December 25. For most of the continental United States, the suggested cutoff for ground shipping is December 16. Express services will accept packages until December 22.\n\nRural areas and Alaska and Hawaii may need several extra days.\n\nRetailers are also adjusting. Several large chains said they would expand in-store pickup and set up temporary lockers in parking lots to reduce last-mile deliveries.\n\nWeather remains the biggest risk. A major winter storm in the Midwest last year delayed hundreds of thousands of packages for several days.\n\nCarriers said they had hired more than 200,000 seasonal workers to handle the peak.",
+    "existingTopic": "News > Business > Retail"
+  },
+  "output": {
+    "purpose": "news",
+    "tone": "neutral",
+    "confidence": 0.83,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "The country's largest parcel carriers said on Tuesday that holiday package volumes are expected to reach a record this year."
+      },
+      {
+        "field": "tone",
+        "quote": "Carriers published their recommended last shipping dates for ground delivery before December 25."
+      }
+    ]
+  }
+}

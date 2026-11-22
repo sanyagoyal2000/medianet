@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "4509df8dc5271174",
+  "input": {
+    "url": "healthdaily.example/ten-minute-winter-workouts",
+    "title": "Ten-minute winter workouts",
+    "text": "Cold, dark mornings make it hard to keep moving. Try these three ten-minute routines that need no equipment and very little space.\n\nTen minutes is enough to feel warmer, brighter and more awake. Each routine uses 40 seconds of work and 20 seconds of rest, repeated twice through five moves.\n\nRoutine one, the wake-up: marching in place, arm circles, bodyweight squats, standing side bends and a slow shoulder roll. It is gentle enough for any fitness level.\n\nRoutine two, the warm-up: jumping jacks or step jacks, lunges, push-ups against a wall or counter, high knees and a plank. Expect to break a light sweat.\n\nRoutine three, the strength set: squats with a pause at the bottom, glute bridges, a slow push-up, a side plank on each side and calf raises. Go slowly and focus on form.\n\nPick one routine each morning, or stack two on weekends. Keep a pair of sneakers by the bed so there is one less excuse.\n\nIf you are new to exercise or have a health condition, check with a doctor before starting a new routine.",
+    "existingTopic": "Health > Fitness"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "upbeat",
+    "confidence": 0.85,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Try these three ten-minute routines that need no equipment and very little space."
+      },
+      {
+        "field": "tone",
+        "quote": "Ten minutes is enough to feel warmer, brighter and more awake."
+      }
+    ]
+  }
+}

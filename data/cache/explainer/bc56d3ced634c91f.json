@@ -1,0 +1,31 @@
+{
+  "agent": "explainer",
+  "hash": "bc56d3ced634c91f",
+  "input": {
+    "page": {
+      "title": "15 stocking stuffers under $25",
+      "topic": "Shopping > Gifts > Holiday",
+      "purpose": "buying_guide",
+      "tone": "upbeat",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "eligible",
+    "reasons": [
+      "Topic matched: Shopping / Gifts",
+      "Purpose matched: Buying guide",
+      "Tone preferred: Upbeat",
+      "No hard exclusion: Not a product recall or tragedy"
+    ]
+  },
+  "output": {
+    "buyer": "Eligible for Holiday Gifting 2026: buying guide on holiday gifts, upbeat tone, no hard exclusion.",
+    "reader": "Shown because this page is a holiday gift guide. Paid placement."
+  }
+}

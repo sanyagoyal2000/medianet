@@ -1,0 +1,27 @@
+{
+  "agent": "explainer",
+  "hash": "6f56bc25cded7eae",
+  "input": {
+    "page": {
+      "title": "Desk upgrades worth buying",
+      "topic": "Shopping > Home & Office",
+      "purpose": "product_comparison",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "agent": "explainer",
+  "hash": "4fa8ad47c5287e0e",
+  "input": {
+    "page": {
+      "title": "Budget phone review: solid camera, weak speaker",
+      "topic": "Technology > Phones",
+      "purpose": "product_comparison",
+      "tone": "neutral",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "agent": "explainer",
+  "hash": "881d35b973c42c42",
+  "input": {
+    "page": {
+      "title": "STEM gifts for kids 6–10",
+      "topic": "Shopping > Gifts > Kids",
+      "purpose": "buying_guide",
+      "tone": "upbeat",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "eligible",
+    "reasons": [
+      "Topic matched: Shopping / Gifts",
+      "Purpose matched: Buying guide",
+      "Tone preferred: Upbeat",
+      "No hard exclusion: Not a product recall or tragedy"
+    ]
+  },
+  "output": {
+    "buyer": "Eligible for Holiday Gifting 2026: buying guide on kids gifts, upbeat tone, no hard exclusion.",
+    "reader": "Shown because this page is a kids gift guide. Paid placement."
+  }
+}

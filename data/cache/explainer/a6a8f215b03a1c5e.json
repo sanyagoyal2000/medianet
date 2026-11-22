@@ -1,0 +1,27 @@
+{
+  "agent": "explainer",
+  "hash": "a6a8f215b03a1c5e",
+  "input": {
+    "page": {
+      "title": "Should you buy a laptop on Black Friday?",
+      "topic": "Shopping > Electronics > Computers",
+      "purpose": "opinion",
+      "tone": "neutral",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Purpose not targeted: Opinion"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: purpose not targeted: opinion.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

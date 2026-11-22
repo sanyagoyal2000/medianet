@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "cf4a580740b742b6",
+  "input": {
+    "url": "techreview.example/wireless-earbuds-under-50",
+    "title": "Wireless earbuds under $50, compared",
+    "text": "Budget earbuds used to mean tinny sound and constant dropouts. That has changed. We compared seven pairs of budget earbuds on fit, battery life, call quality and noise cancellation. All of them are priced under $50.\n\nOur top pick costs $39 and lasted seven hours on a charge, with three more charges in the case. Its fit was secure enough for running, and the app lets you adjust the bass.\n\nThe runner-up, at $45, has the best noise cancellation in the group. It cut the hum of a bus engine noticeably, though it struggled with voices. Call quality was average.\n\nThe cheapest pair we tested, at $22, is fine for podcasts but fell out during workouts. Two pairs lost connection when a phone was in a back pocket, so we did not include them.\n\nNone of these match premium earbuds, but two come surprisingly close for everyday listening. If you are buying for a teenager or a commuter who tends to lose things, these are a sensible choice.\n\nBattery figures are from our own tests at 50 percent volume. Prices were checked on November 19.",
+    "existingTopic": "Shopping > Electronics > Audio"
+  },
+  "output": {
+    "purpose": "product_comparison",
+    "tone": "neutral",
+    "confidence": 0.79,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We compared seven pairs of budget earbuds on fit, battery life, call quality and noise cancellation."
+      },
+      {
+        "field": "tone",
+        "quote": "None of these match premium earbuds, but two come surprisingly close for everyday listening."
+      }
+    ]
+  }
+}

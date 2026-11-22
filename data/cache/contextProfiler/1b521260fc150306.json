@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "1b521260fc150306",
+  "input": {
+    "url": "gardenpost.example/winter-garden-checklist",
+    "title": "Winter garden prep checklist",
+    "text": "A few hours of work in late autumn makes spring gardening much easier. Use this checklist before the ground freezes.\n\nClean up diseased plants first. Leaves from tomatoes and roses that had blight or black spot should go in the trash, not the compost, so the problem does not return next year.\n\nLeave some seed heads standing. Coneflowers and grasses feed birds through the winter and give the garden some structure when everything else has died back.\n\nMulch beds with shredded leaves or bark after the first hard frost. Mulch keeps the soil temperature steady and protects roots from freezing and thawing.\n\nDrain and store hoses, and turn off outdoor taps if you live where pipes freeze. Clean and oil your tools before putting them away.\n\nPlant spring bulbs now if you have not already. Tulips, daffodils and alliums need a cold period to bloom.\n\nFinally, make notes about what worked this year and what did not. In March, you will be glad you did.",
+    "existingTopic": "Home & Garden"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.81,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Use this checklist before the ground freezes."
+      },
+      {
+        "field": "tone",
+        "quote": "A few hours of work in late autumn makes spring gardening much easier."
+      }
+    ]
+  }
+}

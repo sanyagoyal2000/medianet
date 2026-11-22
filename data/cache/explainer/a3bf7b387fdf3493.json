@@ -1,0 +1,30 @@
+{
+  "agent": "explainer",
+  "hash": "a3bf7b387fdf3493",
+  "input": {
+    "page": {
+      "title": "When holiday debt becomes overwhelming",
+      "topic": "Finance > Debt",
+      "purpose": "how_to",
+      "tone": "serious",
+      "sensitive": [
+        "financial_distress"
+      ]
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

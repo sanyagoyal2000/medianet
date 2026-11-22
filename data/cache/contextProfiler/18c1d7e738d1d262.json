@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "18c1d7e738d1d262",
+  "input": {
+    "url": "giftguide.example/holiday-gifts-under-50",
+    "title": "20 holiday gifts under $50",
+    "text": "Holiday shopping does not have to drain your account. Our editors compared useful gifts for every budget. Every pick on this list costs less than $50, and every one is something we would happily unwrap ourselves.\n\nStart with the people who are always cold. A weighted fleece throw at $38 is the kind of present that gets used every single night from December to March. For the coffee drinker, an insulated travel mug that actually keeps drinks hot for six hours comes in at $29, and it fits most car cup holders.\n\nThoughtful finds to brighten everyday routines. That was our test for this list. A rechargeable LED desk lamp with three color temperatures ($34) makes a dim apartment feel warmer. A set of linen kitchen towels ($22) is the upgrade nobody buys for themselves. A compact charger that powers a phone and earbuds at once ($27) solves the tangle on every nightstand.\n\nFor readers, we like a clip-on book light ($15) paired with a gift card to a local bookstore. For cooks, a cast iron skillet ($32) will outlast the holiday season by a few decades. Kids aged six and up loved a build-your-own marble run ($41) in our testing.\n\nPrices were checked on November 20 and may change. We earn nothing from these picks; we simply bought, used and compared them. Scroll down for the full list of 20 gifts, sorted by price.",
+    "existingTopic": "Shopping > Gifts > Holiday"
+  },
+  "output": {
+    "purpose": "buying_guide",
+    "tone": "upbeat",
+    "confidence": 0.84,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Our editors compared useful gifts for every budget."
+      },
+      {
+        "field": "tone",
+        "quote": "Thoughtful finds to brighten everyday routines."
+      }
+    ]
+  }
+}

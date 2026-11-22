@@ -1,0 +1,56 @@
+{
+  "agent": "briefInterpreter",
+  "hash": "ce54d1e2c7e33bd8",
+  "input": {
+    "brief": "Northbank: US personal budgeting and credit card comparisons for holiday spending. Practical tone. Exclude financial distress, layoffs and politics."
+  },
+  "output": {
+    "spec": {
+      "topics": [
+        "Shopping > Gifts > Holiday",
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "layoffs",
+        "financial_distress",
+        "politics"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "summary": "Targets Shopping > Gifts > Holiday, Shopping > Electronics for product comparison pages in US, preferring practical tone. Hard exclusions: layoffs, financial distress, politics. Partner tier ≤ 1.",
+    "ambiguities": [
+      "Mapped to 2 ContextGraph topics (Shopping > Gifts > Holiday, Shopping > Electronics). Remove one to narrow reach."
+    ]
+  },
+  "steps": [
+    {
+      "label": "Reading brief"
+    },
+    {
+      "label": "Mapping to ContextGraph",
+      "detail": "Shopping > Gifts > Holiday · Shopping > Electronics"
+    },
+    {
+      "label": "Applying hard restrictions",
+      "detail": "Exclude Layoffs · Exclude Financial distress · Exclude Politics · Country US · Partner tier ≤ 1"
+    },
+    {
+      "label": "Scoring pages",
+      "detail": "1 eligible · 6 excluded with reasons"
+    },
+    {
+      "label": "Forecasting reach",
+      "detail": "333K opportunities · next 7 days · Historical estimate, not guaranteed delivery"
+    },
+    {
+      "label": "Draft ready"
+    }
+  ]
+}

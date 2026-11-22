@@ -1,0 +1,28 @@
+{
+  "agent": "contextProfiler",
+  "hash": "2f38966abd775dda",
+  "input": {
+    "url": "dailynews.example/holiday-toy-recall-40k-gifts",
+    "title": "Holiday toy recall: 40k gifts pulled",
+    "text": "Federal regulators announced a recall of about 40,000 battery-powered plush toys on Thursday. The toys were sold as holiday gifts at several national retailers and online between September and November.\n\nThe recall follows 14 reports of the battery compartment opening during normal play. In three cases, children were treated for swallowing small button batteries. No deaths have been reported.\n\nParents should stop using the toys immediately and remove the batteries. The affected toys are a singing reindeer and a light-up snowman, both about ten inches tall, with a lot number printed on the tag sewn into the seam.\n\nRetailers have pulled the remaining stock from shelves. Customers can return the toys to any store for a full refund, with or without a receipt, or request a prepaid mailing label from the manufacturer.\n\nSafety advocates say the timing is especially concerning. Many families buy gifts early and store them until the holidays, which means some recalled toys may not be opened for weeks. Officials urged anyone who has already wrapped a gift to check the label before giving it.\n\nThe manufacturer said in a statement that it is redesigning the battery door with a screw closure. A full list of lot numbers is available on the regulator's recall page.",
+    "existingTopic": "Shopping > Gifts > Holiday"
+  },
+  "output": {
+    "purpose": "safety_report",
+    "tone": "serious",
+    "confidence": 0.58,
+    "sensitive": [
+      "recalls"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Federal regulators announced a recall of about 40,000 battery-powered plush toys on Thursday."
+      },
+      {
+        "field": "tone",
+        "quote": "Parents should stop using the toys immediately and remove the batteries."
+      }
+    ]
+  }
+}

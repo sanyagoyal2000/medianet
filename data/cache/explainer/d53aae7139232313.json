@@ -1,0 +1,31 @@
+{
+  "agent": "explainer",
+  "hash": "d53aae7139232313",
+  "input": {
+    "page": {
+      "title": "Desk upgrades worth buying",
+      "topic": "Shopping > Home & Office",
+      "purpose": "product_comparison",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "eligible",
+    "reasons": [
+      "Topic matched: Shopping / Home & Office",
+      "Purpose matched: Comparison",
+      "Tone preferred: Practical",
+      "No hard exclusion: Not a product recall or tragedy"
+    ]
+  },
+  "output": {
+    "buyer": "Eligible for Holiday Gifting 2026: comparison on home & office, practical tone, no hard exclusion.",
+    "reader": "Shown because this page is a home & office product comparison. Paid placement."
+  }
+}

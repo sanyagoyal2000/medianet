@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "14c694eefbfd2f37",
+  "input": {
+    "url": "travelnotes.example/first-ski-weekend-guide",
+    "title": "A first-timer's guide to booking a ski weekend",
+    "text": "Booking a ski trip for the first time can feel like learning a new language: lift passes, rentals, lessons, slope ratings. Follow these steps to plan a ski weekend without overspending.\n\nPick the right mountain. Smaller resorts within a three-hour drive are often cheaper and less crowded, and they have gentle beginner areas. Big-name resorts are fun, but you will not use most of the terrain on your first trip.\n\nBook lessons and rentals together. Most resorts sell a beginner package with a lift ticket, ski or snowboard rental and a group lesson. It is almost always cheaper than buying each piece separately, especially if you book a week ahead online.\n\nStay close, not fancy. A basic motel ten minutes from the lifts costs half as much as slopeside lodging. Look for places with a shuttle.\n\nDress in layers. You will warm up quickly while learning. Waterproof pants and gloves matter more than an expensive jacket.\n\nYour first morning on the snow will be wobbly, and that is half the fun. By the afternoon, most beginners can ride the easy lift and make it down without falling. Celebrate with hot chocolate either way.",
+    "existingTopic": "Travel > Winter Trips"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "upbeat",
+    "confidence": 0.82,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Follow these steps to plan a ski weekend without overspending."
+      },
+      {
+        "field": "tone",
+        "quote": "Your first morning on the snow will be wobbly, and that is half the fun."
+      }
+    ]
+  }
+}

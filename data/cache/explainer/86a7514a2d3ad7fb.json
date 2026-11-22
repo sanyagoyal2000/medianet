@@ -1,0 +1,30 @@
+{
+  "agent": "explainer",
+  "hash": "86a7514a2d3ad7fb",
+  "input": {
+    "page": {
+      "title": "Flu season: when to see a doctor",
+      "topic": "Health > Conditions",
+      "purpose": "how_to",
+      "tone": "serious",
+      "sensitive": [
+        "health"
+      ]
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

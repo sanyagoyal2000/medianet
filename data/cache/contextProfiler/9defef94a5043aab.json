@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "9defef94a5043aab",
+  "input": {
+    "url": "moneysense.example/holiday-budget-you-will-keep",
+    "title": "How to set a holiday budget you'll stick to",
+    "text": "Holiday spending creeps up quietly: a gift here, a party there, an extra grocery run. Use this four-step method to set a holiday budget before you buy a single gift.\n\nFirst, pick a total. Look at what you can cover from this month's income and savings without using credit. Write that number down where you will see it.\n\nSecond, list every category, not just gifts. Include travel, food, decorations, wrapping, shipping and charitable giving. These extras often add 30 percent to what people expect to spend.\n\nThird, assign amounts to each person on your list. It helps to group people into tiers: close family, friends, coworkers. Agree on a spending limit with family members if you can.\n\nFourth, track as you go. A simple note on your phone works. Subtract every purchase from the category it belongs to.\n\nA budget is not about saying no; it is about deciding ahead of time what matters most. Readers who planned this way told us they enjoyed the season more, because January did not arrive with a surprise credit card bill.",
+    "existingTopic": "Finance > Personal Budgeting"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.83,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Use this four-step method to set a holiday budget before you buy a single gift."
+      },
+      {
+        "field": "tone",
+        "quote": "A budget is not about saying no; it is about deciding ahead of time what matters most."
+      }
+    ]
+  }
+}

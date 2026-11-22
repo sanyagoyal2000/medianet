@@ -1,0 +1,30 @@
+{
+  "agent": "explainer",
+  "hash": "63d2f7fe2494ca08",
+  "input": {
+    "page": {
+      "title": "Holiday toy recall: 40k gifts pulled",
+      "topic": "Shopping > Gifts > Holiday",
+      "purpose": "safety_report",
+      "tone": "serious",
+      "sensitive": [
+        "recalls"
+      ]
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Hard exclusion: Product recalls"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: page is a product recall; campaign excludes recalls.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

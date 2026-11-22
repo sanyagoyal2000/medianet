@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "da0733febe8f9b71",
+  "input": {
+    "url": "kitchenwise.example/gifts-for-home-cooks",
+    "title": "Gifts for home cooks that actually get used",
+    "text": "Every cook has a drawer of gifts they never use: the avocado slicer, the herb scissors, the garlic press that is impossible to clean. This guide covers the kitchen gifts our test cooks reached for most over three months.\n\nSkip the gadgets with one job and buy tools that earn their drawer space. A sharp eight-inch chef's knife ($45) tops our list. Most home cooks are still using the knife that came in a block set, and a good one changes how cooking feels.\n\nAn instant-read thermometer ($24) was the second most used tool. It takes the guessing out of roasts, chicken and even bread.\n\nA heavy rimmed sheet pan ($19) sounds boring, but our testers used it four or five times a week for vegetables, cookies and sheet-pan dinners. A bench scraper ($9) moves chopped onions, cleans counters and portions dough.\n\nFor a splurge under $50, a five-quart Dutch oven in enameled cast iron ($49) handles soups, stews and no-knead bread.\n\nPair any of these with a handwritten recipe card, and you have a gift that will be used every week.",
+    "existingTopic": "Shopping > Gifts"
+  },
+  "output": {
+    "purpose": "buying_guide",
+    "tone": "practical",
+    "confidence": 0.83,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "This guide covers the kitchen gifts our test cooks reached for most over three months."
+      },
+      {
+        "field": "tone",
+        "quote": "Skip the gadgets with one job and buy tools that earn their drawer space."
+      }
+    ]
+  }
+}

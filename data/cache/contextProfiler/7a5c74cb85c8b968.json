@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "7a5c74cb85c8b968",
+  "input": {
+    "url": "homecook.example/holiday-roast-timeline",
+    "title": "Roast dinner timeline for a stress-free holiday",
+    "text": "The hardest part of a holiday roast is not the cooking. It is the timing. Use this hour-by-hour timeline to get the roast, sides and gravy on the table together.\n\nMost of the work happens the day before, so the day itself stays calm. On the day before, peel and cut the potatoes and keep them in cold water in the fridge. Make the cranberry sauce and the dessert. Set the table.\n\nFive hours before dinner, take the roast out of the fridge so it can come to room temperature. Three and a half hours before, put it in the oven.\n\nNinety minutes before dinner, parboil the potatoes and toss them in hot fat. They go into the oven when the roast comes out.\n\nOne hour before, take the roast out and cover it loosely with foil. It needs at least 45 minutes to rest, and it will stay hot.\n\nThirty minutes before, make the gravy from the pan drippings and steam the green vegetables.\n\nCarve at the table. Nobody minds waiting five extra minutes when everything is hot at once.",
+    "existingTopic": "Food & Drink > Recipes"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.84,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Use this hour-by-hour timeline to get the roast, sides and gravy on the table together."
+      },
+      {
+        "field": "tone",
+        "quote": "Most of the work happens the day before, so the day itself stays calm."
+      }
+    ]
+  }
+}

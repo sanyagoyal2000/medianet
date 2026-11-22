@@ -1,0 +1,30 @@
+{
+  "agent": "explainer",
+  "hash": "31997302031aa166",
+  "input": {
+    "page": {
+      "title": "Wireless earbuds under $50, compared",
+      "topic": "Shopping > Electronics > Audio",
+      "purpose": "product_comparison",
+      "tone": "neutral",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "eligible",
+    "reasons": [
+      "Topic matched: Shopping / Electronics",
+      "Purpose matched: Comparison",
+      "Tone: Neutral (ranked lower, not excluded)",
+      "No hard exclusion: Not a product recall"
+    ]
+  },
+  "output": {
+    "buyer": "Eligible for Holiday Chargers (agent draft): comparison on audio, neutral tone, no hard exclusion.",
+    "reader": "Shown because this page is a audio product comparison. Paid placement."
+  }
+}

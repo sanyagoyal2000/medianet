@@ -1,0 +1,27 @@
+{
+  "agent": "explainer",
+  "hash": "95214ebdf4e4058f",
+  "input": {
+    "page": {
+      "title": "In defense of the gift card",
+      "topic": "Shopping > Gifts",
+      "purpose": "opinion",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

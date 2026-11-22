@@ -1,0 +1,30 @@
+{
+  "agent": "explainer",
+  "hash": "fa4ff56e42f9cbc6",
+  "input": {
+    "page": {
+      "title": "Best compact chargers",
+      "topic": "Shopping > Electronics > Chargers",
+      "purpose": "product_comparison",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "eligible",
+    "reasons": [
+      "Topic matched: Shopping / Electronics",
+      "Purpose matched: Comparison",
+      "Tone preferred: Practical",
+      "No hard exclusion: Not a product recall"
+    ]
+  },
+  "output": {
+    "buyer": "Eligible for Holiday Chargers (agent draft): comparison on chargers, practical tone, no hard exclusion.",
+    "reader": "Shown because this page is a chargers product comparison. Paid placement."
+  }
+}

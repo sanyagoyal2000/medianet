@@ -1,0 +1,31 @@
+{
+  "agent": "explainer",
+  "hash": "9cf4b26f024f5f49",
+  "input": {
+    "page": {
+      "title": "Wireless earbuds under $50, compared",
+      "topic": "Shopping > Electronics > Audio",
+      "purpose": "product_comparison",
+      "tone": "neutral",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "eligible",
+    "reasons": [
+      "Topic matched: Shopping / Electronics",
+      "Purpose matched: Comparison",
+      "Tone: Neutral (ranked lower, not excluded)",
+      "No hard exclusion: Not a product recall or tragedy"
+    ]
+  },
+  "output": {
+    "buyer": "Eligible for Holiday Gifting 2026: comparison on audio, neutral tone, no hard exclusion.",
+    "reader": "Shown because this page is a audio product comparison. Paid placement."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "agent": "contextProfiler",
+  "hash": "1226c5afde629e22",
+  "input": {
+    "url": "dailynews.example/family-mourns-holiday-house-fire",
+    "title": "Family mourns after holiday house fire",
+    "text": "A house fire on Maple Street early Sunday killed two people and left a family of five without a home. Fire officials confirmed the details on Monday.\n\nFirefighters arrived about 3 a.m. to find flames coming from the front of the two-story house. Three family members escaped through a back window. Two others, a grandmother and her adult son, died at the scene.\n\nInvestigators said the fire appears to have started near a space heater in the living room. They have not ruled out other causes and expect to release a final report in several weeks.\n\nNeighbors gathered on Monday evening to light candles outside the house. Several said the family had lived on the street for more than twenty years and were known for decorating their porch every December.\n\nA local church has opened a collection for clothing and household items, and an online fundraiser had raised more than $40,000 by Monday night.\n\nFire officials urged residents to keep space heaters at least three feet from anything that can burn, to plug them directly into the wall, and to test smoke alarms monthly. Winter is the peak season for home fires.",
+    "existingTopic": "News > Local"
+  },
+  "output": {
+    "purpose": "news",
+    "tone": "tragic",
+    "confidence": 0.9,
+    "sensitive": [
+      "tragedy"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "A house fire on Maple Street early Sunday killed two people and left a family of five without a home."
+      },
+      {
+        "field": "tone",
+        "quote": "Neighbors gathered on Monday evening to light candles outside the house."
+      }
+    ]
+  }
+}

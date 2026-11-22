@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "9a8a1162815ccd37",
+  "input": {
+    "url": "techreview.example/buy-laptop-black-friday",
+    "title": "Should you buy a laptop on Black Friday?",
+    "text": "Every November, readers ask whether they should wait for Black Friday to buy a new laptop. In my view, Black Friday is a good time to buy a laptop only if you already know the exact model you want.\n\nDiscounts are real, but so are the shortcuts some deals take. Many of the cheapest doorbuster laptops are special versions made for the sales, with less memory, slower storage or dimmer screens than the models reviewers tested earlier in the year.\n\nIf you have done your research and the model you want drops by $150 or more, that is a genuine deal. Price history tools can show whether the \"sale\" price is really lower than usual.\n\nIf you need a laptop for school or work right now, do not wait for a deal that saves you $50. A computer you can use today is worth more than one you buy in two weeks.\n\nLook at memory first. In 2026, 16GB is the sensible minimum for most people. Storage can be expanded with an external drive, but memory usually cannot.\n\nMy advice: make a short list now, set price alerts, and buy when a model on your list hits its lowest price.",
+    "existingTopic": "Shopping > Electronics > Computers"
+  },
+  "output": {
+    "purpose": "opinion",
+    "tone": "neutral",
+    "confidence": 0.74,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "In my view, Black Friday is a good time to buy a laptop only if you already know the exact model you want."
+      },
+      {
+        "field": "tone",
+        "quote": "Discounts are real, but so are the shortcuts some deals take."
+      }
+    ]
+  }
+}

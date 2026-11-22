@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "9a4c3ec0c669f4fb",
+  "input": {
+    "url": "worklife.example/in-defense-of-the-gift-card",
+    "title": "In defense of the gift card",
+    "text": "Every year someone tells me that gift cards are thoughtless. I disagree. I think the gift card is the most underrated present of the season.\n\nGiving someone the choice is not lazy; it is respectful of their time and taste. Adults usually know exactly what they need, and many of them are tired of returning sweaters in January.\n\nGift cards are also kind to people with tight budgets. A card from a grocery store or a gas station can matter more to a young family than any decorative object, and it does not carry the awkwardness of handing over cash.\n\nThe trick is to make it personal. Pick a place the person already loves: the bookstore they always visit, the cafe near their office, the hardware store where they spend Saturday mornings. Add a note about why you chose it.\n\nThere are a few rules. Check the fees and expiry dates, which vary by state. Prefer cards from businesses that are likely to be around next year. And give an amount that is useful, not symbolic.\n\nA gift card says, \"I trust you.\" That feels like a pretty good holiday message.",
+    "existingTopic": "Shopping > Gifts"
+  },
+  "output": {
+    "purpose": "opinion",
+    "tone": "practical",
+    "confidence": 0.76,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "I think the gift card is the most underrated present of the season."
+      },
+      {
+        "field": "tone",
+        "quote": "Giving someone the choice is not lazy; it is respectful of their time and taste."
+      }
+    ]
+  }
+}

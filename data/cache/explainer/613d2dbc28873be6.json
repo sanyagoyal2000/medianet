@@ -1,0 +1,28 @@
+{
+  "agent": "explainer",
+  "hash": "613d2dbc28873be6",
+  "input": {
+    "page": {
+      "title": "Best compact chargers",
+      "topic": "Shopping > Electronics > Chargers",
+      "purpose": "product_comparison",
+      "tone": "practical",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "partner_tier",
+    "reasons": [
+      "Partner tier above campaign limit"
+    ]
+  },
+  "output": {
+    "buyer": "Not served: partner tier above campaign limit.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

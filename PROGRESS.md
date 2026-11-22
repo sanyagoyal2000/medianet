@@ -5,7 +5,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - [x] Phase 00 · Scaffold and project setup
 - [x] Phase 01 · Design system and app shell
 - [x] Phase 02 · Data layer, simulated Media.net systems, seed
-- [ ] Phase 03 · Agent runtime, prompts and cached fallback
+- [x] Phase 03 · Agent runtime, prompts and cached fallback
 - [ ] Phase 04 · F1 context engine + Context Library (J2)
 - [ ] Phase 05 · F3/F4 campaign brief, targeting and eligibility (J1)
 - [ ] Phase 06 · F2 traffic router, Traffic Intelligence, Decision Inspector (J3, J4)
@@ -25,6 +25,10 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - **Decision:** the context KPIs are percentages of a 1M-URL inventory baseline (`meta.coverageBaseline`) plus the live sample pages, so corrections move the counts without breaking 91.2%.
 - **Decision:** purpose is a targeting requirement in Context Studio mode ("Purpose not targeted"), applied after the spec's hard rules. Tone only ranks. Today mode = topic, tier and country only.
 - **Decision:** `04_Traffic_Intelligence.png` shows RQ1050 as a buyer assistant (Planning only), which differs from spec/03's table (AI app). I followed the screenshot. The AI-app requests are RQ1047/RQ1053 (Awaiting display). The Overview's four recent decisions are RQ1053–RQ1056.
+
+- **P03:** `lib/ai/run.ts` handles structured calls (`messages.parse` + `zodOutputFormat`, 25 s timeout, zod re-validation with 1 retry), refusal and error fallback to cache, and `agent_runs` logging. It also has a manual tool loop (max 6 turns, `tool_choice` auto because Sonnet 5.5 rejects forced choice). The prompts are copied word for word into `lib/ai/prompts/*.md`. The demo mode comes from env, overridden by a `demo_mode` cookie.
+- **No `ANTHROPIC_API_KEY` was available**, so `data/cache/**` (98 entries) is **hand-authored offline** by `npm run cache:build`: the profiler uses the seed profiles, the explainer covers every page × focus campaign, and there are 3 briefs and 4 ShopBuddy scenarios. Re-run with a key in `.env.local` to replace them with live outputs.
+- **Decision:** on a cache miss, the profiler, explainer, brief interpreter and placement guard use **deterministic offline heuristics** (with quotes taken from real sentences of the page) instead of the "nearest example". A nearest example would quote a different page, and the evidence check would then reject it. The nearest-example lookup is still the last resort.
 
 ## Deployed URL
 (Claude Code fills this in at the end)

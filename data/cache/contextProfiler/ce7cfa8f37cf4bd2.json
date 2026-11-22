@@ -1,0 +1,28 @@
+{
+  "agent": "contextProfiler",
+  "hash": "ce7cfa8f37cf4bd2",
+  "input": {
+    "url": "healthdaily.example/flu-season-when-to-see-doctor",
+    "title": "Flu season: when to see a doctor",
+    "text": "Flu cases are rising across much of the country, and doctors expect the season to peak in late December. Here is how to tell whether flu symptoms can be managed at home or need a doctor.\n\nMost healthy adults recover in about a week with rest, fluids and over-the-counter fever reducers. Stay home until you have been fever-free for at least 24 hours without medicine, to avoid spreading it.\n\nCall a doctor early if you are in a higher-risk group: adults over 65, young children, pregnant people, and anyone with asthma, diabetes or heart disease. Antiviral medicine works best when started within two days of the first symptoms.\n\nSeek emergency care right away if someone has trouble breathing or chest pain. Other warning signs include confusion, severe weakness, a fever that returns after improving, and signs of dehydration in children, such as no tears when crying.\n\nIt is not too late to get a flu shot. It takes about two weeks to become fully effective, which means getting one now still offers protection through the holidays.\n\nThis article is general information and is not a substitute for medical advice.",
+    "existingTopic": "Health > Conditions"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "serious",
+    "confidence": 0.55,
+    "sensitive": [
+      "health"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Here is how to tell whether flu symptoms can be managed at home or need a doctor."
+      },
+      {
+        "field": "tone",
+        "quote": "Seek emergency care right away if someone has trouble breathing or chest pain."
+      }
+    ]
+  }
+}

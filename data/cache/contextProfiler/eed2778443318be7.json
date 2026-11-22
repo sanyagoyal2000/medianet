@@ -1,0 +1,26 @@
+{
+  "agent": "contextProfiler",
+  "hash": "eed2778443318be7",
+  "input": {
+    "url": "familylife.example/screen-time-winter-break",
+    "title": "Setting screen-time rules over winter break",
+    "text": "Two weeks without school can turn into two weeks on the couch with a tablet. These five steps can help you set screen-time rules your kids will actually follow over the break.\n\nThe goal is not zero screens; it is a plan everyone agreed to. Sit down together before the break starts and talk about what a good day looks like.\n\nAgree on screen-free times rather than total hours. Meals, the first hour after waking and the hour before bed are easy places to start. They are easier to enforce than a daily total.\n\nPlan a few anchors for each day: a walk, a board game, a trip to the library, time with friends. When kids know something fun is coming, they put devices down more easily.\n\nUse the built-in controls on phones and tablets, but explain why you are using them. Children push back less when the rules are clear and the same for everyone, including parents.\n\nFinally, expect some flexibility. A long car trip or a snowy afternoon might mean extra screen time, and that is fine. Breaks are supposed to feel like breaks.",
+    "existingTopic": "Family & Parenting > Kids"
+  },
+  "output": {
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.81,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "These five steps can help you set screen-time rules your kids will actually follow over the break."
+      },
+      {
+        "field": "tone",
+        "quote": "The goal is not zero screens; it is a plan everyone agreed to."
+      }
+    ]
+  }
+}

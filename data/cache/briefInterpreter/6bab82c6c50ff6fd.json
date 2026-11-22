@@ -1,0 +1,51 @@
+{
+  "agent": "briefInterpreter",
+  "hash": "6bab82c6c50ff6fd",
+  "input": {
+    "brief": "Wanderly: reach US travelers planning ski weekends and winter trips. Prefer upbeat how-to content. Exclude tragedy and violence."
+  },
+  "output": {
+    "spec": {
+      "topics": [
+        "Travel"
+      ],
+      "purposes": [
+        "how_to"
+      ],
+      "tonePreference": [
+        "upbeat"
+      ],
+      "excludeSensitive": [
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "summary": "Targets Travel for how to pages in US, preferring upbeat tone. Hard exclusions: tragedy. Partner tier ≤ 1.",
+    "ambiguities": []
+  },
+  "steps": [
+    {
+      "label": "Reading brief"
+    },
+    {
+      "label": "Mapping to ContextGraph",
+      "detail": "Travel"
+    },
+    {
+      "label": "Applying hard restrictions",
+      "detail": "Exclude Tragedy · Country US · Partner tier ≤ 1"
+    },
+    {
+      "label": "Scoring pages",
+      "detail": "2 eligible · 0 excluded with reasons"
+    },
+    {
+      "label": "Forecasting reach",
+      "detail": "379K opportunities · next 7 days · Historical estimate, not guaranteed delivery"
+    },
+    {
+      "label": "Draft ready"
+    }
+  ]
+}

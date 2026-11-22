@@ -1,0 +1,28 @@
+{
+  "agent": "explainer",
+  "hash": "fbc5b940bb66ca92",
+  "input": {
+    "page": {
+      "title": "Five-ingredient holiday cookies",
+      "topic": "Food & Drink > Baking",
+      "purpose": "how_to",
+      "tone": "upbeat",
+      "sensitive": []
+    },
+    "campaign": {
+      "name": "Holiday Gifting 2026",
+      "excludes": [
+        "recalls",
+        "tragedy"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}

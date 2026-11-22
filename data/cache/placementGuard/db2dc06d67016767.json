@@ -1,0 +1,13 @@
+{
+  "agent": "placementGuard",
+  "hash": "db2dc06d67016767",
+  "input": {
+    "turnSummary": "Gift ideas under $50 for my sister who loves cooking"
+  },
+  "output": {
+    "topic": "Gifts",
+    "purpose": "buying_guide",
+    "sensitive": [],
+    "confidence": 0.91
+  }
+}

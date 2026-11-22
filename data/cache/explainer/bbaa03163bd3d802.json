@@ -1,0 +1,29 @@
+{
+  "agent": "explainer",
+  "hash": "bbaa03163bd3d802",
+  "input": {
+    "page": {
+      "title": "Family mourns after holiday house fire",
+      "topic": "News > Local",
+      "purpose": "news",
+      "tone": "tragic",
+      "sensitive": [
+        "tragedy"
+      ]
+    },
+    "campaign": {
+      "name": "Holiday Chargers (agent draft)",
+      "excludes": [
+        "recalls"
+      ]
+    },
+    "outcome": "excluded",
+    "reasons": [
+      "Topic not in campaign"
+    ]
+  },
+  "output": {
+    "buyer": "Excluded: topic not in campaign.",
+    "reader": "No ad from this campaign appears on this page because of its subject. Paid placements follow the page's context only."
+  }
+}
