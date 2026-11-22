@@ -1,0 +1,346 @@
+[
+  {
+    "id": "RQ1041",
+    "ts": "2026-11-22T13:31:12.408Z",
+    "source": "Unidentified",
+    "pageId": "pg-stocking-stuffers",
+    "userAgent": "python-httpx/0.27.0",
+    "headers": {
+      "accept": "*/*"
+    },
+    "ivtScore": 0.17,
+    "declaredIdentity": "None declared",
+    "purpose": "unknown",
+    "confidence": "Low",
+    "audienceExposure": "Unverified",
+    "channel": "Web",
+    "kind": "unknown",
+    "review": {
+      "status": "open"
+    }
+  },
+  {
+    "id": "RQ1042",
+    "ts": "2026-11-22T13:36:40.122Z",
+    "source": "Website",
+    "pageId": "pg-desk-upgrades",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "headers": {
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"131\", \"Google Chrome\";v=\"131\"",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document",
+      "referer": "https://www.search.example/"
+    },
+    "ivtScore": 0.05,
+    "declaredIdentity": "Browser (no agent declared)",
+    "purpose": "human_facing",
+    "confidence": "High",
+    "audienceExposure": "Observed (browser render)",
+    "channel": "Web",
+    "kind": "human",
+    "review": null
+  },
+  {
+    "id": "RQ1043",
+    "ts": "2026-11-22T13:42:05.931Z",
+    "source": "Unidentified",
+    "pageId": "pg-earbuds",
+    "userAgent": "python-httpx/0.27.0",
+    "headers": {
+      "accept": "*/*"
+    },
+    "ivtScore": 0.17,
+    "declaredIdentity": "None declared",
+    "purpose": "unknown",
+    "confidence": "Low",
+    "audienceExposure": "Unverified",
+    "channel": "Web",
+    "kind": "unknown",
+    "review": {
+      "status": "open"
+    }
+  },
+  {
+    "id": "RQ1044",
+    "ts": "2026-11-22T13:45:18.560Z",
+    "source": "Website",
+    "pageId": "pg-chargers",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "headers": {
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"131\", \"Google Chrome\";v=\"131\"",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document",
+      "referer": "https://www.search.example/"
+    },
+    "ivtScore": 0.05,
+    "declaredIdentity": "Browser (no agent declared)",
+    "purpose": "human_facing",
+    "confidence": "High",
+    "audienceExposure": "Observed (browser render)",
+    "channel": "Web",
+    "kind": "human",
+    "review": null
+  },
+  {
+    "id": "RQ1045",
+    "ts": "2026-11-22T13:47:51.017Z",
+    "source": "Registered crawler",
+    "pageId": "pg-toy-recall",
+    "userAgent": "Mozilla/5.0 (compatible; NewsIndexBot/2.1; +https://newsindexbot.example/bot)",
+    "headers": {
+      "accept": "text/html",
+      "signature-agent": "\"https://newsindexbot.example\"",
+      "signature-input": "sig1=(\"@authority\" \"signature-agent\");created=1795355271;expires=1795355571;keyid=\"nib-ed25519-2026\";alg=\"ed25519\";tag=\"web-bot-auth\"",
+      "signature": "sig1=:1liDhBvNlaT9TWP2dqKq9oG+oeGxUugJUB+h15qHBNPBdG7BzifaFW62NsmiYaON==:"
+    },
+    "ivtScore": 0.1,
+    "declaredIdentity": "Declared crawler",
+    "purpose": "crawler",
+    "confidence": "High",
+    "audienceExposure": "Not observed",
+    "channel": "Web",
+    "kind": "crawler",
+    "review": null
+  },
+  {
+    "id": "RQ1046",
+    "ts": "2026-11-22T13:48:33.284Z",
+    "source": "Website",
+    "pageId": "pg-stocking-stuffers",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "headers": {
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"131\", \"Google Chrome\";v=\"131\"",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document",
+      "referer": "https://www.search.example/"
+    },
+    "ivtScore": 0.05,
+    "declaredIdentity": "Browser (no agent declared)",
+    "purpose": "human_facing",
+    "confidence": "High",
+    "audienceExposure": "Observed (browser render)",
+    "channel": "Web",
+    "kind": "human",
+    "review": null
+  },
+  {
+    "id": "RQ1047",
+    "ts": "2026-11-22T13:49:10.775Z",
+    "source": "ShopBuddy (AI app)",
+    "pageId": null,
+    "userAgent": "ShopBuddy-Server/2.3 (+https://shopbuddy.example/partners)",
+    "headers": {
+      "content-type": "application/json",
+      "x-ai-app-id": "shopbuddy",
+      "x-ai-turn-id": "turn_RQ1047"
+    },
+    "ivtScore": 0.17,
+    "declaredIdentity": "Registered AI app (ShopBuddy)",
+    "purpose": "ai_app",
+    "confidence": "Medium",
+    "audienceExposure": "Pending display confirmation",
+    "channel": "ShopBuddy",
+    "kind": "ai_app",
+    "review": null
+  },
+  {
+    "id": "RQ1048",
+    "ts": "2026-11-22T13:50:41.213Z",
+    "source": "Website",
+    "pageId": "pg-gift-guide",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "headers": {
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"131\", \"Google Chrome\";v=\"131\"",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document",
+      "referer": "https://www.search.example/"
+    },
+    "ivtScore": 0.05,
+    "declaredIdentity": "Browser (no agent declared)",
+    "purpose": "human_facing",
+    "confidence": "High",
+    "audienceExposure": "Observed (browser render)",
+    "channel": "Web",
+    "kind": "human",
+    "review": null
+  },
+  {
+    "id": "RQ1049",
+    "ts": "2026-11-22T13:51:02.204Z",
+    "source": "Registered crawler",
+    "pageId": "pg-gift-guide",
+    "userAgent": "Mozilla/5.0 (compatible; NewsIndexBot/2.1; +https://newsindexbot.example/bot)",
+    "headers": {
+      "accept": "text/html",
+      "signature-agent": "\"https://newsindexbot.example\"",
+      "signature-input": "sig1=(\"@authority\" \"signature-agent\");created=1795355462;expires=1795355762;keyid=\"nib-ed25519-2026\";alg=\"ed25519\";tag=\"web-bot-auth\"",
+      "signature": "sig1=:1liDhN7RhOPJvqXeliyilgeKkSqF4CkVkxORlpa3xpjVBa/NX2ny9eieV0uuMeaR==:"
+    },
+    "ivtScore": 0.1,
+    "declaredIdentity": "Declared crawler",
+    "purpose": "crawler",
+    "confidence": "High",
+    "audienceExposure": "Not observed",
+    "channel": "Web",
+    "kind": "crawler",
+    "review": null
+  },
+  {
+    "id": "RQ1050",
+    "ts": "2026-11-22T13:52:10.640Z",
+    "source": "Buyer assistant",
+    "pageId": null,
+    "userAgent": "buyer-assistant/1.4 (MCP client)",
+    "headers": {
+      "content-type": "application/json",
+      "signature-agent": "\"https://buyer-assistant.example\"",
+      "signature-input": "sig1=(\"@authority\" \"signature-agent\");created=1795355530;expires=1795355830;keyid=\"buyer-assistant-01\";alg=\"ed25519\";tag=\"web-bot-auth\"",
+      "signature": "sig1=:1liDOhr1c2+ZM2YU8duGteCe10heg2zVFCjVTrHK11Op1RKPet7pMi+VUaQgkhWq==:",
+      "mcp-session": "stateless"
+    },
+    "ivtScore": 0.1,
+    "declaredIdentity": "Declared buying agent",
+    "purpose": "buying_agent",
+    "confidence": "High",
+    "audienceExposure": "Not observed (planning)",
+    "channel": "MCP",
+    "kind": "buyer",
+    "review": null
+  },
+  {
+    "id": "RQ1051",
+    "ts": "2026-11-22T13:52:48.091Z",
+    "source": "Unidentified",
+    "pageId": "pg-gift-guide",
+    "userAgent": "python-httpx/0.27.0",
+    "headers": {
+      "accept": "*/*"
+    },
+    "ivtScore": 0.17,
+    "declaredIdentity": "None declared",
+    "purpose": "unknown",
+    "confidence": "Low",
+    "audienceExposure": "Unverified",
+    "channel": "Web",
+    "kind": "unknown",
+    "review": {
+      "status": "open"
+    }
+  },
+  {
+    "id": "RQ1052",
+    "ts": "2026-11-22T13:53:30.452Z",
+    "source": "Unknown client",
+    "pageId": "pg-gift-guide",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.0.0 Safari/537.36",
+    "headers": {
+      "accept": "*/*",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"131\"",
+      "x-forwarded-for": "203.0.113.7, 198.51.100.4, 192.0.2.44, 203.0.113.90"
+    },
+    "ivtScore": 0.99,
+    "declaredIdentity": "Suspected automation",
+    "purpose": "suspected_invalid",
+    "confidence": "High",
+    "audienceExposure": "Not credible",
+    "channel": "Web",
+    "kind": "headless",
+    "review": null
+  },
+  {
+    "id": "RQ1053",
+    "ts": "2026-11-22T14:04:12.318Z",
+    "source": "ShopBuddy (AI app)",
+    "pageId": null,
+    "userAgent": "ShopBuddy-Server/2.3 (+https://shopbuddy.example/partners)",
+    "headers": {
+      "content-type": "application/json",
+      "x-ai-app-id": "shopbuddy",
+      "x-ai-turn-id": "turn_RQ1053"
+    },
+    "ivtScore": 0.17,
+    "declaredIdentity": "Registered AI app (ShopBuddy)",
+    "purpose": "ai_app",
+    "confidence": "Medium",
+    "audienceExposure": "Pending display confirmation",
+    "channel": "ShopBuddy",
+    "kind": "ai_app",
+    "contextLabel": "Shopping question",
+    "review": null
+  },
+  {
+    "id": "RQ1054",
+    "ts": "2026-11-22T14:05:03.870Z",
+    "source": "Registered crawler",
+    "pageId": "pg-gift-guide",
+    "userAgent": "Mozilla/5.0 (compatible; NewsIndexBot/2.1; +https://newsindexbot.example/bot)",
+    "headers": {
+      "accept": "text/html",
+      "signature-agent": "\"https://newsindexbot.example\"",
+      "signature-input": "sig1=(\"@authority\" \"signature-agent\");created=1795356303;expires=1795356603;keyid=\"nib-ed25519-2026\";alg=\"ed25519\";tag=\"web-bot-auth\"",
+      "signature": "sig1=:1liDOVz5p2Xx3vXeliyilgxOYuWhkewsolq9Rl2zqV3Z1+TJLXjmhC+CxIl+8uKB==:"
+    },
+    "ivtScore": 0.1,
+    "declaredIdentity": "Declared crawler",
+    "purpose": "crawler",
+    "confidence": "High",
+    "audienceExposure": "Not observed",
+    "channel": "Web",
+    "kind": "crawler",
+    "review": null
+  },
+  {
+    "id": "RQ1055",
+    "ts": "2026-11-22T14:06:20.115Z",
+    "source": "Website",
+    "pageId": "pg-toy-recall",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "headers": {
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"131\", \"Google Chrome\";v=\"131\"",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document",
+      "referer": "https://www.search.example/"
+    },
+    "ivtScore": 0.05,
+    "declaredIdentity": "Browser (no agent declared)",
+    "purpose": "human_facing",
+    "confidence": "High",
+    "audienceExposure": "Observed (browser render)",
+    "channel": "Web",
+    "kind": "human",
+    "review": null
+  },
+  {
+    "id": "RQ1056",
+    "ts": "2026-11-22T14:07:45.733Z",
+    "source": "Website",
+    "pageId": "pg-gift-guide",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "headers": {
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Chromium\";v=\"131\", \"Google Chrome\";v=\"131\"",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-dest": "document",
+      "referer": "https://www.search.example/"
+    },
+    "ivtScore": 0.05,
+    "declaredIdentity": "Browser (no agent declared)",
+    "purpose": "human_facing",
+    "confidence": "High",
+    "audienceExposure": "Observed (browser render)",
+    "channel": "Web",
+    "kind": "human",
+    "review": null
+  }
+]

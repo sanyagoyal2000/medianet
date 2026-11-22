@@ -1,0 +1,15 @@
+[
+  {
+    "appId": "shopbuddy",
+    "format": "Sponsored answer card",
+    "contextsAllowed": [
+      "Shopping",
+      "Gifts",
+      "Product comparisons"
+    ],
+    "frequency": "Max 1 per 3 turns",
+    "approvedAssetsOnly": true,
+    "disclosure": "Sponsored",
+    "sensitivePolicy": "No ad"
+  }
+]

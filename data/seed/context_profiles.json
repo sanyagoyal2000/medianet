@@ -1,0 +1,583 @@
+[
+  {
+    "pageId": "pg-gift-guide",
+    "purpose": "buying_guide",
+    "tone": "upbeat",
+    "confidence": 0.84,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Our editors compared useful gifts for every budget."
+      },
+      {
+        "field": "tone",
+        "quote": "Thoughtful finds to brighten everyday routines."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T12:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-desk-upgrades",
+    "purpose": "product_comparison",
+    "tone": "practical",
+    "confidence": 0.81,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We tested six monitor stands, four desk mats and three keyboard trays side by side."
+      },
+      {
+        "field": "tone",
+        "quote": "Spend where you sit longest, and skip the gadgets that only look good in photos."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T11:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-toy-recall",
+    "purpose": "safety_report",
+    "tone": "serious",
+    "confidence": 0.58,
+    "sensitive": [
+      "recalls"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Federal regulators announced a recall of about 40,000 battery-powered plush toys on Thursday."
+      },
+      {
+        "field": "tone",
+        "quote": "Parents should stop using the toys immediately and remove the batteries."
+      }
+    ],
+    "status": "needs_review",
+    "classifiedAt": "2026-11-22T13:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-chargers",
+    "purpose": "product_comparison",
+    "tone": "practical",
+    "confidence": 0.77,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We compared nine compact USB-C chargers on speed, heat and size, using the same phone, tablet and thin laptop for every test."
+      },
+      {
+        "field": "tone",
+        "quote": "If you only buy one, get a two-port model that fits in a jacket pocket."
+      }
+    ],
+    "status": "stale",
+    "classifiedAt": "2026-11-05T12:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-santa-satire",
+    "purpose": "entertainment",
+    "tone": "satirical",
+    "confidence": 0.9,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "This is satire, and no elves were harmed in the making of this article."
+      },
+      {
+        "field": "tone",
+        "quote": "Management has offered the elves an extra candy cane per shift, which the union called insulting."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T09:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-retail-layoffs",
+    "purpose": "news",
+    "tone": "negative",
+    "confidence": 0.86,
+    "sensitive": [
+      "layoffs"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "A national department store chain said on Wednesday that it will cut about 2,000 corporate and distribution jobs."
+      },
+      {
+        "field": "tone",
+        "quote": "Workers described the timing as cruel, coming weeks before the busiest season of the year."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T08:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-stocking-stuffers",
+    "purpose": "buying_guide",
+    "tone": "upbeat",
+    "confidence": 0.88,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Here are 15 small gifts under $25 that people actually keep using after the holidays."
+      },
+      {
+        "field": "tone",
+        "quote": "Tiny gifts, big smiles, and not a single novelty mug in sight."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T10:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-gifts-for-cooks",
+    "purpose": "buying_guide",
+    "tone": "practical",
+    "confidence": 0.83,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "This guide covers the kitchen gifts our test cooks reached for most over three months."
+      },
+      {
+        "field": "tone",
+        "quote": "Skip the gadgets with one job and buy tools that earn their drawer space."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T06:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-earbuds",
+    "purpose": "product_comparison",
+    "tone": "neutral",
+    "confidence": 0.79,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We compared seven pairs of budget earbuds on fit, battery life, call quality and noise cancellation."
+      },
+      {
+        "field": "tone",
+        "quote": "None of these match premium earbuds, but two come surprisingly close for everyday listening."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T02:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-coffee-makers",
+    "purpose": "product_comparison",
+    "tone": "practical",
+    "confidence": 0.8,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We ran drip and pod machines side by side for a month to compare cost per cup, taste and cleanup."
+      },
+      {
+        "field": "tone",
+        "quote": "If you drink more than two cups a day, a drip machine pays for itself within a year."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T18:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-ski-weekend",
+    "purpose": "how_to",
+    "tone": "upbeat",
+    "confidence": 0.82,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Follow these steps to plan a ski weekend without overspending."
+      },
+      {
+        "field": "tone",
+        "quote": "Your first morning on the snow will be wobbly, and that is half the fun."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T08:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-cheap-flights",
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.85,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "These six steps helped our readers save an average of $140 per ticket last December."
+      },
+      {
+        "field": "tone",
+        "quote": "Flexibility beats any secret trick, so start with your dates before you look at prices."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T12:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-holiday-budget",
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.83,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Use this four-step method to set a holiday budget before you buy a single gift."
+      },
+      {
+        "field": "tone",
+        "quote": "A budget is not about saying no; it is about deciding ahead of time what matters most."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T20:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-credit-cards",
+    "purpose": "product_comparison",
+    "tone": "neutral",
+    "confidence": 0.78,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We compared flat cashback, rotating categories and store cards on a typical $1,200 holiday budget."
+      },
+      {
+        "field": "tone",
+        "quote": "Rewards only pay off if you clear the balance every month."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-20T22:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-holiday-debt",
+    "purpose": "how_to",
+    "tone": "serious",
+    "confidence": 0.8,
+    "sensitive": [
+      "financial_distress"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "If you are behind on payments, these steps can help you regain control."
+      },
+      {
+        "field": "tone",
+        "quote": "Falling behind is common, and it is not a personal failure."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T16:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-cookies",
+    "purpose": "how_to",
+    "tone": "upbeat",
+    "confidence": 0.87,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Here is how to make three batches of cookies with the same five pantry ingredients."
+      },
+      {
+        "field": "tone",
+        "quote": "These cookies are forgiving, cheerful and nearly impossible to mess up."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T23:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-roast-dinner",
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.84,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Use this hour-by-hour timeline to get the roast, sides and gravy on the table together."
+      },
+      {
+        "field": "tone",
+        "quote": "Most of the work happens the day before, so the day itself stays calm."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T05:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-laptop-bf",
+    "purpose": "opinion",
+    "tone": "neutral",
+    "confidence": 0.74,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "In my view, Black Friday is a good time to buy a laptop only if you already know the exact model you want."
+      },
+      {
+        "field": "tone",
+        "quote": "Discounts are real, but so are the shortcuts some deals take."
+      }
+    ],
+    "status": "stale",
+    "classifiedAt": "2026-11-06T18:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-budget-phone",
+    "purpose": "product_comparison",
+    "tone": "neutral",
+    "confidence": 0.72,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We used the phone for two weeks and compared it with last year's model and two rivals."
+      },
+      {
+        "field": "tone",
+        "quote": "It is a sensible phone with one annoying flaw."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-20T10:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-screen-time",
+    "purpose": "how_to",
+    "tone": "practical",
+    "confidence": 0.81,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "These five steps can help you set screen-time rules your kids will actually follow over the break."
+      },
+      {
+        "field": "tone",
+        "quote": "The goal is not zero screens; it is a plan everyone agreed to."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T10:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-stem-gifts",
+    "purpose": "buying_guide",
+    "tone": "upbeat",
+    "confidence": 0.86,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We asked a dozen kids to test science and building kits, and these eight were the clear favorites."
+      },
+      {
+        "field": "tone",
+        "quote": "Every one of these kept a curious kid busy for a whole rainy afternoon."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T05:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-flu-season",
+    "purpose": "how_to",
+    "tone": "serious",
+    "confidence": 0.55,
+    "sensitive": [
+      "health"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Here is how to tell whether flu symptoms can be managed at home or need a doctor."
+      },
+      {
+        "field": "tone",
+        "quote": "Seek emergency care right away if someone has trouble breathing or chest pain."
+      }
+    ],
+    "status": "needs_review",
+    "classifiedAt": "2026-11-22T12:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-winter-workouts",
+    "purpose": "how_to",
+    "tone": "upbeat",
+    "confidence": 0.85,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Try these three ten-minute routines that need no equipment and very little space."
+      },
+      {
+        "field": "tone",
+        "quote": "Ten minutes is enough to feel warmer, brighter and more awake."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-20T18:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-gift-cards-opinion",
+    "purpose": "opinion",
+    "tone": "practical",
+    "confidence": 0.76,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "I think the gift card is the most underrated present of the season."
+      },
+      {
+        "field": "tone",
+        "quote": "Giving someone the choice is not lazy; it is respectful of their time and taste."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-20T02:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-shipping-delays",
+    "purpose": "news",
+    "tone": "neutral",
+    "confidence": 0.83,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "The country's largest parcel carriers said on Tuesday that holiday package volumes are expected to reach a record this year."
+      },
+      {
+        "field": "tone",
+        "quote": "Carriers published their recommended last shipping dates for ground delivery before December 25."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T07:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-uk-gifts",
+    "purpose": "buying_guide",
+    "tone": "upbeat",
+    "confidence": 0.86,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "Our UK team rounded up 18 Christmas presents under £40 that we would be delighted to receive."
+      },
+      {
+        "field": "tone",
+        "quote": "Cosy, clever and properly useful, with something for everyone on your list."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T03:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-house-fire",
+    "purpose": "news",
+    "tone": "tragic",
+    "confidence": 0.9,
+    "sensitive": [
+      "tragedy"
+    ],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "A house fire on Maple Street early Sunday killed two people and left a family of five without a home."
+      },
+      {
+        "field": "tone",
+        "quote": "Neighbors gathered on Monday evening to light candles outside the house."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-22T09:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-office-chairs",
+    "purpose": "product_comparison",
+    "tone": "practical",
+    "confidence": 0.82,
+    "sensitive": [],
+    "evidence": [
+      {
+        "field": "purpose",
+        "quote": "We sat in eight ergonomic chairs for a full workweek each and compared adjustability, comfort and build."
+      },
+      {
+        "field": "tone",
+        "quote": "Adjustability matters more than padding, so test the armrests and lumbar support first."
+      }
+    ],
+    "status": "fresh",
+    "classifiedAt": "2026-11-21T22:10:00.000Z",
+    "version": 1
+  },
+  {
+    "pageId": "pg-garden-prep",
+    "purpose": null,
+    "tone": null,
+    "confidence": 0,
+    "sensitive": [],
+    "evidence": [],
+    "status": "unclassified",
+    "classifiedAt": "",
+    "version": 1
+  }
+]

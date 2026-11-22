@@ -1,0 +1,659 @@
+[
+  {
+    "id": "DEC-RQ1041",
+    "requestId": "RQ1041",
+    "campaignId": null,
+    "outcome": "Review required",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": false,
+        "detail": "None declared · IVT 0.17 (existing verification partner)",
+        "at": "2026-11-22T13:31:12.408Z"
+      },
+      {
+        "label": "Request purpose unclear",
+        "ok": false,
+        "detail": "No browser signals and no registered identity",
+        "at": "2026-11-22T13:31:13.108Z"
+      },
+      {
+        "label": "Routed to configured review",
+        "ok": true,
+        "detail": "Unknown does not mean human",
+        "at": "2026-11-22T13:31:13.808Z"
+      },
+      {
+        "label": "Advertising billing excluded",
+        "ok": true,
+        "detail": "Never billed as human",
+        "at": "2026-11-22T13:31:14.508Z"
+      }
+    ],
+    "appliedRule": "unknown",
+    "billable": false,
+    "contentAccess": "No",
+    "adDisplayed": "No",
+    "reasonBuyer": "Unknown requester; held for configured review and never billed as human.",
+    "reasonReader": "",
+    "routedMs": 0.42
+  },
+  {
+    "id": "DEC-RQ1042",
+    "requestId": "RQ1042",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "Ad displayed",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Browser (no agent declared) · IVT 0.05 (existing verification partner)",
+        "at": "2026-11-22T13:36:40.122Z"
+      },
+      {
+        "label": "Request purpose: human-facing",
+        "ok": true,
+        "detail": "Browser render, low IVT, no automation flags",
+        "at": "2026-11-22T13:36:40.822Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Home & Office · Comparison",
+        "at": "2026-11-22T13:36:41.522Z"
+      },
+      {
+        "label": "Advertising checks passed",
+        "ok": true,
+        "detail": "Topic matched: Shopping / Home & Office · Purpose matched: Comparison · Tone preferred: Practical · No hard exclusion: Not a product recall or tragedy",
+        "at": "2026-11-22T13:36:42.222Z"
+      },
+      {
+        "label": "Ad displayed · billable impression",
+        "ok": true,
+        "detail": "Human-facing display confirmed by render beacon",
+        "at": "2026-11-22T13:36:42.922Z"
+      }
+    ],
+    "appliedRule": "human_facing",
+    "billable": true,
+    "contentAccess": "n/a",
+    "adDisplayed": "Yes",
+    "reasonBuyer": "Eligible: Topic matched: Shopping / Home & Office; Purpose matched: Comparison.",
+    "reasonReader": "Shown because this page is about home & office. Paid placement.",
+    "routedMs": 0.3
+  },
+  {
+    "id": "DEC-RQ1043",
+    "requestId": "RQ1043",
+    "campaignId": null,
+    "outcome": "Review required",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": false,
+        "detail": "None declared · IVT 0.17 (existing verification partner)",
+        "at": "2026-11-22T13:42:05.931Z"
+      },
+      {
+        "label": "Request purpose unclear",
+        "ok": false,
+        "detail": "No browser signals and no registered identity",
+        "at": "2026-11-22T13:42:06.631Z"
+      },
+      {
+        "label": "Routed to configured review",
+        "ok": true,
+        "detail": "Unknown does not mean human",
+        "at": "2026-11-22T13:42:07.331Z"
+      },
+      {
+        "label": "Advertising billing excluded",
+        "ok": true,
+        "detail": "Never billed as human",
+        "at": "2026-11-22T13:42:08.031Z"
+      }
+    ],
+    "appliedRule": "unknown",
+    "billable": false,
+    "contentAccess": "No",
+    "adDisplayed": "No",
+    "reasonBuyer": "Unknown requester; held for configured review and never billed as human.",
+    "reasonReader": "",
+    "routedMs": 0.32
+  },
+  {
+    "id": "DEC-RQ1044",
+    "requestId": "RQ1044",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "Campaign excluded",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Browser (no agent declared) · IVT 0.05 (existing verification partner)",
+        "at": "2026-11-22T13:45:18.560Z"
+      },
+      {
+        "label": "Request purpose: human-facing",
+        "ok": true,
+        "detail": "Browser render, low IVT, no automation flags",
+        "at": "2026-11-22T13:45:19.260Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Chargers · Comparison",
+        "at": "2026-11-22T13:45:19.960Z"
+      },
+      {
+        "label": "Advertising checks",
+        "ok": false,
+        "detail": "Partner tier above campaign limit",
+        "at": "2026-11-22T13:45:20.660Z"
+      },
+      {
+        "label": "Campaign excluded · no impression",
+        "ok": true,
+        "detail": "Other campaigns may still compete",
+        "at": "2026-11-22T13:45:21.360Z"
+      }
+    ],
+    "appliedRule": "human_facing",
+    "billable": false,
+    "contentAccess": "n/a",
+    "adDisplayed": "No (campaign excluded)",
+    "reasonBuyer": "Excluded: Partner tier above campaign limit.",
+    "reasonReader": "No ad from this campaign was shown on this page.",
+    "routedMs": 0.38
+  },
+  {
+    "id": "DEC-RQ1045",
+    "requestId": "RQ1045",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "No ad impression",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Declared crawler · IVT 0.10 (existing verification partner) · Web Bot Auth: verification simulated",
+        "at": "2026-11-22T13:47:51.017Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Holiday gifts · Safety report",
+        "at": "2026-11-22T13:47:51.717Z"
+      },
+      {
+        "label": "Publisher access policy checked",
+        "ok": true,
+        "detail": "Content retrieval allowed per publisher policy",
+        "at": "2026-11-22T13:47:52.417Z"
+      },
+      {
+        "label": "Advertising billing excluded",
+        "ok": true,
+        "detail": "Crawler identity is not a human audience",
+        "at": "2026-11-22T13:47:53.117Z"
+      }
+    ],
+    "appliedRule": "crawler",
+    "billable": false,
+    "contentAccess": "Follow publisher policy",
+    "adDisplayed": "No",
+    "reasonBuyer": "No ad impression: NewsIndexBot is retrieving content, not displaying ads.",
+    "reasonReader": "",
+    "routedMs": 0.38
+  },
+  {
+    "id": "DEC-RQ1046",
+    "requestId": "RQ1046",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "Ad displayed",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Browser (no agent declared) · IVT 0.05 (existing verification partner)",
+        "at": "2026-11-22T13:48:33.284Z"
+      },
+      {
+        "label": "Request purpose: human-facing",
+        "ok": true,
+        "detail": "Browser render, low IVT, no automation flags",
+        "at": "2026-11-22T13:48:33.984Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Holiday gifts · Buying guide",
+        "at": "2026-11-22T13:48:34.684Z"
+      },
+      {
+        "label": "Advertising checks passed",
+        "ok": true,
+        "detail": "Topic matched: Shopping / Gifts · Purpose matched: Buying guide · Tone preferred: Upbeat · No hard exclusion: Not a product recall or tragedy",
+        "at": "2026-11-22T13:48:35.384Z"
+      },
+      {
+        "label": "Ad displayed · billable impression",
+        "ok": true,
+        "detail": "Human-facing display confirmed by render beacon",
+        "at": "2026-11-22T13:48:36.084Z"
+      }
+    ],
+    "appliedRule": "human_facing",
+    "billable": true,
+    "contentAccess": "n/a",
+    "adDisplayed": "Yes",
+    "reasonBuyer": "Eligible: Topic matched: Shopping / Gifts; Purpose matched: Buying guide.",
+    "reasonReader": "Shown because this page is about holiday gifts. Paid placement.",
+    "routedMs": 0.29
+  },
+  {
+    "id": "DEC-RQ1047",
+    "requestId": "RQ1047",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "Awaiting display",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Registered AI app (ShopBuddy) · IVT 0.17 (existing verification partner)",
+        "at": "2026-11-22T13:49:10.775Z"
+      },
+      {
+        "label": "Request purpose: AI-app request",
+        "ok": true,
+        "detail": "Registered partner app via x-ai-app-id",
+        "at": "2026-11-22T13:49:11.475Z"
+      },
+      {
+        "label": "Placement guard: consent, context, frequency",
+        "ok": true,
+        "detail": "Turn summary only, never the full conversation",
+        "at": "2026-11-22T13:49:12.175Z"
+      },
+      {
+        "label": "Awaiting display confirmation",
+        "ok": true,
+        "detail": "Offer returned; not an impression until displayed",
+        "at": "2026-11-22T13:49:12.875Z"
+      }
+    ],
+    "appliedRule": "ai_app",
+    "billable": false,
+    "contentAccess": "n/a",
+    "adDisplayed": "Pending confirmation",
+    "reasonBuyer": "Offer returned to AI app; billable only after display confirmation.",
+    "reasonReader": "Matched to this shopping question. Paid placement.",
+    "routedMs": 0.32
+  },
+  {
+    "id": "DEC-RQ1048",
+    "requestId": "RQ1048",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "Ad displayed",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Browser (no agent declared) · IVT 0.05 (existing verification partner)",
+        "at": "2026-11-22T13:50:41.213Z"
+      },
+      {
+        "label": "Request purpose: human-facing",
+        "ok": true,
+        "detail": "Browser render, low IVT, no automation flags",
+        "at": "2026-11-22T13:50:42.313Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Holiday gifts · Buying guide",
+        "at": "2026-11-22T13:50:43.413Z"
+      },
+      {
+        "label": "Advertising checks passed",
+        "ok": true,
+        "detail": "Topic matched: Shopping / Gifts · Purpose matched: Buying guide · Tone preferred: Upbeat · No hard exclusion: Not a product recall or tragedy",
+        "at": "2026-11-22T13:50:44.513Z"
+      },
+      {
+        "label": "Ad displayed · billable impression",
+        "ok": true,
+        "detail": "Human-facing display confirmed by render beacon",
+        "at": "2026-11-22T13:50:45.613Z"
+      }
+    ],
+    "appliedRule": "human_facing",
+    "billable": true,
+    "contentAccess": "n/a",
+    "adDisplayed": "Yes",
+    "reasonBuyer": "Eligible: Topic matched: Shopping / Gifts; Purpose matched: Buying guide.",
+    "reasonReader": "Shown because this page is about holiday gifts. Paid placement.",
+    "routedMs": 0.42
+  },
+  {
+    "id": "DEC-RQ1049",
+    "requestId": "RQ1049",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "No ad impression",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Declared crawler · IVT 0.10 (existing verification partner) · Web Bot Auth: verification simulated",
+        "at": "2026-11-22T13:51:02.204Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Holiday gifts · Buying guide",
+        "at": "2026-11-22T13:51:07.204Z"
+      },
+      {
+        "label": "Publisher access policy checked",
+        "ok": true,
+        "detail": "Content retrieval allowed per publisher policy",
+        "at": "2026-11-22T13:51:12.204Z"
+      },
+      {
+        "label": "Advertising billing excluded",
+        "ok": true,
+        "detail": "Crawler identity is not a human audience",
+        "at": "2026-11-22T13:51:17.204Z"
+      }
+    ],
+    "appliedRule": "crawler",
+    "billable": false,
+    "contentAccess": "Follow publisher policy",
+    "adDisplayed": "No",
+    "reasonBuyer": "No ad impression: NewsIndexBot is retrieving content, not displaying ads.",
+    "reasonReader": "",
+    "routedMs": 0.38
+  },
+  {
+    "id": "DEC-RQ1050",
+    "requestId": "RQ1050",
+    "campaignId": null,
+    "outcome": "Planning only",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Declared buying agent · IVT 0.10 (existing verification partner) · Web Bot Auth: verification simulated",
+        "at": "2026-11-22T13:52:10.640Z"
+      },
+      {
+        "label": "Request purpose: campaign planning",
+        "ok": true,
+        "detail": "Claude (buyer assistant) via MCP · read & draft only",
+        "at": "2026-11-22T13:52:11.340Z"
+      },
+      {
+        "label": "Planning only · no ad display",
+        "ok": true,
+        "detail": "Agent identity does not establish human exposure",
+        "at": "2026-11-22T13:52:12.040Z"
+      },
+      {
+        "label": "Advertising billing excluded",
+        "ok": true,
+        "at": "2026-11-22T13:52:12.740Z"
+      }
+    ],
+    "appliedRule": "buying_agent",
+    "billable": false,
+    "contentAccess": "No",
+    "adDisplayed": "No",
+    "reasonBuyer": "Planning request from a buyer's agent; not an ad opportunity.",
+    "reasonReader": "",
+    "routedMs": 0.42
+  },
+  {
+    "id": "DEC-RQ1051",
+    "requestId": "RQ1051",
+    "campaignId": null,
+    "outcome": "Review required",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": false,
+        "detail": "None declared · IVT 0.17 (existing verification partner)",
+        "at": "2026-11-22T13:52:48.091Z"
+      },
+      {
+        "label": "Request purpose unclear",
+        "ok": false,
+        "detail": "No browser signals and no registered identity",
+        "at": "2026-11-22T13:52:48.991Z"
+      },
+      {
+        "label": "Routed to configured review",
+        "ok": true,
+        "detail": "Unknown does not mean human",
+        "at": "2026-11-22T13:52:49.891Z"
+      },
+      {
+        "label": "Advertising billing excluded",
+        "ok": true,
+        "detail": "Never billed as human",
+        "at": "2026-11-22T13:52:50.791Z"
+      }
+    ],
+    "appliedRule": "unknown",
+    "billable": false,
+    "contentAccess": "No",
+    "adDisplayed": "No",
+    "reasonBuyer": "Unknown requester; held for configured review and never billed as human.",
+    "reasonReader": "",
+    "routedMs": 0.31
+  },
+  {
+    "id": "DEC-RQ1052",
+    "requestId": "RQ1052",
+    "campaignId": null,
+    "outcome": "Excluded",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": false,
+        "detail": "Suspected automation · IVT 0.99 (existing verification partner)",
+        "at": "2026-11-22T13:53:30.452Z"
+      },
+      {
+        "label": "Invalid traffic signal",
+        "ok": false,
+        "detail": "IVT 0.99 > 0.80 threshold",
+        "at": "2026-11-22T13:53:31.152Z"
+      },
+      {
+        "label": "Excluded from ad delivery",
+        "ok": true,
+        "at": "2026-11-22T13:53:31.852Z"
+      },
+      {
+        "label": "Advertising billing excluded",
+        "ok": true,
+        "at": "2026-11-22T13:53:32.552Z"
+      }
+    ],
+    "appliedRule": "suspected_invalid",
+    "billable": false,
+    "contentAccess": "No",
+    "adDisplayed": "No",
+    "reasonBuyer": "Excluded: suspected invalid traffic (IVT 0.99).",
+    "reasonReader": "",
+    "routedMs": 0.37
+  },
+  {
+    "id": "DEC-RQ1053",
+    "requestId": "RQ1053",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "Awaiting display",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Registered AI app (ShopBuddy) · IVT 0.17 (existing verification partner)",
+        "at": "2026-11-22T14:04:12.318Z"
+      },
+      {
+        "label": "Request purpose: AI-app request",
+        "ok": true,
+        "detail": "Registered partner app via x-ai-app-id",
+        "at": "2026-11-22T14:04:13.018Z"
+      },
+      {
+        "label": "Placement guard: consent, context, frequency",
+        "ok": true,
+        "detail": "Turn summary only, never the full conversation",
+        "at": "2026-11-22T14:04:13.718Z"
+      },
+      {
+        "label": "Awaiting display confirmation",
+        "ok": true,
+        "detail": "Offer returned; not an impression until displayed",
+        "at": "2026-11-22T14:04:14.418Z"
+      }
+    ],
+    "appliedRule": "ai_app",
+    "billable": false,
+    "contentAccess": "n/a",
+    "adDisplayed": "Pending confirmation",
+    "reasonBuyer": "Offer returned to AI app; billable only after display confirmation.",
+    "reasonReader": "Matched to this shopping question. Paid placement.",
+    "routedMs": 0.33
+  },
+  {
+    "id": "DEC-RQ1054",
+    "requestId": "RQ1054",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "No ad impression",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Declared crawler · IVT 0.10 (existing verification partner) · Web Bot Auth: verification simulated",
+        "at": "2026-11-22T14:05:03.870Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Holiday gifts · Buying guide",
+        "at": "2026-11-22T14:05:04.570Z"
+      },
+      {
+        "label": "Publisher access policy checked",
+        "ok": true,
+        "detail": "Content retrieval allowed per publisher policy",
+        "at": "2026-11-22T14:05:05.270Z"
+      },
+      {
+        "label": "Advertising billing excluded",
+        "ok": true,
+        "detail": "Crawler identity is not a human audience",
+        "at": "2026-11-22T14:05:05.970Z"
+      }
+    ],
+    "appliedRule": "crawler",
+    "billable": false,
+    "contentAccess": "Follow publisher policy",
+    "adDisplayed": "No",
+    "reasonBuyer": "No ad impression: NewsIndexBot is retrieving content, not displaying ads.",
+    "reasonReader": "",
+    "routedMs": 0.33
+  },
+  {
+    "id": "DEC-RQ1055",
+    "requestId": "RQ1055",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "Campaign excluded",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Browser (no agent declared) · IVT 0.05 (existing verification partner)",
+        "at": "2026-11-22T14:06:20.115Z"
+      },
+      {
+        "label": "Request purpose: human-facing",
+        "ok": true,
+        "detail": "Browser render, low IVT, no automation flags",
+        "at": "2026-11-22T14:06:20.815Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Holiday gifts · Safety report",
+        "at": "2026-11-22T14:06:21.515Z"
+      },
+      {
+        "label": "Advertising checks",
+        "ok": false,
+        "detail": "Hard exclusion: Product recalls",
+        "at": "2026-11-22T14:06:22.215Z"
+      },
+      {
+        "label": "Campaign excluded · no impression",
+        "ok": true,
+        "detail": "Other campaigns may still compete",
+        "at": "2026-11-22T14:06:22.915Z"
+      }
+    ],
+    "appliedRule": "human_facing",
+    "billable": false,
+    "contentAccess": "n/a",
+    "adDisplayed": "No (campaign excluded)",
+    "reasonBuyer": "Excluded: Hard exclusion: Product recalls (page is product recalls).",
+    "reasonReader": "No ad from this campaign was shown on this page.",
+    "routedMs": 0.42
+  },
+  {
+    "id": "DEC-RQ1056",
+    "requestId": "RQ1056",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "outcome": "Ad displayed",
+    "steps": [
+      {
+        "label": "Identity assessed",
+        "ok": true,
+        "detail": "Browser (no agent declared) · IVT 0.05 (existing verification partner)",
+        "at": "2026-11-22T14:07:45.733Z"
+      },
+      {
+        "label": "Request purpose: human-facing",
+        "ok": true,
+        "detail": "Browser render, low IVT, no automation flags",
+        "at": "2026-11-22T14:07:46.433Z"
+      },
+      {
+        "label": "Context matched",
+        "ok": true,
+        "detail": "Holiday gifts · Buying guide",
+        "at": "2026-11-22T14:07:47.133Z"
+      },
+      {
+        "label": "Advertising checks passed",
+        "ok": true,
+        "detail": "Topic matched: Shopping / Gifts · Purpose matched: Buying guide · Tone preferred: Upbeat · No hard exclusion: Not a product recall or tragedy",
+        "at": "2026-11-22T14:07:47.833Z"
+      },
+      {
+        "label": "Ad displayed · billable impression",
+        "ok": true,
+        "detail": "Human-facing display confirmed by render beacon",
+        "at": "2026-11-22T14:07:48.533Z"
+      }
+    ],
+    "appliedRule": "human_facing",
+    "billable": true,
+    "contentAccess": "n/a",
+    "adDisplayed": "Yes",
+    "reasonBuyer": "Eligible: Topic matched: Shopping / Gifts; Purpose matched: Buying guide.",
+    "reasonReader": "Shown because this page is about holiday gifts. Paid placement.",
+    "routedMs": 0.42
+  }
+]

@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   },
   serverExternalPackages: ["linkedom"],
   devIndicators: false,
+  outputFileTracingRoot: __dirname,
 };
 
 export default nextConfig;

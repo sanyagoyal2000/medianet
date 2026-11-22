@@ -1,0 +1,119 @@
+[
+  {
+    "id": "run-0001",
+    "agent": "contextProfiler",
+    "model": "claude-haiku-5-5",
+    "source": "ui",
+    "input": {
+      "pageId": "pg-gift-guide"
+    },
+    "output": {
+      "purpose": "buying_guide",
+      "tone": "upbeat",
+      "confidence": 0.84
+    },
+    "latencyMs": 1180,
+    "cached": false,
+    "createdAt": "2026-11-22T12:10:00.000Z"
+  },
+  {
+    "id": "run-0002",
+    "agent": "contextProfiler",
+    "model": "claude-haiku-5-5",
+    "source": "ui",
+    "input": {
+      "pageId": "pg-toy-recall"
+    },
+    "output": {
+      "purpose": "safety_report",
+      "tone": "serious",
+      "confidence": 0.58,
+      "sensitive": [
+        "recalls"
+      ]
+    },
+    "latencyMs": 1320,
+    "cached": false,
+    "createdAt": "2026-11-22T13:10:00.000Z"
+  },
+  {
+    "id": "run-0003",
+    "agent": "mcp:find_contexts",
+    "model": "deterministic",
+    "source": "mcp",
+    "input": {
+      "spec": {
+        "topics": [
+          "Shopping > Electronics"
+        ],
+        "excludeSensitive": [
+          "recalls"
+        ]
+      }
+    },
+    "output": {
+      "eligible": 3,
+      "excluded": 2
+    },
+    "latencyMs": 41,
+    "cached": false,
+    "createdAt": "2026-11-22T09:04:00.000Z"
+  },
+  {
+    "id": "run-0004",
+    "agent": "mcp:forecast_reach",
+    "model": "deterministic",
+    "source": "mcp",
+    "input": {
+      "spec": {
+        "topics": [
+          "Shopping > Electronics"
+        ]
+      }
+    },
+    "output": {
+      "low": 520000,
+      "high": 640000,
+      "basis": "Historical estimate, not guaranteed delivery"
+    },
+    "latencyMs": 12,
+    "cached": false,
+    "createdAt": "2026-11-22T09:07:00.000Z"
+  },
+  {
+    "id": "run-0005",
+    "agent": "mcp:create_package",
+    "model": "deterministic",
+    "source": "mcp",
+    "input": {
+      "name": "Holiday Chargers (agent draft)"
+    },
+    "output": {
+      "campaignId": "cmp-voltmart-holiday-chargers-agent",
+      "dealRequestId": "DR-4187",
+      "status": "draft"
+    },
+    "latencyMs": 18,
+    "cached": false,
+    "createdAt": "2026-11-22T09:10:00.000Z"
+  },
+  {
+    "id": "run-0006",
+    "agent": "placementGuard",
+    "model": "claude-haiku-5-5",
+    "source": "partner",
+    "input": {
+      "appId": "shopbuddy",
+      "turnSummary": "What are practical holiday gifts under $50?"
+    },
+    "output": {
+      "topic": "Gifts",
+      "purpose": "buying_guide",
+      "sensitive": [],
+      "confidence": 0.91
+    },
+    "latencyMs": 640,
+    "cached": false,
+    "createdAt": "2026-11-22T14:04:12.700Z"
+  }
+]

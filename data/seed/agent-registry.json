@@ -1,0 +1,11 @@
+{
+  "note": "Registered agents for Web Bot Auth (verification simulated: header structure + registry lookup only).",
+  "agents": [
+    { "name": "NewsIndexBot", "type": "crawler", "operator": "NewsIndex (search & news crawler)", "keyId": "nib-ed25519-2026", "signatureAgent": "https://newsindexbot.example" },
+    { "name": "ShopSearchBot", "type": "crawler", "operator": "ShopSearch (product search crawler)", "keyId": "ssb-ed25519-2026", "signatureAgent": "https://shopsearch.example/bot" },
+    { "name": "Claude (buyer assistant)", "type": "buying_agent", "operator": "Media buyer's AI assistant via MCP", "keyId": "buyer-assistant-01", "signatureAgent": "https://buyer-assistant.example" }
+  ],
+  "aiApps": [
+    { "appId": "shopbuddy", "name": "ShopBuddy", "operator": "ShopBuddy (partner pilot)", "status": "partner_pilot" }
+  ]
+}

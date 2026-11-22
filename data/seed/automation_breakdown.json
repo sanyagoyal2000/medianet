@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Content retrieval",
+    "requests": 82000,
+    "share": 0.745
+  },
+  {
+    "type": "Buying-agent planning",
+    "requests": 18000,
+    "share": 0.164
+  },
+  {
+    "type": "Other automation",
+    "requests": 10000,
+    "share": 0.091
+  }
+]

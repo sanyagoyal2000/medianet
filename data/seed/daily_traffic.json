@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2026-11-16",
+    "humanFacing": 118400,
+    "automated": 15200,
+    "unknown": 7400
+  },
+  {
+    "date": "2026-11-17",
+    "humanFacing": 120120,
+    "automated": 15730,
+    "unknown": 7150
+  },
+  {
+    "date": "2026-11-18",
+    "humanFacing": 121800,
+    "automated": 16100,
+    "unknown": 7100
+  },
+  {
+    "date": "2026-11-19",
+    "humanFacing": 123480,
+    "automated": 16170,
+    "unknown": 7350
+  },
+  {
+    "date": "2026-11-20",
+    "humanFacing": 121800,
+    "automated": 15950,
+    "unknown": 7250
+  },
+  {
+    "date": "2026-11-21",
+    "humanFacing": 117600,
+    "automated": 15290,
+    "unknown": 7110
+  },
+  {
+    "date": "2026-11-22",
+    "humanFacing": 116800,
+    "automated": 15560,
+    "unknown": 6640
+  }
+]

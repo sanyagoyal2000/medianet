@@ -1,0 +1,671 @@
+// Seed pages: original, believable article text (150–300 words each) + their context profiles.
+// Evidence quotes MUST appear verbatim in the text; generate-seed.ts verifies this.
+
+export interface SeedPage {
+  id: string;
+  url: string;
+  site: string;
+  title: string;
+  topicPath: string;
+  partnerTier: number;
+  country: string;
+  trafficPerDay: number;
+  purpose: string | null;
+  tone: string | null;
+  confidence: number;
+  sensitive: string[];
+  status: "fresh" | "stale" | "needs_review" | "unclassified";
+  classifiedHoursAgo: number;
+  evPurpose?: string;
+  evTone?: string;
+  text: string;
+}
+
+export const SEED_PAGES: SeedPage[] = [
+  {
+    id: "pg-gift-guide",
+    url: "giftguide.example/holiday-gifts-under-50",
+    site: "giftguide.example",
+    title: "20 holiday gifts under $50",
+    topicPath: "Shopping > Gifts > Holiday",
+    partnerTier: 1, country: "US", trafficPerDay: 120000,
+    purpose: "buying_guide", tone: "upbeat", confidence: 0.84, sensitive: [], status: "fresh", classifiedHoursAgo: 2,
+    evPurpose: "Our editors compared useful gifts for every budget.",
+    evTone: "Thoughtful finds to brighten everyday routines.",
+    text: `Holiday shopping does not have to drain your account. Our editors compared useful gifts for every budget. Every pick on this list costs less than $50, and every one is something we would happily unwrap ourselves.
+
+Start with the people who are always cold. A weighted fleece throw at $38 is the kind of present that gets used every single night from December to March. For the coffee drinker, an insulated travel mug that actually keeps drinks hot for six hours comes in at $29, and it fits most car cup holders.
+
+Thoughtful finds to brighten everyday routines. That was our test for this list. A rechargeable LED desk lamp with three color temperatures ($34) makes a dim apartment feel warmer. A set of linen kitchen towels ($22) is the upgrade nobody buys for themselves. A compact charger that powers a phone and earbuds at once ($27) solves the tangle on every nightstand.
+
+For readers, we like a clip-on book light ($15) paired with a gift card to a local bookstore. For cooks, a cast iron skillet ($32) will outlast the holiday season by a few decades. Kids aged six and up loved a build-your-own marble run ($41) in our testing.
+
+Prices were checked on November 20 and may change. We earn nothing from these picks; we simply bought, used and compared them. Scroll down for the full list of 20 gifts, sorted by price.`,
+  },
+  {
+    id: "pg-desk-upgrades",
+    url: "worklife.example/desk-upgrades-worth-buying",
+    site: "worklife.example",
+    title: "Desk upgrades worth buying",
+    topicPath: "Shopping > Home & Office",
+    partnerTier: 1, country: "US", trafficPerDay: 52000,
+    purpose: "product_comparison", tone: "practical", confidence: 0.81, sensitive: [], status: "fresh", classifiedHoursAgo: 3,
+    evPurpose: "We tested six monitor stands, four desk mats and three keyboard trays side by side.",
+    evTone: "Spend where you sit longest, and skip the gadgets that only look good in photos.",
+    text: `A good desk setup is less about style and more about the hours you spend at it. We tested six monitor stands, four desk mats and three keyboard trays side by side. Here is what earned a permanent spot.
+
+Monitor stands first. The aluminum riser at $45 beat the bamboo model on stability, and it leaves room for a keyboard underneath. The clamp-on arm at $89 is better if you share a desk, but it takes twenty minutes to install and needs a sturdy edge.
+
+Desk mats were closer. The felt mat ($24) is quiet and soft under the wrist, while the vegan leather version ($31) wipes clean after a coffee spill. Both stopped our chairs from scratching the desk surface.
+
+Keyboard trays were the surprise. Two of the three wobbled when we typed fast. Only the steel tray ($72) stayed put, and it is the one we would buy again.
+
+Spend where you sit longest, and skip the gadgets that only look good in photos. A cable tray under the desk ($19) did more for our focus than any decorative organizer. If you are buying for someone who works from home, a stand and a mat together come in under $70 and get used every day.`,
+  },
+  {
+    id: "pg-toy-recall",
+    url: "dailynews.example/holiday-toy-recall-40k-gifts",
+    site: "dailynews.example",
+    title: "Holiday toy recall: 40k gifts pulled",
+    topicPath: "Shopping > Gifts > Holiday",
+    partnerTier: 1, country: "US", trafficPerDay: 64000,
+    purpose: "safety_report", tone: "serious", confidence: 0.58, sensitive: ["recalls"], status: "needs_review", classifiedHoursAgo: 1,
+    evPurpose: "Federal regulators announced a recall of about 40,000 battery-powered plush toys on Thursday.",
+    evTone: "Parents should stop using the toys immediately and remove the batteries.",
+    text: `Federal regulators announced a recall of about 40,000 battery-powered plush toys on Thursday. The toys were sold as holiday gifts at several national retailers and online between September and November.
+
+The recall follows 14 reports of the battery compartment opening during normal play. In three cases, children were treated for swallowing small button batteries. No deaths have been reported.
+
+Parents should stop using the toys immediately and remove the batteries. The affected toys are a singing reindeer and a light-up snowman, both about ten inches tall, with a lot number printed on the tag sewn into the seam.
+
+Retailers have pulled the remaining stock from shelves. Customers can return the toys to any store for a full refund, with or without a receipt, or request a prepaid mailing label from the manufacturer.
+
+Safety advocates say the timing is especially concerning. Many families buy gifts early and store them until the holidays, which means some recalled toys may not be opened for weeks. Officials urged anyone who has already wrapped a gift to check the label before giving it.
+
+The manufacturer said in a statement that it is redesigning the battery door with a screw closure. A full list of lot numbers is available on the regulator's recall page.`,
+  },
+  {
+    id: "pg-chargers",
+    url: "techreview.example/best-compact-chargers",
+    site: "techreview.example",
+    title: "Best compact chargers",
+    topicPath: "Shopping > Electronics > Chargers",
+    partnerTier: 2, country: "US", trafficPerDay: 41000,
+    purpose: "product_comparison", tone: "practical", confidence: 0.77, sensitive: [], status: "stale", classifiedHoursAgo: 410,
+    evPurpose: "We compared nine compact USB-C chargers on speed, heat and size, using the same phone, tablet and thin laptop for every test.",
+    evTone: "If you only buy one, get a two-port model that fits in a jacket pocket.",
+    text: `Chargers keep shrinking while phones and laptops keep asking for more power. We compared nine compact USB-C chargers on speed, heat and size, using the same phone, tablet and thin laptop for every test.
+
+The 65-watt two-port model was the best all-rounder. It filled a phone to 50 percent in 24 minutes and still had enough headroom to charge a laptop at the same time. It got warm, but never too hot to touch.
+
+The 30-watt single-port charger is the pick for travelers. It is the size of a matchbox and weighs less than two ounces. It will not charge a laptop quickly, but it handles a phone and earbuds with ease.
+
+Two models in our test throttled badly once they warmed up, losing almost half their speed after ten minutes. We left them off the list.
+
+If you only buy one, get a two-port model that fits in a jacket pocket. Look for folding prongs, a clear wattage label and a cable that is rated for the same power. Prices in this guide ranged from $19 to $49 when we last checked.`,
+  },
+  {
+    id: "pg-santa-satire",
+    url: "funnypages.example/santa-elves-unionize",
+    site: "funnypages.example",
+    title: "Satire: Santa unionizes elves",
+    topicPath: "Entertainment > Humor",
+    partnerTier: 1, country: "US", trafficPerDay: 22000,
+    purpose: "entertainment", tone: "satirical", confidence: 0.9, sensitive: [], status: "fresh", classifiedHoursAgo: 5,
+    evPurpose: "This is satire, and no elves were harmed in the making of this article.",
+    evTone: "Management has offered the elves an extra candy cane per shift, which the union called insulting.",
+    text: `NORTH POLE — In a move that stunned the reindeer community, the elves of Santa's workshop voted 4,112 to 3 on Monday to form the International Brotherhood of Toymakers and Cookie Tasters.
+
+The three votes against came from elves who said they had not read the ballot because they were busy painting rocking horses.
+
+Union leaders presented a list of demands that includes a 32-hour week, dental coverage for sugar-related injuries, and a ban on the phrase "just one more sleigh load." They also want the workshop's music changed. "We have heard the same twelve songs since 1843," said one shop steward.
+
+Management has offered the elves an extra candy cane per shift, which the union called insulting. Mrs. Claus, who runs payroll, said she is open to talks but warned that the workshop operates on cookies and goodwill.
+
+Santa himself declined to comment, though witnesses saw him pacing near the stables and muttering about the naughty list. Rudolph has reportedly offered to mediate.
+
+A strike could begin as early as December 1, which would leave only the reindeer to wrap gifts. Experts say this would be a disaster, as reindeer do not have thumbs.
+
+This is satire, and no elves were harmed in the making of this article.`,
+  },
+  {
+    id: "pg-retail-layoffs",
+    url: "bizwire.example/retailer-cuts-2000-jobs",
+    site: "bizwire.example",
+    title: "Retailer cuts 2,000 jobs before holidays",
+    topicPath: "News > Business > Retail",
+    partnerTier: 1, country: "US", trafficPerDay: 47000,
+    purpose: "news", tone: "negative", confidence: 0.86, sensitive: ["layoffs"], status: "fresh", classifiedHoursAgo: 6,
+    evPurpose: "A national department store chain said on Wednesday that it will cut about 2,000 corporate and distribution jobs.",
+    evTone: "Workers described the timing as cruel, coming weeks before the busiest season of the year.",
+    text: `A national department store chain said on Wednesday that it will cut about 2,000 corporate and distribution jobs. The cuts amount to roughly 4 percent of its workforce, as it closes two regional warehouses and consolidates its buying teams.
+
+The company blamed weaker spending on home goods and apparel, and higher shipping costs that it said had squeezed margins through the summer. Its shares fell 6 percent in morning trading.
+
+Workers described the timing as cruel, coming weeks before the busiest season of the year. Several employees at a warehouse in Ohio said they learned about the cuts from a recorded video message. The company said affected staff will receive at least eight weeks of severance and help finding new roles.
+
+Store employees are not affected, and all locations will stay open through the holidays, a spokesperson said.
+
+Analysts said the move reflects a broader shift. Shoppers are buying more online and waiting longer for discounts, which forces retailers to rethink how much inventory they hold. Two other chains announced smaller cuts last month.
+
+The company will report its quarterly results in early December. It said it still expects holiday sales to be flat compared with last year.`,
+  },
+  {
+    id: "pg-stocking-stuffers",
+    url: "giftguide.example/stocking-stuffers-under-25",
+    site: "giftguide.example",
+    title: "15 stocking stuffers under $25",
+    topicPath: "Shopping > Gifts > Holiday",
+    partnerTier: 1, country: "US", trafficPerDay: 68000,
+    purpose: "buying_guide", tone: "upbeat", confidence: 0.88, sensitive: [], status: "fresh", classifiedHoursAgo: 4,
+    evPurpose: "Here are 15 small gifts under $25 that people actually keep using after the holidays.",
+    evTone: "Tiny gifts, big smiles, and not a single novelty mug in sight.",
+    text: `Stockings are where good intentions go to become clutter. Here are 15 small gifts under $25 that people actually keep using after the holidays.
+
+Tiny gifts, big smiles, and not a single novelty mug in sight. We started with the stuff that gets lost the most: a four-pack of bright cable ties ($8), a key finder tag ($19) and a set of reusable produce bags ($12).
+
+For the person who is always cold, rechargeable hand warmers ($22) last about six hours and double as a phone power bank. For the home cook, a magnetic measuring spoon set ($14) snaps together in the drawer.
+
+Kids liked a pocket-sized drawing pad with a magnetic stylus ($11) and a deck of travel card games ($9). Teenagers were harder to impress, but a clip-on phone grip ($13) and a mini instant camera film pack ($18) both won approval.
+
+Rounding out the list are fuzzy socks with grippy soles ($10), a lip balm trio ($7), a stainless steel straw kit ($9), a mini flashlight ($15), a bookmark with a built-in light ($12), and a small succulent in a ceramic pot ($16).
+
+All prices were checked this week. Mix and match to fill a stocking for under $50.`,
+  },
+  {
+    id: "pg-gifts-for-cooks",
+    url: "kitchenwise.example/gifts-for-home-cooks",
+    site: "kitchenwise.example",
+    title: "Gifts for home cooks that actually get used",
+    topicPath: "Shopping > Gifts",
+    partnerTier: 1, country: "US", trafficPerDay: 46000,
+    purpose: "buying_guide", tone: "practical", confidence: 0.83, sensitive: [], status: "fresh", classifiedHoursAgo: 8,
+    evPurpose: "This guide covers the kitchen gifts our test cooks reached for most over three months.",
+    evTone: "Skip the gadgets with one job and buy tools that earn their drawer space.",
+    text: `Every cook has a drawer of gifts they never use: the avocado slicer, the herb scissors, the garlic press that is impossible to clean. This guide covers the kitchen gifts our test cooks reached for most over three months.
+
+Skip the gadgets with one job and buy tools that earn their drawer space. A sharp eight-inch chef's knife ($45) tops our list. Most home cooks are still using the knife that came in a block set, and a good one changes how cooking feels.
+
+An instant-read thermometer ($24) was the second most used tool. It takes the guessing out of roasts, chicken and even bread.
+
+A heavy rimmed sheet pan ($19) sounds boring, but our testers used it four or five times a week for vegetables, cookies and sheet-pan dinners. A bench scraper ($9) moves chopped onions, cleans counters and portions dough.
+
+For a splurge under $50, a five-quart Dutch oven in enameled cast iron ($49) handles soups, stews and no-knead bread.
+
+Pair any of these with a handwritten recipe card, and you have a gift that will be used every week.`,
+  },
+  {
+    id: "pg-earbuds",
+    url: "techreview.example/wireless-earbuds-under-50",
+    site: "techreview.example",
+    title: "Wireless earbuds under $50, compared",
+    topicPath: "Shopping > Electronics > Audio",
+    partnerTier: 1, country: "US", trafficPerDay: 58000,
+    purpose: "product_comparison", tone: "neutral", confidence: 0.79, sensitive: [], status: "fresh", classifiedHoursAgo: 12,
+    evPurpose: "We compared seven pairs of budget earbuds on fit, battery life, call quality and noise cancellation.",
+    evTone: "None of these match premium earbuds, but two come surprisingly close for everyday listening.",
+    text: `Budget earbuds used to mean tinny sound and constant dropouts. That has changed. We compared seven pairs of budget earbuds on fit, battery life, call quality and noise cancellation. All of them are priced under $50.
+
+Our top pick costs $39 and lasted seven hours on a charge, with three more charges in the case. Its fit was secure enough for running, and the app lets you adjust the bass.
+
+The runner-up, at $45, has the best noise cancellation in the group. It cut the hum of a bus engine noticeably, though it struggled with voices. Call quality was average.
+
+The cheapest pair we tested, at $22, is fine for podcasts but fell out during workouts. Two pairs lost connection when a phone was in a back pocket, so we did not include them.
+
+None of these match premium earbuds, but two come surprisingly close for everyday listening. If you are buying for a teenager or a commuter who tends to lose things, these are a sensible choice.
+
+Battery figures are from our own tests at 50 percent volume. Prices were checked on November 19.`,
+  },
+  {
+    id: "pg-coffee-makers",
+    url: "kitchenwise.example/drip-vs-pod-coffee-makers",
+    site: "kitchenwise.example",
+    title: "Drip vs. pod coffee makers: which to buy",
+    topicPath: "Shopping > Home & Kitchen",
+    partnerTier: 1, country: "US", trafficPerDay: 33000,
+    purpose: "product_comparison", tone: "practical", confidence: 0.8, sensitive: [], status: "fresh", classifiedHoursAgo: 20,
+    evPurpose: "We ran drip and pod machines side by side for a month to compare cost per cup, taste and cleanup.",
+    evTone: "If you drink more than two cups a day, a drip machine pays for itself within a year.",
+    text: `Pod machines win on speed. Drip machines win on cost. But the details matter. We ran drip and pod machines side by side for a month to compare cost per cup, taste and cleanup.
+
+The numbers first. Pods averaged 68 cents a cup in our test. Ground coffee in a drip machine came to about 22 cents. If you drink more than two cups a day, a drip machine pays for itself within a year.
+
+Taste was closer than we expected. Our panel preferred the drip coffee in blind tests, but only by a small margin, and the best pods scored higher than the cheapest drip machine.
+
+Cleanup favored pods. There is no filter to empty and no carafe to scrub. Drip machines need a monthly descaling, which most people forget.
+
+Waste is the other issue. Even recyclable pods often end up in the trash because they must be emptied first.
+
+Our recommendation: choose a pod machine for a single person who wants one cup in the morning, and a drip machine for a household that drinks a full pot. Both of our top picks cost less than $80.`,
+  },
+  {
+    id: "pg-ski-weekend",
+    url: "travelnotes.example/first-ski-weekend-guide",
+    site: "travelnotes.example",
+    title: "A first-timer's guide to booking a ski weekend",
+    topicPath: "Travel > Winter Trips",
+    partnerTier: 1, country: "US", trafficPerDay: 29000,
+    purpose: "how_to", tone: "upbeat", confidence: 0.82, sensitive: [], status: "fresh", classifiedHoursAgo: 30,
+    evPurpose: "Follow these steps to plan a ski weekend without overspending.",
+    evTone: "Your first morning on the snow will be wobbly, and that is half the fun.",
+    text: `Booking a ski trip for the first time can feel like learning a new language: lift passes, rentals, lessons, slope ratings. Follow these steps to plan a ski weekend without overspending.
+
+Pick the right mountain. Smaller resorts within a three-hour drive are often cheaper and less crowded, and they have gentle beginner areas. Big-name resorts are fun, but you will not use most of the terrain on your first trip.
+
+Book lessons and rentals together. Most resorts sell a beginner package with a lift ticket, ski or snowboard rental and a group lesson. It is almost always cheaper than buying each piece separately, especially if you book a week ahead online.
+
+Stay close, not fancy. A basic motel ten minutes from the lifts costs half as much as slopeside lodging. Look for places with a shuttle.
+
+Dress in layers. You will warm up quickly while learning. Waterproof pants and gloves matter more than an expensive jacket.
+
+Your first morning on the snow will be wobbly, and that is half the fun. By the afternoon, most beginners can ride the easy lift and make it down without falling. Celebrate with hot chocolate either way.`,
+  },
+  {
+    id: "pg-cheap-flights",
+    url: "travelnotes.example/cheaper-holiday-flights",
+    site: "travelnotes.example",
+    title: "How to find cheaper holiday flights",
+    topicPath: "Travel > Flights",
+    partnerTier: 1, country: "US", trafficPerDay: 37000,
+    purpose: "how_to", tone: "practical", confidence: 0.85, sensitive: [], status: "fresh", classifiedHoursAgo: 26,
+    evPurpose: "These six steps helped our readers save an average of $140 per ticket last December.",
+    evTone: "Flexibility beats any secret trick, so start with your dates before you look at prices.",
+    text: `Holiday airfare is expensive, but it is not random. These six steps helped our readers save an average of $140 per ticket last December.
+
+Flexibility beats any secret trick, so start with your dates before you look at prices. Flying on Christmas Day or the day after is often 30 percent cheaper than the weekend before.
+
+Compare nearby airports. A second airport an hour away can cut fares dramatically, especially for families buying four or more tickets.
+
+Set price alerts instead of checking every day. Fares for domestic holiday travel usually bottom out four to six weeks before departure, then climb quickly.
+
+Watch the fees. A low base fare can end up more expensive once you add a carry-on bag and seat selection. Compare the total price for your actual trip.
+
+Use points carefully. Airline miles are often worth more for last-minute holiday flights, when cash prices spike.
+
+Finally, book refundable or changeable fares if your plans may shift. The extra cost can be small compared with a change fee. Holiday travel is stressful enough without losing money on a ticket you cannot use.`,
+  },
+  {
+    id: "pg-holiday-budget",
+    url: "moneysense.example/holiday-budget-you-will-keep",
+    site: "moneysense.example",
+    title: "How to set a holiday budget you'll stick to",
+    topicPath: "Finance > Personal Budgeting",
+    partnerTier: 1, country: "US", trafficPerDay: 31000,
+    purpose: "how_to", tone: "practical", confidence: 0.83, sensitive: [], status: "fresh", classifiedHoursAgo: 18,
+    evPurpose: "Use this four-step method to set a holiday budget before you buy a single gift.",
+    evTone: "A budget is not about saying no; it is about deciding ahead of time what matters most.",
+    text: `Holiday spending creeps up quietly: a gift here, a party there, an extra grocery run. Use this four-step method to set a holiday budget before you buy a single gift.
+
+First, pick a total. Look at what you can cover from this month's income and savings without using credit. Write that number down where you will see it.
+
+Second, list every category, not just gifts. Include travel, food, decorations, wrapping, shipping and charitable giving. These extras often add 30 percent to what people expect to spend.
+
+Third, assign amounts to each person on your list. It helps to group people into tiers: close family, friends, coworkers. Agree on a spending limit with family members if you can.
+
+Fourth, track as you go. A simple note on your phone works. Subtract every purchase from the category it belongs to.
+
+A budget is not about saying no; it is about deciding ahead of time what matters most. Readers who planned this way told us they enjoyed the season more, because January did not arrive with a surprise credit card bill.`,
+  },
+  {
+    id: "pg-credit-cards",
+    url: "moneysense.example/credit-card-rewards-holiday",
+    site: "moneysense.example",
+    title: "Credit card rewards compared for holiday spending",
+    topicPath: "Finance > Credit Cards",
+    partnerTier: 1, country: "US", trafficPerDay: 27000,
+    purpose: "product_comparison", tone: "neutral", confidence: 0.78, sensitive: [], status: "fresh", classifiedHoursAgo: 40,
+    evPurpose: "We compared flat cashback, rotating categories and store cards on a typical $1,200 holiday budget.",
+    evTone: "Rewards only pay off if you clear the balance every month.",
+    text: `Holiday shopping is when card rewards can add up, but the best card depends on how you shop. We compared flat cashback, rotating categories and store cards on a typical $1,200 holiday budget.
+
+A flat 2 percent cashback card earned $24 on our sample budget, with no tracking required. It is the simplest option and works everywhere.
+
+Rotating category cards earned the most, $41, but only because the fourth-quarter bonus happened to cover department stores and online shopping. In other years, the categories might not match your spending.
+
+Store cards offered the biggest headline discounts, often 15 to 20 percent off the first purchase. But the rewards only apply at one retailer, and their interest rates were the highest in our comparison.
+
+Rewards only pay off if you clear the balance every month. Carrying a $1,200 balance at a typical rate for three months would cost more than any card earns in rewards.
+
+Our take: use a flat cashback card for most purchases, and only open a store card if you were already planning a large purchase at that store.`,
+  },
+  {
+    id: "pg-holiday-debt",
+    url: "moneysense.example/when-holiday-debt-overwhelms",
+    site: "moneysense.example",
+    title: "When holiday debt becomes overwhelming",
+    topicPath: "Finance > Debt",
+    partnerTier: 1, country: "US", trafficPerDay: 18000,
+    purpose: "how_to", tone: "serious", confidence: 0.8, sensitive: ["financial_distress"], status: "fresh", classifiedHoursAgo: 22,
+    evPurpose: "If you are behind on payments, these steps can help you regain control.",
+    evTone: "Falling behind is common, and it is not a personal failure.",
+    text: `For many households, January brings a stack of bills that feels impossible to pay. If you are behind on payments, these steps can help you regain control.
+
+Falling behind is common, and it is not a personal failure. Surveys suggest that more than a third of shoppers take on holiday debt, and many are still paying it off by spring.
+
+Start by listing every debt: who you owe, the balance, the interest rate and the minimum payment. Seeing it in one place makes the problem smaller and clearer.
+
+Call your lenders before you miss a payment. Many offer hardship programs that lower interest or pause payments for a few months. They are more flexible when you contact them early.
+
+Protect essentials first: housing, utilities, food and transportation to work. Credit card debt matters, but not more than keeping the lights on.
+
+Be wary of quick fixes. Debt settlement companies that charge large upfront fees can leave you worse off. A nonprofit credit counselor can help you build a plan for free or at low cost.
+
+If debt is affecting your sleep or health, talk to someone you trust. Help is available, and the first step is often the hardest.`,
+  },
+  {
+    id: "pg-cookies",
+    url: "homecook.example/five-ingredient-holiday-cookies",
+    site: "homecook.example",
+    title: "Five-ingredient holiday cookies",
+    topicPath: "Food & Drink > Baking",
+    partnerTier: 1, country: "US", trafficPerDay: 34000,
+    purpose: "how_to", tone: "upbeat", confidence: 0.87, sensitive: [], status: "fresh", classifiedHoursAgo: 15,
+    evPurpose: "Here is how to make three batches of cookies with the same five pantry ingredients.",
+    evTone: "These cookies are forgiving, cheerful and nearly impossible to mess up.",
+    text: `Holiday baking does not need a long shopping list. Here is how to make three batches of cookies with the same five pantry ingredients. You need butter, sugar, flour, eggs and vanilla.
+
+These cookies are forgiving, cheerful and nearly impossible to mess up. Start with a basic dough: cream one cup of softened butter with three quarters of a cup of sugar until fluffy. Beat in one egg and a teaspoon of vanilla. Stir in two and a quarter cups of flour until just combined.
+
+Divide the dough into three bowls.
+
+For thumbprints, roll the first bowl into small balls, press a dent into each with your thumb, and fill with jam after baking.
+
+For slice-and-bake rounds, roll the second bowl into a log, chill it for an hour, then cut quarter-inch slices. Dip the edges in sprinkles if you have them.
+
+For cut-outs, roll the third bowl between two sheets of parchment and use any cookie cutter you own.
+
+Bake everything at 350 degrees for 10 to 12 minutes, until the edges are just golden. Let the cookies cool on the pan for five minutes before moving them. They keep for a week in a tin, if they last that long.`,
+  },
+  {
+    id: "pg-roast-dinner",
+    url: "homecook.example/holiday-roast-timeline",
+    site: "homecook.example",
+    title: "Roast dinner timeline for a stress-free holiday",
+    topicPath: "Food & Drink > Recipes",
+    partnerTier: 1, country: "US", trafficPerDay: 26000,
+    purpose: "how_to", tone: "practical", confidence: 0.84, sensitive: [], status: "fresh", classifiedHoursAgo: 33,
+    evPurpose: "Use this hour-by-hour timeline to get the roast, sides and gravy on the table together.",
+    evTone: "Most of the work happens the day before, so the day itself stays calm.",
+    text: `The hardest part of a holiday roast is not the cooking. It is the timing. Use this hour-by-hour timeline to get the roast, sides and gravy on the table together.
+
+Most of the work happens the day before, so the day itself stays calm. On the day before, peel and cut the potatoes and keep them in cold water in the fridge. Make the cranberry sauce and the dessert. Set the table.
+
+Five hours before dinner, take the roast out of the fridge so it can come to room temperature. Three and a half hours before, put it in the oven.
+
+Ninety minutes before dinner, parboil the potatoes and toss them in hot fat. They go into the oven when the roast comes out.
+
+One hour before, take the roast out and cover it loosely with foil. It needs at least 45 minutes to rest, and it will stay hot.
+
+Thirty minutes before, make the gravy from the pan drippings and steam the green vegetables.
+
+Carve at the table. Nobody minds waiting five extra minutes when everything is hot at once.`,
+  },
+  {
+    id: "pg-laptop-bf",
+    url: "techreview.example/buy-laptop-black-friday",
+    site: "techreview.example",
+    title: "Should you buy a laptop on Black Friday?",
+    topicPath: "Shopping > Electronics > Computers",
+    partnerTier: 1, country: "US", trafficPerDay: 39000,
+    purpose: "opinion", tone: "neutral", confidence: 0.74, sensitive: [], status: "stale", classifiedHoursAgo: 380,
+    evPurpose: "In my view, Black Friday is a good time to buy a laptop only if you already know the exact model you want.",
+    evTone: "Discounts are real, but so are the shortcuts some deals take.",
+    text: `Every November, readers ask whether they should wait for Black Friday to buy a new laptop. In my view, Black Friday is a good time to buy a laptop only if you already know the exact model you want.
+
+Discounts are real, but so are the shortcuts some deals take. Many of the cheapest doorbuster laptops are special versions made for the sales, with less memory, slower storage or dimmer screens than the models reviewers tested earlier in the year.
+
+If you have done your research and the model you want drops by $150 or more, that is a genuine deal. Price history tools can show whether the "sale" price is really lower than usual.
+
+If you need a laptop for school or work right now, do not wait for a deal that saves you $50. A computer you can use today is worth more than one you buy in two weeks.
+
+Look at memory first. In 2026, 16GB is the sensible minimum for most people. Storage can be expanded with an external drive, but memory usually cannot.
+
+My advice: make a short list now, set price alerts, and buy when a model on your list hits its lowest price.`,
+  },
+  {
+    id: "pg-budget-phone",
+    url: "techreview.example/budget-phone-review",
+    site: "techreview.example",
+    title: "Budget phone review: solid camera, weak speaker",
+    topicPath: "Technology > Phones",
+    partnerTier: 1, country: "US", trafficPerDay: 24000,
+    purpose: "product_comparison", tone: "neutral", confidence: 0.72, sensitive: [], status: "fresh", classifiedHoursAgo: 52,
+    evPurpose: "We used the phone for two weeks and compared it with last year's model and two rivals.",
+    evTone: "It is a sensible phone with one annoying flaw.",
+    text: `Budget phones keep getting better, and this year's model is no exception. We used the phone for two weeks and compared it with last year's model and two rivals. Both rivals sit in the same price range.
+
+It is a sensible phone with one annoying flaw. The speaker is thin and distorts at high volume, which makes video calls without headphones unpleasant.
+
+Everything else is solid. The main camera takes sharp daylight photos with natural color, and the night mode is a clear step up from last year. The ultrawide camera is weaker, with soft edges.
+
+Battery life was excellent. We regularly ended the day with 40 percent left after heavy use. The included charger is slow, though, taking almost two hours to fill the battery.
+
+The screen is bright enough to read outdoors and refreshes smoothly. Performance is fine for social apps and maps, but large games stutter.
+
+Compared with its two rivals, this phone has the better camera and longer software support, promising five years of updates. One rival has a much better speaker. If you mostly use headphones, this is the one to buy.`,
+  },
+  {
+    id: "pg-screen-time",
+    url: "familylife.example/screen-time-winter-break",
+    site: "familylife.example",
+    title: "Setting screen-time rules over winter break",
+    topicPath: "Family & Parenting > Kids",
+    partnerTier: 1, country: "US", trafficPerDay: 21000,
+    purpose: "how_to", tone: "practical", confidence: 0.81, sensitive: [], status: "fresh", classifiedHoursAgo: 28,
+    evPurpose: "These five steps can help you set screen-time rules your kids will actually follow over the break.",
+    evTone: "The goal is not zero screens; it is a plan everyone agreed to.",
+    text: `Two weeks without school can turn into two weeks on the couch with a tablet. These five steps can help you set screen-time rules your kids will actually follow over the break.
+
+The goal is not zero screens; it is a plan everyone agreed to. Sit down together before the break starts and talk about what a good day looks like.
+
+Agree on screen-free times rather than total hours. Meals, the first hour after waking and the hour before bed are easy places to start. They are easier to enforce than a daily total.
+
+Plan a few anchors for each day: a walk, a board game, a trip to the library, time with friends. When kids know something fun is coming, they put devices down more easily.
+
+Use the built-in controls on phones and tablets, but explain why you are using them. Children push back less when the rules are clear and the same for everyone, including parents.
+
+Finally, expect some flexibility. A long car trip or a snowy afternoon might mean extra screen time, and that is fine. Breaks are supposed to feel like breaks.`,
+  },
+  {
+    id: "pg-stem-gifts",
+    url: "familylife.example/stem-gifts-kids-6-10",
+    site: "familylife.example",
+    title: "STEM gifts for kids 6–10",
+    topicPath: "Shopping > Gifts > Kids",
+    partnerTier: 1, country: "US", trafficPerDay: 39000,
+    purpose: "buying_guide", tone: "upbeat", confidence: 0.86, sensitive: [], status: "fresh", classifiedHoursAgo: 9,
+    evPurpose: "We asked a dozen kids to test science and building kits, and these eight were the clear favorites.",
+    evTone: "Every one of these kept a curious kid busy for a whole rainy afternoon.",
+    text: `The best science gifts do not feel like homework. We asked a dozen kids to test science and building kits, and these eight were the clear favorites.
+
+Every one of these kept a curious kid busy for a whole rainy afternoon. The top pick was a snap-together circuit kit ($35) that lets kids build a working doorbell, fan and alarm without soldering. Our testers aged seven and up built every project in the booklet within a week.
+
+A crystal-growing kit ($18) was the most exciting to watch, with crystals forming overnight. A marble run with 120 pieces ($41) was the most popular with six-year-olds, who built towers taller than themselves.
+
+For kids who like screens, a coding robot ($49) that follows lines drawn with markers was a hit, and it does not need a tablet.
+
+Rounding out the list are a kid-safe microscope ($32), a weather station ($27), a solar-powered car kit ($22) and a set of magnetic building tiles ($39).
+
+All of these are under $50. Adult help is needed for some steps, especially for the younger testers.`,
+  },
+  {
+    id: "pg-flu-season",
+    url: "healthdaily.example/flu-season-when-to-see-doctor",
+    site: "healthdaily.example",
+    title: "Flu season: when to see a doctor",
+    topicPath: "Health > Conditions",
+    partnerTier: 1, country: "US", trafficPerDay: 30000,
+    purpose: "how_to", tone: "serious", confidence: 0.55, sensitive: ["health"], status: "needs_review", classifiedHoursAgo: 2,
+    evPurpose: "Here is how to tell whether flu symptoms can be managed at home or need a doctor.",
+    evTone: "Seek emergency care right away if someone has trouble breathing or chest pain.",
+    text: `Flu cases are rising across much of the country, and doctors expect the season to peak in late December. Here is how to tell whether flu symptoms can be managed at home or need a doctor.
+
+Most healthy adults recover in about a week with rest, fluids and over-the-counter fever reducers. Stay home until you have been fever-free for at least 24 hours without medicine, to avoid spreading it.
+
+Call a doctor early if you are in a higher-risk group: adults over 65, young children, pregnant people, and anyone with asthma, diabetes or heart disease. Antiviral medicine works best when started within two days of the first symptoms.
+
+Seek emergency care right away if someone has trouble breathing or chest pain. Other warning signs include confusion, severe weakness, a fever that returns after improving, and signs of dehydration in children, such as no tears when crying.
+
+It is not too late to get a flu shot. It takes about two weeks to become fully effective, which means getting one now still offers protection through the holidays.
+
+This article is general information and is not a substitute for medical advice.`,
+  },
+  {
+    id: "pg-winter-workouts",
+    url: "healthdaily.example/ten-minute-winter-workouts",
+    site: "healthdaily.example",
+    title: "Ten-minute winter workouts",
+    topicPath: "Health > Fitness",
+    partnerTier: 1, country: "US", trafficPerDay: 23000,
+    purpose: "how_to", tone: "upbeat", confidence: 0.85, sensitive: [], status: "fresh", classifiedHoursAgo: 44,
+    evPurpose: "Try these three ten-minute routines that need no equipment and very little space.",
+    evTone: "Ten minutes is enough to feel warmer, brighter and more awake.",
+    text: `Cold, dark mornings make it hard to keep moving. Try these three ten-minute routines that need no equipment and very little space.
+
+Ten minutes is enough to feel warmer, brighter and more awake. Each routine uses 40 seconds of work and 20 seconds of rest, repeated twice through five moves.
+
+Routine one, the wake-up: marching in place, arm circles, bodyweight squats, standing side bends and a slow shoulder roll. It is gentle enough for any fitness level.
+
+Routine two, the warm-up: jumping jacks or step jacks, lunges, push-ups against a wall or counter, high knees and a plank. Expect to break a light sweat.
+
+Routine three, the strength set: squats with a pause at the bottom, glute bridges, a slow push-up, a side plank on each side and calf raises. Go slowly and focus on form.
+
+Pick one routine each morning, or stack two on weekends. Keep a pair of sneakers by the bed so there is one less excuse.
+
+If you are new to exercise or have a health condition, check with a doctor before starting a new routine.`,
+  },
+  {
+    id: "pg-gift-cards-opinion",
+    url: "worklife.example/in-defense-of-the-gift-card",
+    site: "worklife.example",
+    title: "In defense of the gift card",
+    topicPath: "Shopping > Gifts",
+    partnerTier: 1, country: "US", trafficPerDay: 19000,
+    purpose: "opinion", tone: "practical", confidence: 0.76, sensitive: [], status: "fresh", classifiedHoursAgo: 60,
+    evPurpose: "I think the gift card is the most underrated present of the season.",
+    evTone: "Giving someone the choice is not lazy; it is respectful of their time and taste.",
+    text: `Every year someone tells me that gift cards are thoughtless. I disagree. I think the gift card is the most underrated present of the season.
+
+Giving someone the choice is not lazy; it is respectful of their time and taste. Adults usually know exactly what they need, and many of them are tired of returning sweaters in January.
+
+Gift cards are also kind to people with tight budgets. A card from a grocery store or a gas station can matter more to a young family than any decorative object, and it does not carry the awkwardness of handing over cash.
+
+The trick is to make it personal. Pick a place the person already loves: the bookstore they always visit, the cafe near their office, the hardware store where they spend Saturday mornings. Add a note about why you chose it.
+
+There are a few rules. Check the fees and expiry dates, which vary by state. Prefer cards from businesses that are likely to be around next year. And give an amount that is useful, not symbolic.
+
+A gift card says, "I trust you." That feels like a pretty good holiday message.`,
+  },
+  {
+    id: "pg-shipping-delays",
+    url: "dailynews.example/carriers-warn-holiday-shipping-delays",
+    site: "dailynews.example",
+    title: "Carriers warn of holiday shipping delays",
+    topicPath: "News > Business > Retail",
+    partnerTier: 1, country: "US", trafficPerDay: 36000,
+    purpose: "news", tone: "neutral", confidence: 0.83, sensitive: [], status: "fresh", classifiedHoursAgo: 7,
+    evPurpose: "The country's largest parcel carriers said on Tuesday that holiday package volumes are expected to reach a record this year.",
+    evTone: "Carriers published their recommended last shipping dates for ground delivery before December 25.",
+    text: `The country's largest parcel carriers said on Tuesday that holiday package volumes are expected to reach a record this year. They urged shoppers to send gifts early.
+
+The carriers expect to move about 1.9 billion packages between Thanksgiving and New Year's Day, up 4 percent from last year. Online sales are growing faster than in-store sales, and more retailers now offer free shipping on small orders.
+
+Carriers published their recommended last shipping dates for ground delivery before December 25. For most of the continental United States, the suggested cutoff for ground shipping is December 16. Express services will accept packages until December 22.
+
+Rural areas and Alaska and Hawaii may need several extra days.
+
+Retailers are also adjusting. Several large chains said they would expand in-store pickup and set up temporary lockers in parking lots to reduce last-mile deliveries.
+
+Weather remains the biggest risk. A major winter storm in the Midwest last year delayed hundreds of thousands of packages for several days.
+
+Carriers said they had hired more than 200,000 seasonal workers to handle the peak.`,
+  },
+  {
+    id: "pg-uk-gifts",
+    url: "giftguide.example/uk/christmas-gifts-under-40",
+    site: "giftguide.example",
+    title: "Christmas gifts under £40",
+    topicPath: "Shopping > Gifts > Holiday",
+    partnerTier: 1, country: "GB", trafficPerDay: 42000,
+    purpose: "buying_guide", tone: "upbeat", confidence: 0.86, sensitive: [], status: "fresh", classifiedHoursAgo: 11,
+    evPurpose: "Our UK team rounded up 18 Christmas presents under £40 that we would be delighted to receive.",
+    evTone: "Cosy, clever and properly useful, with something for everyone on your list.",
+    text: `Christmas comes round faster every year, so we have done the legwork. Our UK team rounded up 18 Christmas presents under £40 that we would be delighted to receive.
+
+Cosy, clever and properly useful, with something for everyone on your list. For the person who feels the cold, a heated throw at £38 costs pennies an hour to run and makes the sofa the best seat in the house.
+
+Tea drinkers will love a glass teapot with a built-in infuser (£22), and coffee lovers a hand grinder (£35) that makes a noticeable difference to the morning cup.
+
+For walkers, a pair of merino walking socks (£16) and a pocket-sized flask (£19) both made our list. Gardeners will appreciate a kneeling pad and tool set (£28).
+
+Families with young children can pick up a wooden advent train (£34), and teenagers were keen on a portable speaker (£39) that survives being dropped.
+
+Prices were correct at the time of writing and include VAT. Order by 18 December for standard delivery before Christmas.`,
+  },
+  {
+    id: "pg-house-fire",
+    url: "dailynews.example/family-mourns-holiday-house-fire",
+    site: "dailynews.example",
+    title: "Family mourns after holiday house fire",
+    topicPath: "News > Local",
+    partnerTier: 1, country: "US", trafficPerDay: 25000,
+    purpose: "news", tone: "tragic", confidence: 0.9, sensitive: ["tragedy"], status: "fresh", classifiedHoursAgo: 5,
+    evPurpose: "A house fire on Maple Street early Sunday killed two people and left a family of five without a home.",
+    evTone: "Neighbors gathered on Monday evening to light candles outside the house.",
+    text: `A house fire on Maple Street early Sunday killed two people and left a family of five without a home. Fire officials confirmed the details on Monday.
+
+Firefighters arrived about 3 a.m. to find flames coming from the front of the two-story house. Three family members escaped through a back window. Two others, a grandmother and her adult son, died at the scene.
+
+Investigators said the fire appears to have started near a space heater in the living room. They have not ruled out other causes and expect to release a final report in several weeks.
+
+Neighbors gathered on Monday evening to light candles outside the house. Several said the family had lived on the street for more than twenty years and were known for decorating their porch every December.
+
+A local church has opened a collection for clothing and household items, and an online fundraiser had raised more than $40,000 by Monday night.
+
+Fire officials urged residents to keep space heaters at least three feet from anything that can burn, to plug them directly into the wall, and to test smoke alarms monthly. Winter is the peak season for home fires.`,
+  },
+  {
+    id: "pg-office-chairs",
+    url: "worklife.example/ergonomic-chairs-compared",
+    site: "worklife.example",
+    title: "Ergonomic chairs compared under $300",
+    topicPath: "Shopping > Home & Office",
+    partnerTier: 1, country: "US", trafficPerDay: 35000,
+    purpose: "product_comparison", tone: "practical", confidence: 0.82, sensitive: [], status: "fresh", classifiedHoursAgo: 16,
+    evPurpose: "We sat in eight ergonomic chairs for a full workweek each and compared adjustability, comfort and build.",
+    evTone: "Adjustability matters more than padding, so test the armrests and lumbar support first.",
+    text: `A good chair is the single biggest upgrade most home offices can make. We sat in eight ergonomic chairs for a full workweek each and compared adjustability, comfort and build. Every chair costs under $300.
+
+Adjustability matters more than padding, so test the armrests and lumbar support first. Our top pick, at $279, has armrests that move in four directions and a lumbar pad that slides up and down. Testers of different heights could all get comfortable within a minute.
+
+The best value, at $189, has fewer adjustments but a breathable mesh back that stayed cool through long afternoons. Its seat cushion flattened slightly by the end of the test.
+
+Two chairs looked great but caused back aches after a few days. Both had fixed lumbar curves that did not suit taller testers.
+
+Check the warranty. The best chairs in our test came with at least five years of coverage on the frame and mechanism.
+
+If you are buying for someone else, choose a model with a generous return window. Chairs are personal, and comfort is hard to judge from a photo.`,
+  },
+  {
+    id: "pg-garden-prep",
+    url: "gardenpost.example/winter-garden-checklist",
+    site: "gardenpost.example",
+    title: "Winter garden prep checklist",
+    topicPath: "Home & Garden",
+    partnerTier: 1, country: "US", trafficPerDay: 15000,
+    purpose: null, tone: null, confidence: 0, sensitive: [], status: "unclassified", classifiedHoursAgo: 0,
+    text: `A few hours of work in late autumn makes spring gardening much easier. Use this checklist before the ground freezes.
+
+Clean up diseased plants first. Leaves from tomatoes and roses that had blight or black spot should go in the trash, not the compost, so the problem does not return next year.
+
+Leave some seed heads standing. Coneflowers and grasses feed birds through the winter and give the garden some structure when everything else has died back.
+
+Mulch beds with shredded leaves or bark after the first hard frost. Mulch keeps the soil temperature steady and protects roots from freezing and thawing.
+
+Drain and store hoses, and turn off outdoor taps if you live where pipes freeze. Clean and oil your tools before putting them away.
+
+Plant spring bulbs now if you have not already. Tulips, daffodils and alliums need a cold period to bloom.
+
+Finally, make notes about what worked this year and what did not. In March, you will be glad you did.`,
+  },
+];

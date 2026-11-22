@@ -1,0 +1,93 @@
+[
+  {
+    "id": "exp-purpose-tone-pilot",
+    "name": "Purpose & tone pilot",
+    "status": "running",
+    "from": "2026-11-16",
+    "to": "2026-11-22",
+    "control": {
+      "requests": 50000,
+      "conversions": 300,
+      "cpa": 20,
+      "filtered": 0.4,
+      "fill": 82
+    },
+    "treatment": {
+      "requests": 50000,
+      "conversions": 315,
+      "cpa": 19.8,
+      "filtered": 0.5,
+      "fill": 81.9,
+      "p99Ms": 3.2,
+      "severe": 0
+    },
+    "guardrails": [
+      {
+        "metric": "Advertiser CPA",
+        "control": "$20.00",
+        "treatment": "$19.80",
+        "status": "passed",
+        "label": "Within tolerance"
+      },
+      {
+        "metric": "p99 added latency",
+        "control": "—",
+        "treatment": "3.2 ms",
+        "status": "passed",
+        "label": "Within configured 5ms"
+      },
+      {
+        "metric": "Severe unsuitable placements",
+        "control": "0",
+        "treatment": "0",
+        "status": "passed",
+        "label": "No incident observed"
+      },
+      {
+        "metric": "Legitimate activity filtered",
+        "control": "0.4%",
+        "treatment": "0.5%",
+        "status": "passed",
+        "label": "Within configured tolerance"
+      },
+      {
+        "metric": "Fill rate",
+        "control": "82.0%",
+        "treatment": "81.9%",
+        "status": "watch",
+        "label": "Review trend"
+      }
+    ],
+    "reconciliation": [
+      {
+        "label": "Contextual uplift",
+        "amount": 420,
+        "detail": "Incremental revenue on treatment placements vs. control, same campaigns."
+      },
+      {
+        "label": "Recovered inventory",
+        "amount": 1120,
+        "detail": "Pages previously blocked by topic-level keyword lists that passed purpose & tone checks."
+      },
+      {
+        "label": "Removed invalid activity",
+        "amount": -180,
+        "detail": "Unknown and suspected-invalid requests no longer billed as human."
+      }
+    ],
+    "rollout": [
+      {
+        "stage": "Shadow",
+        "state": "done"
+      },
+      {
+        "stage": "Pilot",
+        "state": "current"
+      },
+      {
+        "stage": "Ramp",
+        "state": "pending"
+      }
+    ]
+  }
+]

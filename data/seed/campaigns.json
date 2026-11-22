@@ -1,0 +1,804 @@
+[
+  {
+    "id": "cmp-kohls-holiday-2026",
+    "advertiserId": "adv-kohls",
+    "name": "Holiday Gifting 2026",
+    "status": "draft",
+    "source": "ui",
+    "brief": "Find US gift guides and product comparisons under $50. Prefer practical, upbeat content. Exclude product recalls and tragedy.",
+    "rules": {
+      "topics": [
+        "Shopping > Gifts",
+        "Shopping > Home & Office",
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "buying_guide",
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical",
+        "upbeat"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1,
+      "maxPriceHint": "$50"
+    },
+    "budget": "$180,000",
+    "flight": "24 Nov – 24 Dec 2026",
+    "bidCpm": 6.5,
+    "aiChannels": true,
+    "dealRequestId": null,
+    "createdAt": "2026-11-19T14:10:00.000Z",
+    "updatedAt": "2026-11-22T12:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-holiday-chargers-agent",
+    "advertiserId": "adv-voltmart",
+    "name": "Holiday Chargers (agent draft)",
+    "status": "draft",
+    "source": "mcp",
+    "brief": "US product comparisons and buying guides for compact chargers and earbuds. Exclude recalls. Partner tier up to 2.",
+    "bidCpm": 5.2,
+    "aiChannels": false,
+    "dealRequestId": "DR-4187",
+    "rules": {
+      "topics": [
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "product_comparison",
+        "buying_guide"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls"
+      ],
+      "country": "US",
+      "partnerTierMax": 2
+    },
+    "createdAt": "2026-11-22T09:10:00.000Z",
+    "updatedAt": "2026-11-22T09:10:00.000Z"
+  },
+  {
+    "id": "cmp-kohls-black-friday-doorbusters",
+    "advertiserId": "adv-kohls",
+    "name": "Black Friday Doorbusters",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 7.2,
+    "aiChannels": false,
+    "dealRequestId": "DR-3200",
+    "rules": {
+      "topics": [
+        "Shopping > Deals",
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "buying_guide",
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-11-02T14:10:00.000Z",
+    "updatedAt": "2026-11-20T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-kohls-gift-cards-always-on",
+    "advertiserId": "adv-kohls",
+    "name": "Gift Cards Always-On",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 4.1,
+    "aiChannels": false,
+    "dealRequestId": "DR-3201",
+    "rules": {
+      "topics": [
+        "Shopping > Gifts"
+      ],
+      "purposes": [
+        "buying_guide",
+        "opinion"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-11-01T14:10:00.000Z",
+    "updatedAt": "2026-11-19T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-kohls-winter-coats-clearance",
+    "advertiserId": "adv-kohls",
+    "name": "Winter Coats Clearance",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5,
+    "aiChannels": false,
+    "dealRequestId": "DR-3202",
+    "rules": {
+      "topics": [
+        "Shopping"
+      ],
+      "purposes": [
+        "buying_guide"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-31T14:10:00.000Z",
+    "updatedAt": "2026-11-18T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-kohls-home-refresh-season",
+    "advertiserId": "adv-kohls",
+    "name": "Home Refresh Season",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5.6,
+    "aiChannels": false,
+    "dealRequestId": "DR-3203",
+    "rules": {
+      "topics": [
+        "Shopping > Home & Office",
+        "Shopping > Home & Kitchen"
+      ],
+      "purposes": [
+        "product_comparison",
+        "how_to"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-30T14:10:00.000Z",
+    "updatedAt": "2026-11-17T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-kohls-beauty-holiday-sets",
+    "advertiserId": "adv-kohls",
+    "name": "Beauty Holiday Sets",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5.9,
+    "aiChannels": false,
+    "dealRequestId": "DR-3204",
+    "rules": {
+      "topics": [
+        "Shopping > Gifts"
+      ],
+      "purposes": [
+        "buying_guide"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-29T14:10:00.000Z",
+    "updatedAt": "2026-11-16T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-kohls-kids-toys-q4",
+    "advertiserId": "adv-kohls",
+    "name": "Kids Toys Q4",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 6,
+    "aiChannels": false,
+    "dealRequestId": "DR-3205",
+    "rules": {
+      "topics": [
+        "Shopping > Gifts > Kids"
+      ],
+      "purposes": [
+        "buying_guide"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy",
+        "violence"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-28T14:10:00.000Z",
+    "updatedAt": "2026-11-15T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-wanderly-ski-season-getaways",
+    "advertiserId": "adv-wanderly",
+    "name": "Ski Season Getaways",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 6.8,
+    "aiChannels": false,
+    "dealRequestId": "DR-3206",
+    "rules": {
+      "topics": [
+        "Travel > Winter Trips"
+      ],
+      "purposes": [
+        "how_to",
+        "buying_guide"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-27T14:10:00.000Z",
+    "updatedAt": "2026-11-14T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-wanderly-holiday-flights-flex",
+    "advertiserId": "adv-wanderly",
+    "name": "Holiday Flights Flex",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 7.5,
+    "aiChannels": false,
+    "dealRequestId": "DR-3207",
+    "rules": {
+      "topics": [
+        "Travel > Flights"
+      ],
+      "purposes": [
+        "how_to",
+        "news"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-26T14:10:00.000Z",
+    "updatedAt": "2026-11-13T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-wanderly-spring-break-early-bird",
+    "advertiserId": "adv-wanderly",
+    "name": "Spring Break Early Bird",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 4.4,
+    "aiChannels": false,
+    "dealRequestId": "DR-3208",
+    "rules": {
+      "topics": [
+        "Travel"
+      ],
+      "purposes": [
+        "how_to"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-25T14:10:00.000Z",
+    "updatedAt": "2026-11-12T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-wanderly-hotels-last-minute",
+    "advertiserId": "adv-wanderly",
+    "name": "Hotels Last-Minute",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5.2,
+    "aiChannels": false,
+    "dealRequestId": "DR-3209",
+    "rules": {
+      "topics": [
+        "Travel > Hotels"
+      ],
+      "purposes": [
+        "product_comparison",
+        "how_to"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-24T14:10:00.000Z",
+    "updatedAt": "2026-11-20T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-wanderly-weekend-city-breaks",
+    "advertiserId": "adv-wanderly",
+    "name": "Weekend City Breaks",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 4.9,
+    "aiChannels": false,
+    "dealRequestId": "DR-3210",
+    "rules": {
+      "topics": [
+        "Travel"
+      ],
+      "purposes": [
+        "how_to",
+        "buying_guide"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-23T14:10:00.000Z",
+    "updatedAt": "2026-11-19T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-northbank-holiday-budgeting-tools",
+    "advertiserId": "adv-northbank",
+    "name": "Holiday Budgeting Tools",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 8.4,
+    "aiChannels": false,
+    "dealRequestId": "DR-3211",
+    "rules": {
+      "topics": [
+        "Finance > Personal Budgeting"
+      ],
+      "purposes": [
+        "how_to"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "financial_distress",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-22T14:10:00.000Z",
+    "updatedAt": "2026-11-18T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-northbank-cashback-card-q4",
+    "advertiserId": "adv-northbank",
+    "name": "Cashback Card Q4",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 11,
+    "aiChannels": false,
+    "dealRequestId": "DR-3212",
+    "rules": {
+      "topics": [
+        "Finance > Credit Cards"
+      ],
+      "purposes": [
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "financial_distress"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-21T14:10:00.000Z",
+    "updatedAt": "2026-11-17T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-northbank-savings-goals-2027",
+    "advertiserId": "adv-northbank",
+    "name": "Savings Goals 2027",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 6.3,
+    "aiChannels": false,
+    "dealRequestId": "DR-3213",
+    "rules": {
+      "topics": [
+        "Finance"
+      ],
+      "purposes": [
+        "how_to"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "financial_distress"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-20T14:10:00.000Z",
+    "updatedAt": "2026-11-16T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-northbank-first-home-saver",
+    "advertiserId": "adv-northbank",
+    "name": "First-Home Saver",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 7.7,
+    "aiChannels": false,
+    "dealRequestId": "DR-3214",
+    "rules": {
+      "topics": [
+        "Finance"
+      ],
+      "purposes": [
+        "how_to",
+        "news"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "financial_distress",
+        "layoffs"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-19T14:10:00.000Z",
+    "updatedAt": "2026-11-15T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-northbank-student-banking",
+    "advertiserId": "adv-northbank",
+    "name": "Student Banking",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5.1,
+    "aiChannels": false,
+    "dealRequestId": "DR-3215",
+    "rules": {
+      "topics": [
+        "Finance"
+      ],
+      "purposes": [
+        "how_to"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "financial_distress"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-18T14:10:00.000Z",
+    "updatedAt": "2026-11-14T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-compact-chargers-always-on",
+    "advertiserId": "adv-voltmart",
+    "name": "Compact Chargers Always-On",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5.4,
+    "aiChannels": false,
+    "dealRequestId": "DR-3216",
+    "rules": {
+      "topics": [
+        "Shopping > Electronics > Chargers"
+      ],
+      "purposes": [
+        "product_comparison",
+        "buying_guide"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 2
+    },
+    "createdAt": "2026-10-17T14:10:00.000Z",
+    "updatedAt": "2026-11-13T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-earbuds-holiday-push",
+    "advertiserId": "adv-voltmart",
+    "name": "Earbuds Holiday Push",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5.8,
+    "aiChannels": false,
+    "dealRequestId": "DR-3217",
+    "rules": {
+      "topics": [
+        "Shopping > Electronics > Audio"
+      ],
+      "purposes": [
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-16T14:10:00.000Z",
+    "updatedAt": "2026-11-12T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-laptop-season",
+    "advertiserId": "adv-voltmart",
+    "name": "Laptop Season",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 6.9,
+    "aiChannels": false,
+    "dealRequestId": "DR-3218",
+    "rules": {
+      "topics": [
+        "Shopping > Electronics > Computers"
+      ],
+      "purposes": [
+        "product_comparison",
+        "opinion"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 2
+    },
+    "createdAt": "2026-10-15T14:10:00.000Z",
+    "updatedAt": "2026-11-20T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-smart-home-starter",
+    "advertiserId": "adv-voltmart",
+    "name": "Smart Home Starter",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5.3,
+    "aiChannels": false,
+    "dealRequestId": "DR-3219",
+    "rules": {
+      "topics": [
+        "Shopping > Electronics",
+        "Technology"
+      ],
+      "purposes": [
+        "how_to",
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-14T14:10:00.000Z",
+    "updatedAt": "2026-11-19T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-gaming-accessories",
+    "advertiserId": "adv-voltmart",
+    "name": "Gaming Accessories",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 4.8,
+    "aiChannels": false,
+    "dealRequestId": "DR-3220",
+    "rules": {
+      "topics": [
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-13T14:10:00.000Z",
+    "updatedAt": "2026-11-18T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-tv-upgrade-week",
+    "advertiserId": "adv-voltmart",
+    "name": "TV Upgrade Week",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 6.1,
+    "aiChannels": false,
+    "dealRequestId": "DR-3221",
+    "rules": {
+      "topics": [
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "buying_guide",
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-12T14:10:00.000Z",
+    "updatedAt": "2026-11-17T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-phone-accessories",
+    "advertiserId": "adv-voltmart",
+    "name": "Phone Accessories",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 4.6,
+    "aiChannels": false,
+    "dealRequestId": "DR-3222",
+    "rules": {
+      "topics": [
+        "Technology > Phones",
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "product_comparison"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-11T14:10:00.000Z",
+    "updatedAt": "2026-11-16T14:10:00.000Z"
+  },
+  {
+    "id": "cmp-voltmart-camera-creator-kits",
+    "advertiserId": "adv-voltmart",
+    "name": "Camera & Creator Kits",
+    "status": "live",
+    "source": "ui",
+    "brief": "",
+    "bidCpm": 5.5,
+    "aiChannels": false,
+    "dealRequestId": "DR-3223",
+    "rules": {
+      "topics": [
+        "Shopping > Electronics"
+      ],
+      "purposes": [
+        "buying_guide",
+        "how_to"
+      ],
+      "tonePreference": [
+        "practical"
+      ],
+      "excludeSensitive": [
+        "recalls",
+        "tragedy"
+      ],
+      "country": "US",
+      "partnerTierMax": 1
+    },
+    "createdAt": "2026-10-10T14:10:00.000Z",
+    "updatedAt": "2026-11-15T14:10:00.000Z"
+  }
+]

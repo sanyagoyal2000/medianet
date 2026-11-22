@@ -1,0 +1,61 @@
+{
+  "coverageBaseline": {
+    "fresh": 911976,
+    "stale": 60998,
+    "unclassified": 26997,
+    "needs_review": 0
+  },
+  "aiFunnelBaseline": {
+    "requests": 12399,
+    "offers": 8479,
+    "displays": 8059,
+    "clicks": 242
+  },
+  "contextualDelivery": {
+    "rows": [
+      {
+        "context": "Buying guides",
+        "share": 62
+      },
+      {
+        "context": "Product comparisons",
+        "share": 28
+      },
+      {
+        "context": "Other eligible content",
+        "share": 10
+      }
+    ],
+    "trend": [
+      {
+        "date": "16 Nov",
+        "share": 56
+      },
+      {
+        "date": "17 Nov",
+        "share": 57
+      },
+      {
+        "date": "18 Nov",
+        "share": 56
+      },
+      {
+        "date": "19 Nov",
+        "share": 57.5
+      },
+      {
+        "date": "20 Nov",
+        "share": 58
+      },
+      {
+        "date": "21 Nov",
+        "share": 60
+      },
+      {
+        "date": "22 Nov",
+        "share": 61
+      }
+    ]
+  },
+  "activeCampaignsBaseline": 0
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "AI-2041",
+    "appId": "shopbuddy",
+    "scenario": "shopping",
+    "turnSummary": "What are practical holiday gifts under $50?",
+    "campaignId": "cmp-kohls-holiday-2026",
+    "displayToken": "dt_seed_2041",
+    "returned": true,
+    "displayed": true,
+    "clicked": false,
+    "reasonReader": "Matched to this gift-shopping question. Paid placement.",
+    "reason": null,
+    "checks": [
+      {
+        "label": "Consent to sponsored suggestions",
+        "ok": true
+      },
+      {
+        "label": "Relevant context matched (Gifts)",
+        "ok": true
+      },
+      {
+        "label": "Not sensitive",
+        "ok": true
+      },
+      {
+        "label": "Frequency within cap",
+        "ok": true
+      },
+      {
+        "label": "Approved assets available",
+        "ok": true
+      },
+      {
+        "label": "Display confirmation received",
+        "ok": true
+      },
+      {
+        "label": "Billable",
+        "ok": true
+      }
+    ],
+    "createdAt": "2026-11-22T14:04:12.900Z"
+  }
+]

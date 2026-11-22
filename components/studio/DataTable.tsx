@@ -40,13 +40,12 @@ export function DataTable<T>({
             {columns.map((c) => {
               const active = sort?.key === c.key;
               return (
-                <th key={c.key} scope="col" className={cn("px-3 py-2 font-semibold text-ink", c.headerClassName)}>
+                <th key={c.key} scope="col" aria-sort={c.sortValue ? (active ? (sort?.dir === "asc" ? "ascending" : "descending") : "none") : undefined} className={cn("px-3 py-2 font-semibold text-ink", c.headerClassName)}>
                   {c.sortValue ? (
                     <button
                       type="button"
                       className="inline-flex items-center gap-1.5 rounded hover:text-link"
                       onClick={() => setSort({ key: c.key, dir: active && sort?.dir === "asc" ? "desc" : "asc" })}
-                      aria-sort={active ? (sort?.dir === "asc" ? "ascending" : "descending") : "none"}
                     >
                       {c.header}
                       {active ? (sort?.dir === "asc" ? <ChevronUp className="size-3.5" /> : <ChevronDown className="size-3.5" />) : <ChevronsUpDown className="size-3.5 text-subtle" />}
