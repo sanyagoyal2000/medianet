@@ -1,11 +1,11 @@
-import { PageHeader } from "@/components/studio/PageHeader";
-import { Card } from "@/components/studio/Card";
+import { libraryRows } from "@/lib/context/library";
+import { contextKpis } from "@/lib/queries";
+import { LibraryClient } from "./LibraryClient";
 
-export default function Page() {
-  return (
-    <>
-      <PageHeader title="Context Library" subtitle="Review page meaning, purpose and tone" />
-      <div className="grid grid-cols-2 gap-5"><Card className="h-48" /><Card className="h-48" /></div>
-    </>
-  );
+export const dynamic = "force-dynamic";
+
+export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | undefined>> }) {
+  const sp = await searchParams;
+  const [rows, kpis] = await Promise.all([libraryRows(), contextKpis()]);
+  return <LibraryClient rows={rows} kpis={kpis} initial={{ status: sp.status, site: sp.site, page: sp.page, q: sp.q }} />;
 }

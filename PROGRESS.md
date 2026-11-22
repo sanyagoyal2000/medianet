@@ -6,7 +6,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - [x] Phase 01 · Design system and app shell
 - [x] Phase 02 · Data layer, simulated Media.net systems, seed
 - [x] Phase 03 · Agent runtime, prompts and cached fallback
-- [ ] Phase 04 · F1 context engine + Context Library (J2)
+- [x] Phase 04 · F1 context engine + Context Library (J2)
 - [ ] Phase 05 · F3/F4 campaign brief, targeting and eligibility (J1)
 - [ ] Phase 06 · F2 traffic router, Traffic Intelligence, Decision Inspector (J3, J4)
 - [ ] Phase 07 · Phase 2 AI Channels + ShopBuddy, Phase 3 planned (J5)
@@ -29,6 +29,8 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - **P03:** `lib/ai/run.ts` handles structured calls (`messages.parse` + `zodOutputFormat`, 25 s timeout, zod re-validation with 1 retry), refusal and error fallback to cache, and `agent_runs` logging. It also has a manual tool loop (max 6 turns, `tool_choice` auto because Sonnet 5.5 rejects forced choice). The prompts are copied word for word into `lib/ai/prompts/*.md`. The demo mode comes from env, overridden by a `demo_mode` cookie.
 - **No `ANTHROPIC_API_KEY` was available**, so `data/cache/**` (98 entries) is **hand-authored offline** by `npm run cache:build`: the profiler uses the seed profiles, the explainer covers every page × focus campaign, and there are 3 briefs and 4 ShopBuddy scenarios. Re-run with a key in `.env.local` to replace them with live outputs.
 - **Decision:** on a cache miss, the profiler, explainer, brief interpreter and placement guard use **deterministic offline heuristics** (with quotes taken from real sentences of the page) instead of the "nearest example". A nearest example would quote a different page, and the evidence check would then reject it. The nearest-example lookup is still the last resort.
+
+- **P04:** `match.ts`/`tfidf.ts` are wired into the planning tools. `extract.ts` uses fetch (8 s, browser UA) → linkedom → Readability; verified live on a Wikipedia article. `/api/profile` streams NDJSON steps (Fetching → Extracting → Profiling → Checking evidence). Eligibility and correction APIs are done. The Context Library screen has computed KPIs, filters (including `?status=needs_review`), a sortable table, the Add source dialog with a paste-text fallback, the review-gated profile panel, semantic terms with an illustrative vector, a correction dialog with approve/reject, and Reclassify selected with progress. Curl confirmed: recall Excluded "Hard exclusion: Product recalls" in Context Studio mode and Eligible in Today mode; a correction takes Needs review from 2 to 3.
 
 ## Deployed URL
 (Claude Code fills this in at the end)
