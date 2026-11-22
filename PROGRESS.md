@@ -8,7 +8,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - [x] Phase 03 · Agent runtime, prompts and cached fallback
 - [x] Phase 04 · F1 context engine + Context Library (J2)
 - [x] Phase 05 · F3/F4 campaign brief, targeting and eligibility (J1)
-- [ ] Phase 06 · F2 traffic router, Traffic Intelligence, Decision Inspector (J3, J4)
+- [x] Phase 06 · F2 traffic router, Traffic Intelligence, Decision Inspector (J3, J4)
 - [ ] Phase 07 · Phase 2 AI Channels + ShopBuddy, Phase 3 planned (J5)
 - [ ] Phase 08 · Overview, Reports & experiments, Settings (J8, J6)
 - [ ] Phase 09 · MCP endpoint for buying agents (J7)
@@ -34,6 +34,9 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 
 - **P05:** `/api/brief/interpret` streams SSE (curl showed the 6 friendly steps, then the result with spec and 2.4M). Forecast, explain and campaign create/PATCH APIs are done. Review sets `in_review` and files a Deals Desk **draft** request (e.g. DR-4540). The Campaigns list shows status and source pills, with filters including `?source=mcp`. The campaign detail has Brief (live steps, summary, ambiguities), Targeting (matches the screenshot: rules form, debounced eligibility, the Compare Today toggle with "changed" badges, expandable why/evidence, context profile card, a Kohl's creative built in SVG, and a Why this ad? popover driven by the Explainer), Placements (ranked with scores) and Performance (opportunities chart).
 - **Decision:** Save draft and Review campaign sit in the page header, as in `02_Campaign_Targeting.png`, rather than in a footer bar. The "Agent access" line closes the rules card. The eligibility table shows the top eligible pages plus the excluded or limited ones, with "Show all".
+
+- **P06:** The router has its policy table as data, a Web Bot Auth structure and registry check ("verification simulated"), timestamped steps, and `performance.now()` timing: every kind routes in **0.1–0.7 ms**. `simulate.ts` builds realistic headers for all 6 kinds, and live requests fold into today's bucket and the automation rows. Curl confirmed: human → Ad displayed (billable); AI app → Awaiting display; signed crawler → No ad impression + "Follow publisher policy"; buyer → Planning only; unidentified → Review required; headless → Excluded. Only the human request is billable. Unknown review: reclassifying as human without a note returns 400, and nothing is re-billed. Traffic Intelligence and the Decision Inspector match the screenshots. The Inspect request dialog is shared with Overview. `/decisions` redirects to the latest simulated request, or RQ1049.
+- **Decision:** request activity is sorted by request number, not timestamp, because the seed clock (22 Nov 14:10 UTC) can be ahead of real time.
 
 ## Deployed URL
 (Claude Code fills this in at the end)
