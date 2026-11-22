@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { CalendarDays, Info, Lock, Pause, Play } from "lucide-react";
@@ -141,7 +142,7 @@ export function ReportsClient({ initialTab, exp: initialExp, readout, quality, t
             <h2 className="w-[110px] text-[20px] font-bold">Rollout</h2>
             <Stepper steps={exp.rollout.map((s) => ({ label: s.stage, sub: s.state === "done" ? "Complete" : s.state === "current" ? (paused ? "Paused" : "Current") : "Pending", state: s.state }))} />
             <span className="mx-2 h-10 border-l border-line" />
-            <a href="/campaigns/cmp-kohls-holiday-2026?tab=placements" className="inline-flex h-10 items-center rounded-md border border-link px-4 text-[15px] text-link hover:bg-[#F0F6FF]">Inspect placements</a>
+            <Link href="/campaigns/cmp-kohls-holiday-2026?tab=placements" className="inline-flex h-10 items-center rounded-md border border-link px-4 text-[15px] text-link hover:bg-[#F0F6FF]">Inspect placements</Link>
             <Btn kind="outline" onClick={() => toast.info("Rollout plan: Shadow (done) › Pilot 10% of Kohl's eligible traffic › Ramp to 50%, then 100%, each gated on uplift + guardrails.")}>Review rollout</Btn>
             <Tooltip>
               <TooltipTrigger asChild>
