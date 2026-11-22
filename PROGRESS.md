@@ -7,7 +7,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - [x] Phase 02 · Data layer, simulated Media.net systems, seed
 - [x] Phase 03 · Agent runtime, prompts and cached fallback
 - [x] Phase 04 · F1 context engine + Context Library (J2)
-- [ ] Phase 05 · F3/F4 campaign brief, targeting and eligibility (J1)
+- [x] Phase 05 · F3/F4 campaign brief, targeting and eligibility (J1)
 - [ ] Phase 06 · F2 traffic router, Traffic Intelligence, Decision Inspector (J3, J4)
 - [ ] Phase 07 · Phase 2 AI Channels + ShopBuddy, Phase 3 planned (J5)
 - [ ] Phase 08 · Overview, Reports & experiments, Settings (J8, J6)
@@ -31,6 +31,9 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 - **Decision:** on a cache miss, the profiler, explainer, brief interpreter and placement guard use **deterministic offline heuristics** (with quotes taken from real sentences of the page) instead of the "nearest example". A nearest example would quote a different page, and the evidence check would then reject it. The nearest-example lookup is still the last resort.
 
 - **P04:** `match.ts`/`tfidf.ts` are wired into the planning tools. `extract.ts` uses fetch (8 s, browser UA) → linkedom → Readability; verified live on a Wikipedia article. `/api/profile` streams NDJSON steps (Fetching → Extracting → Profiling → Checking evidence). Eligibility and correction APIs are done. The Context Library screen has computed KPIs, filters (including `?status=needs_review`), a sortable table, the Add source dialog with a paste-text fallback, the review-gated profile panel, semantic terms with an illustrative vector, a correction dialog with approve/reject, and Reclassify selected with progress. Curl confirmed: recall Excluded "Hard exclusion: Product recalls" in Context Studio mode and Eligible in Today mode; a correction takes Needs review from 2 to 3.
+
+- **P05:** `/api/brief/interpret` streams SSE (curl showed the 6 friendly steps, then the result with spec and 2.4M). Forecast, explain and campaign create/PATCH APIs are done. Review sets `in_review` and files a Deals Desk **draft** request (e.g. DR-4540). The Campaigns list shows status and source pills, with filters including `?source=mcp`. The campaign detail has Brief (live steps, summary, ambiguities), Targeting (matches the screenshot: rules form, debounced eligibility, the Compare Today toggle with "changed" badges, expandable why/evidence, context profile card, a Kohl's creative built in SVG, and a Why this ad? popover driven by the Explainer), Placements (ranked with scores) and Performance (opportunities chart).
+- **Decision:** Save draft and Review campaign sit in the page header, as in `02_Campaign_Targeting.png`, rather than in a footer bar. The "Agent access" line closes the rules card. The eligibility table shows the top eligible pages plus the excluded or limited ones, with "Show all".
 
 ## Deployed URL
 (Claude Code fills this in at the end)
