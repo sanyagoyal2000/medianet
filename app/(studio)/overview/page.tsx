@@ -130,18 +130,18 @@ export default async function Page() {
           ))}
         </section>
         <section className="studio-card p-4">
-          <h2 className="mb-2 text-[20px] font-bold">AI channels</h2>
+          <h2 className="mb-2 text-[20px] font-bold">AI App Placements</h2>
           <div className="flex items-start justify-between gap-3 border-b border-line py-2">
             <div>
               <p className="flex items-center gap-3 text-[16px] font-semibold">ShopBuddy Sponsored answers <StatusPill variant="green">Partner pilot</StatusPill></p>
               <p className="text-[15px] text-[#475467]">Deliver contextual answers with eligible brand content.</p>
               <p className="mt-1 text-[13px] tabular-nums text-subtle">{int(funnel.requests)} requests › {int(funnel.offers)} offers › {int(funnel.displays)} displays confirmed › {int(funnel.clicks)} clicks</p>
             </div>
-            <Link href="/ai-channels" className="inline-flex h-10 shrink-0 items-center rounded-md border border-link px-4 text-[15px] text-link hover:bg-[#F0F6FF]">Open channel</Link>
+            <Link href="/ai-app-placements" className="inline-flex h-10 shrink-0 items-center rounded-md border border-link px-4 text-[15px] text-link hover:bg-[#F0F6FF]">Open channel</Link>
           </div>
           <div className="py-2">
             <p className="flex items-center gap-3 text-[16px] font-semibold">Licensed content access <StatusPill variant="grey">Planned</StatusPill></p>
-            <p className="text-[15px] text-[#475467]">Enable controlled use of approved brand content across AI channels.</p>
+            <p className="text-[15px] text-[#475467]">Enable controlled use of approved brand content across AI apps.</p>
           </div>
         </section>
       </div>

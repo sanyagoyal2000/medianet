@@ -60,10 +60,10 @@ export function AiChannelsClient({ rules: initialRules, funnel, latest, initialT
     <>
       <div className="mb-5 flex items-start justify-between">
         <div>
-          <h1 className="text-[30px] font-bold leading-tight">AI channels</h1>
+          <h1 className="text-[30px] font-bold leading-tight">AI App Placements</h1>
           <div role="tablist" className="mt-3 flex gap-8">
             {([["sponsored", "Sponsored answers"], ["licensed", "Licensed content access"]] as const).map(([k, l]) => (
-              <button key={k} role="tab" aria-selected={tab === k} onClick={() => { setTab(k); window.history.replaceState(null, "", `/ai-channels?tab=${k}`); }}
+              <button key={k} role="tab" aria-selected={tab === k} onClick={() => { setTab(k); window.history.replaceState(null, "", `/ai-app-placements?tab=${k}`); }}
                 className={cn("relative flex items-center gap-2 pb-2 text-[18px]", tab === k ? "font-semibold text-ink" : "text-[#475467]")}>
                 {l}{k === "licensed" && <StatusPill variant="amber" className="h-6 text-[13px]">Planned</StatusPill>}
                 {tab === k && <span className="absolute inset-x-0 -bottom-0.5 h-[3px] rounded bg-cta" />}

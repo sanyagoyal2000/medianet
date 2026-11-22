@@ -1,8 +1,6 @@
-# Media.net Context Studio (concept prototype)
+# Media.net Context Studio
 
-> Concept prototype for a Media.net PM case study · not an official Media.net product.
-
-A working prototype of **contextual targeting integrated into Media.net's existing ad server**. Media.net already knows what a page is *about* (SearchSignals, ContextGraph, contextual analysis at scale), and already sells curated deals (SELECT, Deals Desk) with measurement (ELEVATE) and verification partners. Context Studio **extends** these with:
+A working build of **contextual targeting integrated into Media.net's existing ad server**. Media.net already knows what a page is *about* (SearchSignals, ContextGraph, contextual analysis at scale), and already sells curated deals (SELECT, Deals Desk) with measurement (ELEVATE) and verification partners. Context Studio **extends** these with:
 
 - **F1** — what a page is **for** (purpose) and its **tone**, each backed by a quote from the page, plus confidence and freshness
 - **F2** — **who is really requesting** the ad (human, AI app, crawler, buying agent, unknown, suspected invalid); only displayed, human-facing impressions are billed
@@ -20,9 +18,9 @@ Running example: Kohl's "Holiday Gifting 2026". *"20 holiday gifts under $50"* i
 | F1 | Purpose/tone profile with evidence, confidence, freshness | Context Library · Campaign › Targeting · Decision Inspector |
 | F2 | Traffic-purpose routing (deterministic, no LLM, < 5 ms) | Traffic Intelligence · Decision Inspector · Overview |
 | F3 | Brief → targeting draft; MCP endpoint for buying agents | Campaign › Brief/Targeting · `/api/mcp` |
-| F4 | "Why this ad?" (context only) | Ad preview on Targeting · AI Channels card |
-| Phase 2 | Sponsored answers (returned ≠ displayed) | AI Channels · `/shopbuddy` |
-| Phase 3 | Licensed content access | AI Channels › Licensed content access (Planned) |
+| F4 | "Why this ad?" (context only) | Ad preview on Targeting · AI App Placements card |
+| Phase 2 | Sponsored answers (returned ≠ displayed) | AI App Placements · `/shopbuddy` |
+| Phase 3 | Licensed content access | AI App Placements › Licensed content access (Planned) |
 | Measurement | Experiment, guardrails, reconciliation, rollout gates | Reports › Experiment monitoring |
 
 ## Existing vs new
@@ -39,7 +37,7 @@ Running example: Kohl's "Holiday Gifting 2026". *"20 holiday gifts under $50"* i
 
 ```
 Browser (Next.js 15 App Router, Tailwind v4, shadcn/ui, Recharts)
-  ├─ app/(studio)/*         Overview, Campaigns, Context Library, Traffic, Decisions, AI Channels, Reports, Settings
+  ├─ app/(studio)/*         Overview, Campaigns, Context Library, Traffic, Decisions, AI App Placements, Reports, Settings
   └─ app/shopbuddy          partner demo chat (own layout)
 
 API routes (runtime = nodejs; agent routes maxDuration = 60)
@@ -110,7 +108,7 @@ Tools: `find_contexts`, `explain_match`, `forecast_reach`, `create_package` (dra
 2. **Campaigns › Holiday Gifting** — Interpret brief → rules fill → gift guide Eligible, toy recall Excluded → toggle **Today (topic only)**: the recall would have run → **Why this ad?**
 3. **Context Library** — Add content source: paste a live news URL → profile with real, verbatim evidence.
 4. **Inspect request** — a signed crawler → Decision Inspector: content access, no ad billing. Then an unknown → review, never billed as human.
-5. **AI Channels** — shopping question → Kohl's card (billable only after display); recall question → no ad.
+5. **AI App Placements** — shopping question → Kohl's card (billable only after display); recall question → no ad.
 6. **Reports** — the pilot is honest (not yet conclusive), guardrails hold, ramp is gated.
 7. **Claude Desktop over MCP** — the agent saves a draft → it appears in Campaigns with source **MCP**.
 

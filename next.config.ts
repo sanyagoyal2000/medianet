@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   },
   serverExternalPackages: ["linkedom"],
   devIndicators: false,
+  async redirects() {
+    return [{ source: "/ai-channels", destination: "/ai-app-placements", permanent: true }];
+  },
   outputFileTracingRoot: __dirname,
 };
 

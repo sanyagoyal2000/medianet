@@ -12,7 +12,7 @@ export const NAV = [
   { href: "/context-library", label: "Context Library", icon: Layers },
   { href: "/traffic", label: "Traffic Intelligence", icon: TrendingUp },
   { href: "/decisions", label: "Decision Inspector", icon: ShieldCheck },
-  { href: "/ai-channels", label: "AI Channels", icon: Sparkles },
+  { href: "/ai-app-placements", label: "AI App Placements", icon: Sparkles },
   { href: "/reports", label: "Reports", icon: BarChart3 },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
@@ -49,9 +49,6 @@ export function Sidebar() {
           );
         })}
       </nav>
-      <p className="mt-auto px-6 pb-5 text-[11px] leading-snug text-white/75">
-        Concept prototype for a Media.net PM case study · not an official Media.net product.
-      </p>
     </aside>
   );
 }

@@ -13,9 +13,6 @@ export default async function StudioLayout({ children }: { children: React.React
       <div className="pl-[240px]">
         <Topbar focusCampaignId={FOCUS_CAMPAIGN_ID} taskCount={tasks} />
         <main className="mx-auto max-w-[1440px] px-6 pb-6 pt-5">{children}</main>
-        <footer className="px-6 pb-6 text-center text-[12px] text-subtle">
-          Concept prototype for a Media.net PM case study · not an official Media.net product.
-        </footer>
       </div>
     </div>
   );

@@ -7,8 +7,8 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Context Studio · Media.net (concept)",
-  description: "Concept prototype for a Media.net PM case study · not an official Media.net product.",
+  title: "Context Studio · Media.net",
+  description: "Contextual relevance, request quality and AI app placements in one workspace.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

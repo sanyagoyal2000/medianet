@@ -122,7 +122,7 @@ export function SettingsClient({ models, env, runs, origin, initialFilter }: {
         </table>
       </section>
 
-      <p className="mt-4 text-[13px] text-subtle">Concept prototype for a Media.net PM case study · not an official Media.net product. Existing Media.net systems (ContextGraph, SearchSignals, Deals Desk, verification partner, ELEVATE) are simulated.</p>
+      <p className="mt-4 text-[13px] text-subtle">Existing Media.net systems (ContextGraph, SearchSignals, Deals Desk, verification partner, ELEVATE) are simulated.</p>
 
       <Drawer open={!!open} onOpenChange={(o) => !o && setOpen(null)} title={open ? `${open.agent} · ${open.id}` : ""} width="sm:max-w-2xl">
         {open && <JsonView value={open} />}

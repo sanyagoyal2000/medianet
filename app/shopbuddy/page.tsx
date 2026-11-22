@@ -68,7 +68,7 @@ export default function ShopBuddyPage() {
           {turns.length > 0 && <button type="button" onClick={reset} className="h-11 rounded-lg border border-[#B8DAD7] bg-white px-3 text-[14px]">New chat</button>}
         </div>
         <p className="mx-auto mt-2 max-w-3xl text-center text-[11px] text-[#4B6B6B]">
-          Partner demo app. Sponsored suggestions are labelled and chosen from this chat&apos;s context only. Concept prototype for a Media.net PM case study · not an official Media.net product.
+          Partner demo app. Sponsored suggestions are labelled and chosen from this chat&apos;s context only.
         </p>
       </form>
     </div>

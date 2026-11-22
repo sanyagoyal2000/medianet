@@ -49,5 +49,7 @@ Claude Code: tick each phase when `npm run build` passes and its "Done when" lis
 
 - **P10 (journey pass, cached mode, Chrome):** J1 ✓ (interpret brief streams steps → Targeting + toast; Why this ad? shows "Shown because this page is a holiday gift guide. Paid placement."; the Today toggle → 3.1M, recall Eligible + CHANGED). J2 ✓ (live URL profiled; correction raises Needs review). J3/J4 ✓ (6 kinds; review sheet rules). J5 ✓ (card + display confirmation → billable; recall → no ad). J6 ✓ (computed readout, gated ramp, pause). J7 ✓ (MCP draft visible as source MCP). J8 ✓ (Overview numbers equal Traffic and Library). Live mode is untested: no API key available. README written. **Deploy blocked: `vercel whoami` → not logged in.**
 
+- **User change:** "AI Channels" was renamed to **AI App Placements** (nav, page title, Overview card, README). The route is now `/ai-app-placements`, and `/ai-channels` permanently redirects to it. At the user's request, the prototype disclaimer was removed from the sidebar, page footer, ShopBuddy, Settings, page metadata and README. This overrides the CLAUDE.md footer rule.
+
 ## Deployed URL
 (Claude Code fills this in at the end)
